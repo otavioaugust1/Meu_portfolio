@@ -1,0 +1,485 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	font-family: 'Raleway', sans-serif;
+	letter-spacing: .05em;
+	color: #2F274C;
+}
+
+/* Classe que estiliza a mensagem de envio do formulário */
+.targetmsg {
+	position: absolute;
+	width: 460px;
+	height: 25px;
+	text-align: center;
+	margin-top: 5px;
+}
+
+.msgEnvio {
+	font-size: 14px;
+	color: #22DD77;
+}
+/*==========================================================*/
+
+/*HEADER*/
+	header {
+		position: absolute;
+		top: 0;
+		width: 100%;
+		z-index: 50;
+	}
+	header img {
+			margin-top: 16px;
+		}
+
+/*INTRO*/
+	.intro-part-1 p {
+		margin-top: 15px;
+		font-size: 18px;
+		color: #2F274C;
+		line-height: 30px;
+	}
+
+	.intro-part-1 p:nth-child(1) {
+		font-size: 28px;
+		color: #9273C3;
+		font-weight: 800;
+		margin-top: 0;
+	}
+
+	.intro-part-1 p:nth-child(3) {
+		margin-top: 30px;
+	}
+
+	.intro-part-1 h1 {
+		margin-top: 5px;
+		font-size: 28px;
+		color: #2F274C;
+		font-weight: 800;
+	}
+	.logo{
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+	}
+	.foto{
+		width: 30em;
+		height: 30em;
+		border-radius: 50%;
+	}
+
+	.btn {
+		text-decoration: none;
+		width: 124px;
+		height: 50px;
+		border: 1px solid #2F274C;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 18px;
+		font-weight: normal;
+		color: #2F274C;
+		margin: 30px 0 0 88px;
+		transition: .3s;
+	}
+
+	.intro-part-2 div {
+		display: inline-block;
+	}
+
+	.intro-part-2 .btn {
+		margin: 0;
+	}
+
+	.intro-part-2 .btn-align {
+		width: 288px;
+		display: block;
+		margin: 0 auto;
+	}
+
+	.btn-align div:nth-child(2) {
+		margin-left: 30px;
+	}
+
+/*PROJECT*/
+	.line {
+		width: 1399px;
+		height: 1px;
+		background-color: #EEE9F6;
+		margin: 0 auto;
+	}
+
+	.btn-projects p {
+		color: #ffffff;
+		text-align: center;
+	}
+
+	.btn-projects p:nth-child(1) {
+		margin-bottom: 15px;
+		font-size: 20px;
+		font-weight: 700;
+	}
+
+	.btn-projects p:nth-child(2) {
+		font-size: 14px;
+		font-weight: 400;
+		text-transform: uppercase;
+	}
+
+/*FOOTER*/
+	.line-title {
+		right: 0;
+		margin-top: 60px;
+		width: 90px;
+		border-bottom: 1px solid #2F274C;
+		position: absolute;
+	}
+
+	.section-title {
+		float: right;
+		color: #2F274C;
+		font-size: 12px;
+	}
+
+	.footer {
+		width: 100%;
+		background-color: #ffffff;
+	}
+
+	.footer-wrapper {
+		width: 100%;
+		position: absolute;	
+	}
+
+	footer {
+		width: 300px;
+		margin: 0 auto;
+		text-align: center;
+		margin-top: 135px;
+	}
+
+	footer p:nth-child(1) {
+		color: #2F274C;
+		font-size: 28px;
+		font-weight: 700;
+	}
+
+	footer p:nth-child(2) {
+		margin-bottom: 30px;
+		margin-top: 30px;
+		line-height: 30px;
+	}
+
+	form {
+		width: 460px;
+		margin: 0 auto;	
+	}
+
+	form p {
+		margin-bottom: 7px;
+		font-weight: bold;
+		font-size: 14px;
+	}
+
+	form input {
+		width: 443px;
+		height: 50px;
+		padding-left: 15px;
+	}
+
+	form input:nth-child(2), form input:nth-child(4) {
+		margin-bottom: 20px;
+	}
+
+	form textarea {
+		width: 443px;
+		height: 185px;
+		padding-top: 15px;
+		padding-left: 15px;
+	}
+
+	.btn-submit {
+		background-color: #9273C2;
+		color: #FFFFFF;
+		border-color: #9273C2;
+		padding: 0;
+		margin: 0 auto;
+		margin-top: 30px;
+	}
+
+	.copy {
+		font-size: 16px;
+		margin-top: 60px;
+		margin-bottom: 60px;
+		text-align: center;
+	}
+
+@media only screen and (min-width: 641px) {
+
+	.container {
+		width: 1170px;
+		position: relative;
+		margin: 0 auto;
+	}
+
+	/*HEADER*/
+		header img, header ul {
+			display: inline-block;
+		}
+
+		header ul li {
+			display: inline-block;
+			margin-left: 30px;
+		}
+
+		header ul {
+			float: right;
+			margin-top: 21px;
+		}
+
+		header ul li a {
+			text-decoration: none;
+			font-size: 16px;
+			color: #2F274C;
+		}
+
+	/*INTRO*/
+		.intro {
+			width: 100%;
+			height: 797px;
+			background-color: #ffffff;
+		}
+
+		.intro-part-1 {
+			width: 400px;
+			margin-top: 176px;
+		}
+
+		.btn:hover {
+			border: 1px solid #9273C3;
+			color: #9273C3;
+			border-radius: 25px;
+		}
+
+		.intro-part-1, .intro-part-2 {
+			vertical-align: top;
+			display: inline-block;
+		}
+
+		.intro-part-2 {
+			margin-top: 213px;
+			margin-left: 272px;
+		}
+
+		.intro-part-2 img {
+			display: block;
+		}
+
+	/*PROJECTS*/
+		.projects {
+			width: 100%;
+			max-height: 650px;
+			height: 42.7913vw;
+			background-color: #ffffff;
+		}
+
+		.line {
+			width: 1399px;
+		}
+
+		.fluid-align {
+			width: 100%;
+			height: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.fluid-container {
+			width: 100%;
+			height: 25.9258vw;
+			display: flex;
+			max-height: 393.81px;
+		}
+
+		.extern-wrapper {
+			width: 33.3333vw;
+			height: 25.9258vw;
+			display: inline-block;
+			max-height: 393.81px;
+			max-width: 506.33px;
+		}
+
+		.btn-projects {
+			width: 33.3333vw;
+			height: 25.9258vw;
+			text-decoration: none;
+			max-height: 393.81px;
+			max-width: 506.33px;
+		}
+
+		.shadow {
+			width: 33.3333vw;
+			height: 25.9258vw;
+			background: rgba(0, 0, 0, 0.3);
+			position: absolute;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			max-height: 393.81px;
+			max-width: 506.33px;
+		}
+
+		.fluid-container .extern-wrapper:nth-child(1) {
+			background: url("../img/home/projects/img-1.jpg") no-repeat;
+			background-position: center;
+			background-size: 33.3333vw 25.9258vw;
+			transition: .6s;
+		}
+
+		.fluid-container .extern-wrapper:nth-child(2) {
+			background: url("../img/home/projects/img-2.jpg") no-repeat;
+			background-position: center;
+			background-size: 33.3333vw 25.9258vw;
+			transition: .6s;
+		}
+
+		.fluid-container .extern-wrapper:nth-child(3) {
+			background: url("../img/home/projects/img-3.jpg") no-repeat;
+			background-position: center;
+			background-size: 33.3333vw 25.9258vw;
+			transition: .6s;
+		}
+
+		.fluid-container .extern-wrapper:nth-child(1):hover {
+			background-size: 40.3555vw 31.3878vw;
+		}
+
+		.fluid-container .extern-wrapper:nth-child(2):hover {
+			background-size: 40.3555vw 31.3878vw;
+		}
+
+		.fluid-container .extern-wrapper:nth-child(3):hover {
+			background-size: 40.3555vw 31.3878vw;
+		}
+
+	.btn-submit:hover {
+		color: #FFFFFF;
+	}
+}
+
+@media only screen and (max-width: 640px) {
+	.container {
+		width: 300px;
+		position: relative;
+		margin: 0 auto;
+	}
+
+        /* Classe que estiliza a mensagem de envio do formulário */
+        .targetmsg {
+	        width: 300px;
+        }
+        /*==========================================================*/
+
+	.hide-menu {
+		 visibility: hidden;
+	}
+
+	/*INTRO*/
+		.intro {
+			width: 100%;
+			height: 1152px;
+			background-color: #ffffff;
+		}
+
+		.intro-part-1 {
+			width: 300px;
+			margin-top: 116px;
+		}
+
+		.intro-part-2 {
+			margin-top: 120px;
+		}
+
+		.intro-part-2 img {
+			width: 100%;
+			text-align: center;
+		}
+
+	/*PROJECTS*/
+		.projects {
+			width: 100%;
+			height: 1005px;
+			background-color: #ffffff;
+		}
+
+		.line {
+			width: 300px;
+		}
+
+		.fluid-container {
+			width: 100%;
+			height: 840px;
+			margin-top: 105px;
+		}
+
+		.extern-wrapper {
+			width: 100%;
+			height: 280px;
+		}
+
+		.btn-projects {
+			width: 100%;
+			height: 280px;
+			text-decoration: none;
+		}
+
+		.shadow {
+			width: 100%;
+			height: 280px;
+			background: rgba(0, 0, 0, 0.3);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.fluid-container .extern-wrapper:nth-child(1) {
+			background: url("../img/home/projects/img-1.jpg") no-repeat;
+			background-position: center;
+			background-size: cover;
+		}
+
+		.fluid-container .extern-wrapper:nth-child(2) {
+			background: url("../img/home/projects/img-2.jpg") no-repeat;
+			background-position: center;
+			background-size: cover;
+		}
+
+		.fluid-container .extern-wrapper:nth-child(3) {
+			background: url("../img/home/projects/img-3.jpg") no-repeat;
+			background-position: center;
+			background-size: cover;
+		}
+
+	/*FOOTER*/
+		form {
+			width: 300px;
+		}
+
+		form input {
+			width: 283px;
+		}
+
+		form textarea {
+			width: 283px;
+			height: 185px;
+		}
+}
+
+.nao-aparece {
+	position: absolute;
+	visibility: hidden;
+	height: 0;
+}

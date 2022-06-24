@@ -1,46 +1,146 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sou Otavio A</title>
-    <title>Conhecendo Otavio Augusto</title>
-    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
-    <link rel="stylesheet" href="../CSS/style.css">
-
+	<meta charset="utf-8">
+	<title>Otavio Augusto - ADS</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-    <header class="cabecalho">
-        <img class="cabecalho-imagem" src="" alt="logo da pagina">
-        <nav class="cabecalho-menu">
-            <a class="cabecalho-menu-item">Sobre</a>
-            <a class="cabecalho-menu-item">Projetos</a>
-            <a class="cabecalho-menu-item">contatos</a>
-        </nav>
-    </header>
-    <main class="conteudo">
-        <section class="conteudo-principal">
-            <div class="conteudo-principal-escrito">
-                <h2>Olá!Eu sou</h2>        
-                <h1><strong>Otávio Augusto</strong></h1>
-                <button>Veja meus projetos</button>
-            </div>
-            <img src="" alt="">            
-        </section>
-        <section>
-            <h3>Minha história pessoal...</h3>
-            <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident quia iure molestias quasi, quo dolorem voluptas cupiditate at sunt incidunt praesentium repudiandae error, eligendi repellat nam inventore accusantium corrupti cumque?
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium mollitia optio est, rerum voluptate quas explicabo, nisi dicta voluptatem tempore maxime ullam expedita, esse laboriosam voluptas possimus atque unde impedit.
-            </p>
-        </section>
-    </main>
-    <footer>
-        
+	<header>
+		<div class="container">
+			<a href="index.html"><img src="./img/foto_me.jpg" alt="logo" class="logo"></a>
+			<ul class="hide-menu">
+				<li> <a href="#projeto">Projetos</a></li>
+				<li> <a href="#contato">Contato</a></li>
+			</ul>
+		</div>
+	</header>
 
-    </footer>
+<!--INTRO -->
+	<section class="intro">
+		<div class="container">
+			<div class="intro-part-1">
+				<p>Olá, eu sou</p>
+				<h1>Otávio Augusto</h1>
+				<p>Recém formado em Análise e Desenvolvimento de Sistemas - ADS - pela Estácio de Sá.</p>
+        <p>Tambem sendo um pesquisador, formado em Administração - ADM, Pós-graduado em Sistema de Apoio ao Processo Seletivo: Regulação em Saúde no SUS - REG pelo Instituto de Ensino e Pesquisa do Hospital Sírio-Libanês, IEP/HSL (2017), Pós-graduado em Especialização em Micropolítica da Gestão e Trabalho em Saúde pela Universidade Federal Fluminense (2018), atuando há 12 anos na Área de Gestão a Saúde sendo 10 anos na Regulação, Faturamento, Planejamento, Controle e Avaliação em Saúde;</p>
+				<p>Sendo um profissional em TI me faz pensar não apenas sobre dados e usabilidade, mas também sobre o código e execução.</p>
+				<p>Estou sempre procurando melhorar minhas habilidades e conhecimentos através de cursos online, livros e projetos.</p>
+				<p>Confira alguns desses projetos</p>
+				<a href="#projeto" class="btn">Projeto</a>
+			</div>
+
+			<div class="intro-part-2">
+				<img class="foto" src="./img/foto_me.jpg"  alt="Foto de Otávio Augusto">
+				
+				<div class="btn-align">
+					<div>
+						<a href="https://www.linkedin.com/in/otavioaugust/" class="btn">LinkedIn</a>
+					</div>
+
+					<div>
+						<a href="#contato" class="btn">Contato</a>
+					</div>
+				</div>
+        <div class="btn-align">
+					<div>
+						<a href="https://www.linkedin.com/in/otavioaugust/" class="btn">Lattes</a>
+					</div>			
+				
+			</div>
+		</div>
+	</section>
+
+<!--PROJECTS -->
+	<section id="projeto" class="projects">
+		<div class="line"></div>
+		<div class="container">
+			<div class="line-title"> 
+				<p class="section-title">PROJECTS</p> </div>
+		</div>
+		<div class="fluid-align">
+			<div class="fluid-container">
+				<div class="extern-wrapper">
+					<a href="project-2.html" class="btn-projects" aria-label="Belíssima - 2019 - Design">
+						<div class="shadow">
+							<div>
+								<p>Belíssima - 2019</p>
+								<p>Design</p>
+							</div>
+						</div>
+						
+					</a>
+				</div>
+
+				<div class="extern-wrapper">
+					<a href="project-1.html" class="btn-projects" aria-label="Museum of FACISA - 2018 - Design">
+						<div class="shadow">
+							<div>
+								<p>Museum of FACISA - 2018</p>
+								<p>Design</p>
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<div class="extern-wrapper">
+					<a href="project-3.html" class="btn-projects" class="btn-projects" aria-label="Ocean - 2019 - Design">
+						<div class="shadow">
+							<div>
+								<p>Ocean - 2019</p>
+								<p>Design</p>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+<!--FOOTER -->
+	<section id="contato" class="footer">
+		<div class="line"></div>
+		<div class="container">
+			<div class="line-title"> 
+				<p class="section-title">CONTACT</p>
+			</div>
+			<div class="footer-wrapper">
+				<footer>
+					<p>Let’s work togheter</p>
+					<p>Use the form below or email me at contact@andressabelem.com</p>
+				</footer>
+
+				<form action="enviar.php" method="post" name="form" id="form">
+					<p>Name</p>
+					<input type="text" style="border:1px solid #2F274C" name="name" required>
+					
+					<p>Email</p>
+					<input type="text" style="border:1px solid #2F274C" name="email" required>
+					
+					<p>Message</p>
+					<textarea type="text" name="mensagem" style="border:1px solid #2F274C" required></textarea>
+					
+					<div class="targetmsg"></div>
+
+					<!-- Solução do andré ( carinha do Origamid ) para impedir que bots floodem emails ( Não tão efetivas para bots mais refinados ) -->
+					<label class="nao-aparece">Se você não é um robô, deixe em branco.</label>
+					<input type="text" class="nao-aparece" name="leaveblank">
+					<label class="nao-aparece">Se você não é um robô, não mude este campo.</label>
+					<input type="text" class="nao-aparece" 	name="dontchange" value="http://" >
+					<!----------------------------------------------->
+
+					<input type="submit" value="Send" class="btn btn-submit">
+				</form>
+				<p class="copy">© 2019 - Andressa Belém</p>
+			</div>
+		</div>
+	</section>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
