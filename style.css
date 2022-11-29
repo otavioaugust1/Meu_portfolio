@@ -39,6 +39,14 @@ nav {
     letter-spacing: 1px;
 }
 
+#menu {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    width: 8em;
+    margin-top: -2.5em;
+  }
+
 span {
     color: var(--my-color-2);
 }
