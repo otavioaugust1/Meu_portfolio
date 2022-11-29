@@ -9,13 +9,13 @@
     --my-color-1: #f5f5f5;
     --my-color-2: #32f900;
     --my-color-3: rgba(204, 255, 205, 0.8);
-    --my-color-4: #000;
+    --my-color-4: #191919;
     --my-color-5: #000;
 
 }
 
 .background {
-    background-image: url(../img/background.jpg);
+    background-image: url(img/background.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
