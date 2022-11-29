@@ -3,198 +3,139 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Otavio Augusto - ADS</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css\Style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio website</title>
 </head>
 
 <body>
-
-    <div class="navigation">
-        <input type="checkbox" class="navigation__checkbox" id="nav-toggle" />
-        <label for="nav-toggle" class="navigation__button">
-            <span class="navigation__icon" aria-label="toggle navigation menu">&nbsp;</span>
-        </label>
-        <div class="navigation__background">&nbsp;</div>
-
-        <nav class="navigation__nav" role="navigation">
-            <ul class="navigation__list">
-                <li class="navigation__item">
-                    <a href="#about" class="navigation__link"><span>01</span>Sobre</a>
-                </li>
-                <li class="navigation__item">
-                    <a href="#skill" class="navigation__link"><span>02</span>Habilidades</a>
-                </li>
-                <li class="navigation__item">
-                    <a href="#work" class="navigation__link"><span>03</span>Projetos</a>
-                </li>
-                <li class="navigation__item">
-                    <a href="#popup" class="navigation__link"><span>04</span>Meu Curriculo</a>
-                </li>
-                <li class="navigation__item">
-                    <a href="#footer" class="navigation__link"><span>05</span>Contato</a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-    <header class="header" role="banner" id="header">
-        <div class="header__text-box">
-            <h1 class="heading-primary">Olá, eu sou Otavio Augusto</h1>
-            <p class="header__description">
-                Recém formado em Análise e Desenvolvimento de Sistemas - ADS
-            </p>
-            <a href="#popup" class="btn btn__hire" id="hire">Meu Curriculo &nbsp;&rarr;</a>
-        </div>
-    </header>
-    <main role="main">
-        <section class="intro">
-            <div class="row">
-                <h2 class="heading-secondary">É bom tê-lo aqui</h2>
-                <p class="intro-text">
-                    Você está procurando um site rápido e fácil de usar para representar seu produto ou negócio? Talvez
-                    você esteja procurando algum tipo de consulta? Ou talvez você tenha uma ideia que deseja expressar,
-                    mas precisa de um profissional visionário para realmente criá-la. Talvez você queira colaborar? Além
-                    disso, sinta-se à vontade para me contatar com algumas sugestões, adoraria ouvir algumas críticas
-                    construtivas em qualquer um dos meus projetos!
-                </p>
-                <a href="https://twitter.com/nisarhassan12" class="btn">Say Hello !</a>
-            </div>
-        </section>
-        <section class="skill" id="skill">
-            <div class="u-text-center">
-                <h2 class="heading-secondary">Habilidades</h2>
-                <p class="intro-text">
-
-                </p>
-                <a href="#work" class="btn">Meus projetos</a>
-            </div>
-        </section>
-        <section class="about" id="about">
-            <div class="u-text-center">
-                <h2 class="heading-secondary">Sobre mim</h2>
-            </div>
-            <p class="intro-text">
-                Sou desenvolvedor web front-end autodidata de Brasilia-DF. Há cerca de 1 ano, comecei a aprender como
-                tornar um programador. Mas eu não sou perfeito. Estou longe de ser perfeita, mas sou resiliente,
-                confiante e muito teimoso, e acho que aprender é um processo fascinante. No momento, estou aprendendo
-                sobre JavaScrip, TypeScript, Angular e Python.
-            </p>
-        </section>
-        <section class="craft">
-            <div class="u-text-center">
-                <h2 class="heading-secondary">Minha paixão em poucas palavras</h2>
-                <p class="intro-text">
-                    Eu amo a simplicidade, então eu tento o meu melhor para fazer as coisas o mais simples possível.
-                    Também estou muito preocupado com as melhores práticas e sempre valorizo a experiência do
-                    desenvolvedor sobre a experiência do usuário.
-                </p>
-            </div>
-
-            <div class="row">
-                <div class="craft__item">
-                    <img src="./img/browser-16.svg" alt="Browser" class="craft__img" />
-                    <h3 class="heading-tertiary">Front-end</h3>
-                    <p class="craft__description">
-                        Valorizo uma estrutura de conteúdo simples, padrões de design limpos e interações pensativas
-                        cheias de semântica e desempenho. Eu costumo codificar as coisas do zero e gostar de trazer
-                        ideias à vida. "SIMPLICIDADE"
-                    </p>
-                </div>
-
-                <div class="craft__item hack"></div>
-
-                <div class="craft__item">
-                    <img src="./img/browser-26.svg" alt="Server" class="craft__img" />
-                    <h3 class="heading-tertiary">Back-end</h3>
-                    <p class="craft__description">
-                        Sou novo em Back-end. Sei um pouco de SQL, mas gostaria de aprender mais. "PERSISTENTE"
-                    </p>
-                </div>
-            </div>
-        </section>
-        <section class="work" id="work">
-            <div class="u-text-center">
-                <h2 class="heading-secondary">Meus projetos</h2>
-                <p class="intro-text">
-                    Estou trabalhando em alguns projetos, que vou carregar para o meu portfólio assim que eles
-                    terminarem. Aqui estão algumas pequenas demonstrações:
-                    <a href="https://nisaranimations.surge.sh/">Notifications demo</a>
-                    ,
-                    <a href="https://totaliser.surge.sh/">A calculator</a>
-                    ,
-                    <a href="https://trek101.surge.sh/">A fictional tour's site</a>
-                    <br />(Work in Progress).
-                </p>
-                <img src="./img/609732.svg" alt="" class="work__construction" />
-                <a href="#popup" class="btn btn--hire">Hire Me &nbsp;&rarr;</a>
-            </div>
-        </section>
-    </main>
-    <footer class="footer" id="footer">
+    <!---Cabeçalho-Main-->
+    <div class="background">
         <nav>
-            <ul class="footer__social-links">
-                <li class="footer__social-link">
-                    <a href="https://www.facebook.com/nisarhassan767">Facebook</a>
-                </li>
-                <li class="footer__social-link">
-                    <a href="https://twitter.com/nisarhassan12">Twitter</a>
-                </li>
-                <li class="footer__social-link">
-                    <a href="https://www.linkedin.com/in/syednisarhassan12/">Linkedin</a>
-                </li>
-                <li class="number">(+92) 3095636143</li>
-                <li>
-                    <a href="mailto:syednisarhassan12@gmail.com" class="number">syednisarhassan12@gmail.com</a>
-                </li>
+            <h2 class="logo">Portfo<span>lio</span></h2>
+            <!--Logo-->
+            <ul class="cabeçalho-link">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Sobre mim</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Habilidades</a></li>
+                <li><a href="#">Contato</a></li>
             </ul>
+            <!--cabeçalho-link-->
+            <a href="#" class="btn">Subscribe</a>
         </nav>
-        <div class="footer__outro">
-            <p class="footer__info">
-                Crafted within Lahore by
-                <a href="https://twitter.com/nisarhassan12">Nisar.</a>
-            </p>
-            <p class="footer__info">&copy;2022. All rights reserved.</p>
-        </div>
-    </footer>
-    <div class="popup" id="popup">
-        <div class="popup__content">
-            <div class="popup__right">
-                <a href="#!" class="popup__close">&times;</a>
-                <div class="popup__top">
-                    <h2 class="heading-secondary u-text-center">Curriculum Vitae</h2>
-                    <p class="popup__text">Grab My CV to find out more about me.</p>
-                    <div class="popup__buttons">
-                        <a href="https://drive.google.com/file/d/11Yv8wqgL6MhfloKqqC2cTIPD7t-WDjyb/view?usp=sharing"
-                            class="btn">Download</a>
-                    </div>
-                </div>
-                <div class="popup__contact-info">
-                    <nav>
-                        <ul class="footer__social-links">
-                            <li class="footer__social-link">
-                                <a href="https://www.facebook.com/nisarhassan767">Facebook</a>
-                            </li>
-                            <li class="footer__social-link">
-                                <a href="https://twitter.com/nisarhassan12">Twitter</a>
-                            </li>
-                            <li class="footer__social-link">
-                                <a href="https://www.linkedin.com/in/syednisarhassan12/">Linkedin</a>
-                            </li>
-                            <li class="number">(+55) 3095636143</li>
-                            <li>
-                                <a class="number"
-                                    href="mailto:syednisarhassan12@gmail.com">syednisarhassan12@gmail.com</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </div>
-    <script src=""></script>
 
+        <div class="Main">
+            <h4>Ola, meu nome é</h4>
+            <h1>Otávio <span>August</span></h1>
+            <h3>Eu sou um desenvolvedor web</h3>
+            <div class="Container-btn">
+                <form>
+                    <input type="email" nome="email" id="mail" placeholder="Envie seu Email">
+                    <input type="submit" name="submit" value="Começar">
+                </form>
+            </div>
+            <!--Container-btn-->
+        </div>
+        <!--Main-->
+    </div>
+    <!--background-->
+
+
+    <!--Começo-da-seção-sobre-->
+    <section class="background-color-Sobre">
+        <div class="main-sobre">
+            <img src="img/main-img.jpg">
+            <div class="Text-sobre">
+                <h2>Sobre-Mim</h2>
+                <h5>Desenvolvedor <span>& designer</span></h5>
+                <p>Eu sou um Desenvolvedor web front-end. Eu posso fornecer codigos limpos e imagem de desing perfeito.
+                    E também fazer o website mais & mais interativo e com animação web. E posso Deixar seu site
+                    responsivo, e que ele acesse todos os usuarios, independente dos seus aparelhos dispositivos.</p>
+                <button type="button">Vamos conversa</button>
+                <!--Button-->
+            </div>
+            <!--Text-sobre-->
+        </div>
+        <!--main-sobre-->
+    </section>
+    <!--background-color-Sobre-->
+
+    <!--Começo-da-seção-nossos-serviços-->
+    <div class="Container-serviços">
+        <div class="title">
+            <h2>Nossos Serviços</h2>
+        </div>
+        <!--title-->
+        <div class="Caixa">
+            <div class="Card">
+                <i class="fas fa-bars"></i>
+                <h5>Desenvolvedor web</h5>
+                <div class="Paragrafo-button">
+                    <p>Muitos sites devem ser contruido com dois principais objetivos: Primeiramente , ele precisar
+                        funcionar em todos os dispositivos. Segundo, Ele precisar ser o mais rapido possivel </p>
+                    <button type="button">Ler Mais</button>
+                    <!--button-->
+                </div>
+                <!--Paragrafo-button-->
+            </div>
+            <!--Card-->
+            <div class="Card">
+                <i class="fas fa-user"></i>
+                <h5>Desenvolvedor web</h5>
+                <div class="Paragrafo-button">
+                    <p>Muitos sites devem ser contruido com dois principais objetivos: Primeiramente , ele precisar
+                        funcionar em todos os dispositivos. Segundo, Ele precisar ser o mais rapido possivel </p>
+                    <button type="button">Ler Mais</button>
+                    <!--button-->
+                </div>
+                <!--Paragrafo-button-->
+            </div>
+            <!--Card-->
+            <div class="Card">
+                <i class="fas fa-bell"></i>
+                <h5>Desenvolvedor web</h5>
+                <div class="Paragrafo-button">
+                    <p>Muitos sites devem ser contruido com dois principais objetivos: Primeiramente , ele precisar
+                        funcionar em todos os dispositivos. Segundo, Ele precisar ser o mais rapido possivel </p>
+                    <button type="button">Ler Mais</button>
+                    <!--button-->
+                </div>
+                <!--Paragrafo-button-->
+            </div>
+            <!--Card-->
+        </div>
+        <!--Caixa-->
+    </div>
+    <!--Conatiner-serviços-->
+
+    <!--Contatos-->
+    <div class="me-contate">
+        <p>Contate minha equipe para a gente criar um bonito site para você</p>
+        <button type="button">Enviar mensagem</button>
+        <!--button-->
+    </div>
+    <!--me-contate-->
+    <!--Rodapé--->
+    <footer>
+        <h6>Otavio Augusto</h6>
+        <p>Para mais HTML E CSS, tutorias - por favor clique no link abaixo para se inscrever no meu canal</p>
+        <div class="Redes-sociais">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-dribbble"></i></a>
+        </div>
+        <!--Redes-sociais-->
+        <p class="end">CopyRight By @otavioaugusto</p>
+    </footer>
 </body>
 
 </html>
