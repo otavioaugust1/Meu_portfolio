@@ -16,7 +16,7 @@
             background-image: url(img/background.jpg)
         }
     </style>
-    <title>Portfolio website - otavioaugust</title>
+    <title>Portfolio - otavioaugust</title>
 </head>
 
 <body>
@@ -30,7 +30,7 @@
                 <li><a href="asset/sobre.html">Sobre mim</a></li>
                 <li><a href="asset/projetos.html">Projetos</a></li>
                 <li><a href="asset/habilidade.html">Habilidades</a></li>
-                <li><a href="#Contatos">Contato</a></li>
+                <li><a href="#contatos">Contato</a></li>
             </ul>
             <!--cabeçalho-link-->
             <a href="#" class="btn">Subscribe</a>
@@ -46,14 +46,15 @@
                     <input type="submit" name="submit" value="Começar">
                 </form>
             </div>
-            <!--Container-btn-->
-        </div>
-        <!--Main-->
+            <i class="fa-solid fa-chevron-down"></i>
+        </div>        
     </div>
-    <!--background-->
+    <div class="cue"><a href="#sobre_mim"><i class="fa-solid fa-chevron-down"></i></a></div>
+
 
 
     <!--Começo-da-seção-sobre-->
+    <a name="sobre_mim"></a>
     <section class="background-color-Sobre">
         <div class="main-sobre">
             <img src="img/main-img.jpg">
@@ -66,13 +67,13 @@
                 <a href="asset\sobre.html"><button type="button">Saiba mais...</button></a>
                 <!--Button-->
             </div>
-            <!--Text-sobre-->
-        </div>
-        <!--main-sobre-->
+        </div>        
     </section>
+   <!-- <div class="cue"><a href="#projetos"><i class="fa-solid fa-chevron-down"></i></a></div> --> 
     <!--background-color-Sobre-->
 
     <!--Começo-da-seção-de-projetos-->
+    <a name="projetos"></a>
     <div class="Container-serviços">
         <div class="title">
             <h2>Meus Projetos</h2>
@@ -132,7 +133,7 @@
                     e<br>não
                     relacional, além de uma imersão<br>Cloud Computer e Machine Learning.</p>
                 <a href="https://github.com/otavioaugust1/DIO_Unimed-BH_CienciaDeDados" target="_blank"
-                rel="noopener noreferrer"><button type="button">Ler Mais</button></a>
+                    rel="noopener noreferrer"><button type="button">Ler Mais</button></a>
                 <!--button-->
             </div>
             <!--Paragrafo-button-->
@@ -145,7 +146,7 @@
                 <p>O Curso em Video aprendendo um pouco de HTML5, CSS3 e JavaScript para iniciantes... Professor
                     Guanabara. </p>
                 <a href="https://github.com/otavioaugust1/CURSO_EM_VIDEO" target="_blank"
-                rel="noopener noreferrer"><button type="button">Ler Mais</button></a>
+                    rel="noopener noreferrer"><button type="button">Ler Mais</button></a>
                 <!--button-->
             </div>
             <!--Paragrafo-button-->
@@ -157,7 +158,7 @@
             <div class="Paragrafo-button">
                 <p>A fomosa calculadora que todo novato tem que fazer... eu fiz tambem.</p>
                 <a href="https://github.com/otavioaugust1/Calculadora_javascript" target="_blank"
-                rel="noopener noreferrer"><button type="button">Ler Mais</button></a>
+                    rel="noopener noreferrer"><button type="button">Ler Mais</button></a>
                 <!--button-->
             </div>
             <!--Paragrafo-button-->
@@ -168,8 +169,8 @@
 
 
     <!--Contatos-->
+    <a name="contatos"></a>
     <div class="me-contate">
-        <a name="Contatos"></a>
         <p>Agora se você quer mandar uma mensagem para mim, é só clicar no botão abaixo:</p>
         <button type="button" onclick="Comentarios()">Enviar mensagem</button>
         <!--button-->
@@ -202,4 +203,5 @@
     </footer>
 </body>
 <script type="text/javascript" async="true" src="js/mensagem.js"></script>
+
 </html>
