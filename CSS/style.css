@@ -86,24 +86,10 @@ nav ul li a:hover {
     color: var(--my-color-2);
 }
 
-.cue{
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translate(-50%, -50%);
-    color: var(-my-color-2);
-    cursor: pointer;
-    font-size: 50px;  
-}
-
-.cue :hover {
-    color: var(--my-color-2)
-}
-
 h1 {
     color: var(--my-color-1);
     margin: 20px 0px 20px;
-    font-size: 75px;
+    font-size: 80px;
 }
 
 h4 {
@@ -165,7 +151,6 @@ h3 {
 
 }
 
-
 .Text-sobre {
     width: 550px;
     max-width: 100%;
@@ -215,13 +200,26 @@ button {
     padding: 13px 20px;
     border-radius: 30px;
     transition: .4s;
-
 }
 
 button:hover {
     background-color: transparent;
     border: 2px solid var(--my-color-2);
     cursor: pointer;
+}
+
+.cue {
+    color: var(--my-color-1);
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    font-size: 50px;
+}
+
+.cue :hover {
+    color: var(--my-color-2)
 }
 
 .Container-serviços {
