@@ -15,20 +15,21 @@
 }
 
 .background {
-    background-size: cover;
-    background-position: center;
     height: 100vh;
     width: 100%;
-
 }
 
 nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--my-color-5);
+    padding: 15px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 45px;
-    padding-left: 8%;
-    padding-right: 8%;
+    z-index: 999;
 }
 
 .logo {
@@ -42,22 +43,38 @@ span {
     color: var(--my-color-2);
 }
 
-nav ul li {
-    list-style-type: none;
-    display: inline-block;
-    padding: 10px 25px;
+.dropdown {
+    position: relative;
 }
 
-nav ul li a {
+.dropdown-btn {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: var(--my-color-1);
+    font-size: 20px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--my-color-5);
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 10px;
+}
+
+.dropdown-content a {
     color: var(--my-color-1);
     text-decoration: none;
-    font-weight: bold;
-    text-transform: capitalize;
+    display: block;
+    padding: 5px 0;
 }
 
-nav ul li a:hover {
-    color: var(--my-color-2);
-    transform: .4s;
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 .btn {
@@ -77,9 +94,12 @@ nav ul li a:hover {
 
 .Main {
     position: absolute;
-    top: 50%;
+    top: 80%;
     left: 8%;
     transform: translateY(-50%);
+    text-align: center;
+    text-shadow: var(--my-color-5) 0.1em 0.1em 0.2em;
+
 }
 
 .Main span {
@@ -88,8 +108,8 @@ nav ul li a:hover {
 
 h1 {
     color: var(--my-color-1);
-    margin: 20px 0px 20px;
-    font-size: 80px;
+    margin: 20px 0px;
+    font-size: 8vw;
 }
 
 h4 {
@@ -100,76 +120,39 @@ h4 {
 
 h3 {
     color: var(--my-color-1);
-    font-size: 25px;
-    margin-bottom: 50px;
-}
-
-.Container-btn form {
-    width: 380px;
-    max-width: 100%;
-    position: relative;
-}
-
-.Container-btn form input:first-child {
-    display: inline-block;
-    width: 100%;
-    padding: 14px 130px 14px 15px;
-    border: 2px solid var(--my-color-2);
-    border-radius: 30px;
-    outline: none;
-}
-
-.Container-btn form input:last-child {
-    position: absolute;
-    display: inline-block;
-    outline: none;
-    border: none;
-    padding: 10px 30px;
-    border-radius: 30px;
-    background-color: var(--my-color-2);
-    color: var(--my-color-1);
-    box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585;
-    right: 6px;
-    top: 6px;
-
+    font-size: 18px;
+    margin-bottom: 20px;
 }
 
 .background-color-Sobre {
     background-color: var(--my-color-4);
     width: 100%;
     padding: 100px 0px;
-
 }
 
 .background-color-Sobre img {
-    width: 430px;
+    max-width: 30%;
+    margin: 3px auto;
     height: auto;
-}
-
-.background-menu {
-    background-color: var(--my-color-5);
-
+    border-radius: 30%;
 }
 
 .Text-sobre {
-    width: 550px;
-    max-width: 100%;
-    display: inline-block;
-    margin-left: 50px;
-    vertical-align: top;
+    max-width: 550px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .main-sobre {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-around;
-    width: 1130px;
-    margin: 0 auto;
+    justify-content: center;
 }
 
 .Text-sobre h2 {
     color: var(--my-color-1);
-    font-size: 75px;
+    font-size: 50px;
     text-transform: capitalize;
     margin-bottom: 20px;
 }
@@ -177,7 +160,7 @@ h3 {
 .Text-sobre h5 {
     color: var(--my-color-1);
     letter-spacing: 2px;
-    font-size: 22px;
+    font-size: 18px;
     margin-bottom: 25px;
     text-transform: capitalize;
 }
@@ -186,7 +169,7 @@ h3 {
     color: var(--my-color-3);
     letter-spacing: 1px;
     line-height: 28px;
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: 45px;
     text-align: justify;
 }
@@ -197,7 +180,7 @@ button {
     text-transform: none;
     border: 2px solid transparent;
     font-weight: bold;
-    padding: 13px 20px;
+    padding: 10px 20px;
     border-radius: 30px;
     transition: .4s;
 }
@@ -208,50 +191,24 @@ button:hover {
     cursor: pointer;
 }
 
-.cue {
-    color: var(--my-color-1);
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translate(-50%, -50%);
-    cursor: pointer;
-    font-size: 50px;
-    outline: none;
-}
-
-.cue :hover {
-    color: var(--my-color-2)
-}
-
 .Container-serviços {
     background-color: var(--my-color-4);
     width: 100%;
     padding: 100px 0px;
 }
 
-.Container-serviços-2 {
-    background-color: var(--my-color-5);
-    width: 100%;
-    padding: 5px 1px;
-    justify-content: center;
-    align-items: center; 
-    display: flex;
-}
-
 .title h2 {
     color: var(--my-color-1);
-    font-size: 75px;
-    width: 1130px;
-    margin: 30px auto;
+    font-size: 50px;
     text-align: center;
+    margin-bottom: 30px;
 }
 
 .Caixa {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    min-height: 400px;
-    flex-wrap: wrap;
 }
 
 .Card {
@@ -263,7 +220,6 @@ button:hover {
     position: relative;
     overflow: hidden;
     text-align: center;
-
 }
 
 .Card i {
@@ -293,17 +249,14 @@ h5 {
 
 .me-contate {
     width: 100%;
-    height: 290px;
+    padding: 30px;
+    text-align: center;
     background-color: var(--my-color-4);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .me-contate p {
     color: var(--my-color-1);
-    font-size: 30px;
+    font-size: 20px;
     font-weight: bold;
     margin-bottom: 25px;
 }
@@ -311,7 +264,7 @@ h5 {
 footer {
     position: relative;
     width: 100%;
-    height: 380px;
+    padding: 50px 0;
     background-color: var(--my-color-4);
     display: flex;
     flex-direction: column;
@@ -322,12 +275,13 @@ footer {
 footer h6 {
     font-size: 35px;
     color: var(--my-color-1);
+    margin-bottom: 10px;
 }
 
 footer p {
     color: var(--my-color-1);
-    font-size: 15px;
-    width: 500px;
+    font-size: 14px;
+    width: 80%;
     text-align: center;
     margin-top: 15px;
     letter-spacing: 1px;
@@ -337,7 +291,6 @@ footer p {
 .Redes-sociais {
     display: flex;
     justify-content: center;
-
 }
 
 .Redes-sociais a {
@@ -379,9 +332,10 @@ footer p {
     font-size: 14px;
 }
 
-th, td {
+th,
+td {
     border: 1px solid var(--my-color-5);
-    height: 100%; 
+    height: 100%;
     justify-content: center;
     align-items: center;
     display: center;
