@@ -1,149 +1,179 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="img/Icon.png" />
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap">
     <style>
         .background {
             background-image: url(img/background.jpg);
             background-size: cover;
             background-position: right;
             height: 100vh;
-            width: 100%;
         }
     </style>
     <title>Portfolio - otavioaugust</title>
 </head>
-
 <body>
-    <!---Cabeçalho-Main-->
-    <div class="background">
-        <nav>
-            <h2 class="logo">Portfo<span>lio</span></h2>
-            <!--Logo-->
-            <div class="dropdown">
-                <button class="dropdown-btn"><i class="fas fa-cog"></i></button>
-                <div class="dropdown-content">
-                    <a href="index.html">Inicio</a>
-                    <a href="asset/sobre.html">Sobre mim</a>
-                    <a href="asset/projetos.html">Projetos</a>
-                    <a href="#contatos">Contato</a>
-                </div>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Portfo<span>lio</span></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-cog"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../asset/sobre.html">Sobre mim</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../asset/projetos.html">Projetos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html#contatos">Contato</a>
+                    </li>
+                </ul>
             </div>
-            <a href="#contatos" class="btn">e-mail</a>
-        </nav>
-
-        <div class="Main">
-            <h4>Olá, meu nome é</h4>
-            <h1>Otávio <span>Augusto</span></h1>
-            <h3>Eu sou um <span>(estudante)</span> cientista de dados <span>apaixonado</span> pelo que faço.</h3>
-
+            <a href="#contatos" class="btn btn-primary">e-mail</a>
+        </div>
+    </nav>
+    
+    <!-- Main Section -->
+    <div class="background">
+        <div class="container">
+            <div class="Main text-center text-white">
+                <h4>Olá, meu nome é</h4>
+                <h1>Otávio <span>Augusto</span></h1>
+                <h3>Eu sou um <span>(estudante)</span> cientista de dados <span>apaixonado</span> pelo que faço.</h3>
+            </div>
         </div>
     </div>
 
-    <!--Começo-da-seção-sobre-->
-    <section class="background-color-Sobre">
-        <div class="main-sobre">
-            <img src="img/main-img.jpg" alt="Imagem principal">
-            <div class="Text-sobre">
-                <h2>Sobre-Mim</h2>
-                <h5>Cientista de dados <span>& desenvolvedor</span></h5>
-                <p>"Eu sou um cientista de dados ou data scientist (ainda aprendendo e me desenvolvendo nesta área).
-                    Trabalho com análise de dados e uso minhas habilidades em programação, estatística, machine learning
-                    e outras áreas para encontrar soluções para problemas complexos. Sou curioso e gosto de explorar
-                    dados e encontrar novas formas de resolver problemas."
-                </p>
-                <a href="asset\sobre.html"><button type="button">Saiba mais...</button></a>
+    <!-- Sobre Section -->
+    <section class="bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="img/main-img.jpg" alt="Imagem principal" class="img-fluid">
+                </div>
+                <div class="col-md-6">
+                    <div class="Text-sobre">
+                        <h2>Sobre-Mim</h2>
+                        <h5>Cientista de dados <span>& desenvolvedor</span></h5>
+                        <p>"Eu sou um cientista de dados ou data scientist (ainda aprendendo e me desenvolvendo nesta área).
+                            Trabalho com análise de dados e uso minhas habilidades em programação, estatística, machine learning
+                            e outras áreas para encontrar soluções para problemas complexos. Sou curioso e gosto de explorar
+                            dados e encontrar novas formas de resolver problemas."
+                        </p>
+                        <a href="asset/sobre.html" class="btn btn-primary">Saiba mais...</a>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="cue"><a href="#sobre_mim"><i class="fas fa-chevron-down"></i></a></div>
+        <div class="cue text-center">
+            <a href="#sobre_mim"><i class="fas fa-chevron-down"></i></a>
+        </div>
     </section>
 
-    <!--Começo-da-seção-de-projetos-->
+    <!-- Projetos Section -->
     <div class="Container-serviços">
-        <div class="title">
-            <h2>Meus Projetos</h2>
-        </div>
-        <!--Card -->
-        <div class="Caixa">
-            <div class="Card">
-                <i class="far fa-futbol"></i>
-                <h5>Previsão do Campeão<br>da Copa do Qatar</h5>
-                <div class="Paragrafo-button">
-                    <p>"A variação no futebol é fascinante. Por exemplo, em um jogo, um time pode estar dominando
-                        completamente e, no entanto, perder devido a um gol de bola parada. Se pudéssemos repetir o jogo
-                        algumas vezes, é provável que tivéssemos vários resultados diferentes, reforçando a importância
-                        desses detalhes minúsculos."</p>
-                    <a href="https://github.com/otavioaugust1/FLAI_Data-Science_COPA_DO_MUNDO_2022" target="_blank"
-                        rel="noopener noreferrer"><button type="button">Ler Mais</button></a>
-                </div>
+        <div class="container">
+            <div class="title text-center">
+                <h2>Meus Projetos</h2>
             </div>
-            <div class="Card">
-                <i class="fas fa-robot"></i>
-                <h5>BOT quebrando <br> CAPTCHA</h5>
-                <div class="Paragrafo-button">
-                    <p>"O CAPTCHA é uma medida de segurança que utiliza imagens de caracteres distorcidos e borrados para impedir que BOTs e outros sistemas automatizados acessem sites ou aplicações. Já imaginou um BOT que utiliza uma rede neural para interpretar imagens de CAPTCHA e tentar adivinhar o que está escrito nelas?"</p>
-                    <a href="https://github.com/otavioaugust1/HashTag_Reconhecimento_CAPTCHA" target="_blank"
-                        rel="noopener noreferrer"><button type="button">Ler Mais</button></a>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="Card text-center">
+                        <i class="far fa-futbol"></i>
+                        <h5>Previsão do Campeão<br>da Copa do Qatar</h5>
+                        <div class="Paragrafo-button">
+                            <p>"A variação no futebol é fascinante. Por exemplo, em um jogo, um time pode estar dominando
+                                completamente e, no entanto, perder devido a um gol de bola parada. Se pudéssemos repetir o jogo
+                                algumas vezes, é provável que tivéssemos vários resultados diferentes, reforçando a importância
+                                desses detalhes minúsculos."</p>
+                            <a href="https://github.com/otavioaugust1/FLAI_Data-Science_COPA_DO_MUNDO_2022"
+                                class="btn btn-primary" target="_blank" rel="noopener noreferrer">Ler Mais</a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="Card">
-                <i class="fas fa-robot"></i>
-                <h5>Bot consolidador RFCE</h5>
-                <div class="Paragrafo-button">
-                    <p>O objetivo deste bot é consolidar as planilhas de cirurgias eletivas enviadas de acordo com a 
-                        PORTARIA GM/MS Nº 90, DE 3 DE FEVEREIRO DE 2023 Institui o Programa Nacional de Redução das 
-                        Filas de CirurgiasEletivas, Exames Complementares e Consultas Especializadas, verificando se os 
-                        dados estão em conformidade com as exigências da portaria. </p>
-                    <a href="https://github.com/otavioaugust1/CONSOLIDACAO_PORTARIA_90" target="_blank"
-                        rel="noopener noreferrer"><button type="button">Ler Mais</button></a>
+                <div class="col-md-4">
+                    <div class="Card text-center">
+                        <i class="fas fa-robot"></i>
+                        <h5>BOT quebrando <br> CAPTCHA</h5>
+                        <div class="Paragrafo-button">
+                            <p>"O CAPTCHA é uma medida de segurança que utiliza imagens de caracteres distorcidos e borrados
+                                para impedir que BOTs e outros sistemas automatizados acessem sites ou aplicações. Já imaginou
+                                um BOT que utiliza uma rede neural para interpretar imagens de CAPTCHA e tentar adivinhar o que
+                                está escrito nelas?"</p>
+                            <a href="https://github.com/otavioaugust1/HashTag_Reconhecimento_CAPTCHA"
+                                class="btn btn-primary" target="_blank" rel="noopener noreferrer">Ler Mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="Card text-center">
+                        <i class="fas fa-robot"></i>
+                        <h5>Bot consolidador RFCE</h5>
+                        <div class="Paragrafo-button">
+                            <p>O objetivo deste bot é consolidar as planilhas de cirurgias eletivas enviadas de acordo com a
+                                PORTARIA GM/MS Nº 90, DE 3 DE FEVEREIRO DE 2023 Institui o Programa Nacional de Redução das
+                                Filas de CirurgiasEletivas, Exames Complementares e Consultas Especializadas, verificando se os
+                                dados estão em conformidade com as exigências da portaria.</p>
+                            <a href="https://github.com/otavioaugust1/CONSOLIDACAO_PORTARIA_90" class="btn btn-primary"
+                                target="_blank" rel="noopener noreferrer">Ler Mais</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!--Contatos-->
-    <div class="me-contate">
-        <p>Agora se você quer mandar uma mensagem para mim, é só clicar no botão abaixo:</p>
-        <a href="mailto:otavioaugust@gmail.com?subject=Quero falar com você&body=Corpo do e-mail">
-            <button>Enviar e-mail</button>
-        </a>
+    <!-- Contato Section -->
+    <div class="me-contate text-center">
+        <p>Agora, se você quer mandar uma mensagem para mim, é só clicar no botão abaixo:</p>
+        <a href="mailto:otavioaugust@gmail.com?subject=Quero falar com você&body=Corpo do e-mail"
+            class="btn btn-primary">Enviar e-mail</a>
     </div>
 
-    <!--Rodapé--->
-    <footer>
-        <h6>Otavio Augusto</h6>
-        <p>Para me conhecer mais - por favor clique no link abaixo para se inscrever nos meus canais</p>
-        <div class="Redes-sociais">
-            <a href="https://web.facebook.com/otavioaugust" target="_blank" rel="noopener noreferrer">
-                <i class="fab fa-facebook-f"></i></a>
-            <a href="https://www.instagram.com/otavioaugust/" target="_blank" rel="noopener noreferrer">
-                <i class="fab fa-instagram"></i></a>
-            <a href="https://twitter.com/0tavioaugust" target="_blank" rel="noopener noreferrer">
-                <i class="fab fa-twitter"></i></a>
-            <a href="https://www.youtube.com/@otavioaugust" target="_blank" rel="noopener noreferrer">
-                <i class="fab fa-youtube"></i></a>
-            <a href="https://www.linkedin.com/in/otavioaugust" target="_blank" rel="noopener noreferrer">
-                <i class="fab fa-linkedin-in"></i></a>
-            <a href="https://github.com/otavioaugust1" target="_blank" rel="noopener noreferrer">
-                <i class="fab fa-github"></i></a>
-            <a href="http://lattes.cnpq.br/1250109562083947" target="_blank" rel="noopener noreferrer">
-                <i class="fas fa-head-side-virus"></i></a>
-            <a href="https://www.kooapp.com/profile/otavioaugust" target="_blank" rel="noopener noreferrer">
-                <i class="fas fa-crow"></i></a>
+    <!-- Footer -->
+    <footer class="bg-light text-center">
+        <div class="container">
+            <h6>Otavio Augusto</h6>
+            <p>Para me conhecer mais - por favor clique no link abaixo para se inscrever nos meus canais</p>
+            <div class="Redes-sociais">
+                <a href="https://web.facebook.com/otavioaugust" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/otavioaugust/" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com/0tavioaugust" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-twitter"></i></a>
+                <a href="https://www.youtube.com/@otavioaugust" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-youtube"></i></a>
+                <a href="https://www.linkedin.com/in/otavioaugust" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/otavioaugust1" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-github"></i></a>
+                <a href="http://lattes.cnpq.br/1250109562083947" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-head-side-virus"></i></a>
+                <a href="https://www.kooapp.com/profile/otavioaugust" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-crow"></i></a>
+            </div>
+            <p class="end">CopyRight By @otavioaugust - CNPJ: 47.440.092/0001-94</p>
         </div>
-        <!--Redes-sociais-->
-        <p class="end">CopyRight By @otavioaugust - CNPJ: 47.440.092/0001-94</p>
     </footer>
 
-    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js"></script>
+    <!-- Bootstrap JS e Popper.js (Necessários para os componentes Bootstrap) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
-
 </html>

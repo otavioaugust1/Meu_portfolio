@@ -1,95 +1,62 @@
+/* Definição de cores */
+:root {
+    --my-color-1: #f5f5f5;
+    --my-color-2: #007BFF; /* Alterei a cor principal para azul */
+    --my-color-3: rgba(165, 188, 243, 0.8);
+    --my-color-4: #191919;
+    --my-color-5: #000;
+    --my-color-6: rgba(0, 66, 249, 0.502);
+    --font-family: 'Josefin Sans', sans-serif;
+}
+
+/* Define as configurações básicas para todos os elementos */
 * {
     padding: 0;
     margin: 0;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: var(--font-family);
     box-sizing: border-box;
 }
 
-:root {
-    --my-color-1: #f5f5f5;
-    --my-color-2: rgb(13, 124, 28);
-    --my-color-3: rgba(204, 255, 205, 0.8);
-    --my-color-4: #191919;
-    --my-color-5: #000;
-    --my-color-6: #00f95380;
+/* Configurações para o corpo da página */
+body {
+    background-color: var(--my-color-4);
 }
 
-.background {
-    height: 100vh;
-    width: 100%;
-}
-
-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
+/* Estilos da barra de navegação */
+.navbar {
     background-color: var(--my-color-5);
-    padding: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 999;
 }
 
-.logo {
+.navbar .navbar-brand {
     color: var(--my-color-1);
     font-size: 35px;
     cursor: pointer;
     letter-spacing: 1px;
 }
 
-span {
-    color: var(--my-color-2);
-}
-
-.dropdown {
-    position: relative;
-}
-
-.dropdown-btn {
-    background-color: transparent;
-    border: none;
-    outline: none;
-    cursor: pointer;
+.navbar .navbar-toggler-icon {
     color: var(--my-color-1);
     font-size: 20px;
 }
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: var(--my-color-5);
-    min-width: 120px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    padding: 10px;
+.navbar .navbar-nav {
+    display: flex;
+    justify-content: flex-end;
 }
 
-.dropdown-content a {
+.navbar .navbar-nav .nav-item {
+    margin: 0 10px;
+}
+
+.navbar .navbar-nav .nav-link {
     color: var(--my-color-1);
-    text-decoration: none;
-    display: block;
-    padding: 5px 0;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.btn {
-    background-color: var(--my-color-2);
-    color: var(--my-color-1);
-    text-decoration: none;
-    border: 2px solid transparent;
     font-weight: bold;
-    padding: 10px 25px;
-    border-radius: 30px;
-    transition: transform .4s;
 }
 
-.btn:hover {
-    transform: scale(1.2);
+/* Estilos da seção principal */
+.background {
+    height: 100vh;
+    width: 100%;
 }
 
 .Main {
@@ -99,66 +66,46 @@ span {
     transform: translateY(-50%);
     text-align: center;
     text-shadow: var(--my-color-5) 0.1em 0.1em 0.2em;
-
 }
 
 .Main span {
     color: var(--my-color-2);
 }
 
-h1 {
+.Main h1 {
     color: var(--my-color-1);
     margin: 20px 0px;
     font-size: 8vw;
 }
 
-h4 {
+.Main h4 {
     color: var(--my-color-3);
     letter-spacing: 2px;
     font-size: 20px;
 }
 
-h3 {
+.Main h3 {
     color: var(--my-color-1);
     font-size: 18px;
     margin-bottom: 20px;
 }
 
-.background-color-Sobre {
-    background-color: var(--my-color-4);
-    width: 100%;
-    padding: 100px 0px;
-}
-
-.background-color-Sobre img {
-    max-width: 30%;
-    margin: 3px auto;
-    height: auto;
-    border-radius: 30%;
-}
-
+/* Estilos da seção "Sobre" */
 .Text-sobre {
     max-width: 550px;
     margin: 0 auto;
     text-align: center;
 }
 
-.main-sobre {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-}
-
 .Text-sobre h2 {
-    color: var(--my-color-1);
+    color: var(--my-color-2);
     font-size: 50px;
     text-transform: capitalize;
     margin-bottom: 20px;
 }
 
 .Text-sobre h5 {
-    color: var(--my-color-1);
+    color: var(--my-color-2);
     letter-spacing: 2px;
     font-size: 18px;
     margin-bottom: 25px;
@@ -166,7 +113,7 @@ h3 {
 }
 
 .Text-sobre p {
-    color: var(--my-color-3);
+    color: var(--my-color-5);
     letter-spacing: 1px;
     line-height: 28px;
     font-size: 16px;
@@ -174,27 +121,31 @@ h3 {
     text-align: justify;
 }
 
-button {
+/* Estilos dos botões */
+.btn {
     background-color: var(--my-color-2);
     color: var(--my-color-1);
-    text-transform: none;
+    text-decoration: none;
     border: 2px solid transparent;
     font-weight: bold;
-    padding: 10px 20px;
+    padding: 10px 25px;
     border-radius: 30px;
-    transition: .4s;
+    transition: transform 0.4s;
 }
 
-button:hover {
-    background-color: transparent;
-    border: 2px solid var(--my-color-2);
-    cursor: pointer;
+.btn:hover {
+    transform: scale(1.2);
 }
 
+/* Estilos da seção "Projetos" */
 .Container-serviços {
     background-color: var(--my-color-4);
     width: 100%;
     padding: 100px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .title h2 {
@@ -209,6 +160,7 @@ button:hover {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .Card {
@@ -219,6 +171,9 @@ button:hover {
     margin: 15px;
     position: relative;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
 }
 
@@ -247,20 +202,7 @@ h5 {
     margin-top: 25px;
 }
 
-.me-contate {
-    width: 100%;
-    padding: 30px;
-    text-align: center;
-    background-color: var(--my-color-4);
-}
-
-.me-contate p {
-    color: var(--my-color-1);
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 25px;
-}
-
+/* Estilos do rodapé */
 footer {
     position: relative;
     width: 100%;
@@ -276,6 +218,7 @@ footer h6 {
     font-size: 35px;
     color: var(--my-color-1);
     margin-bottom: 10px;
+    text-align: center;
 }
 
 footer p {
@@ -286,6 +229,46 @@ footer p {
     margin-top: 15px;
     letter-spacing: 1px;
     line-height: 23px;
+}
+
+/* Estilos da seção "Contato" */
+.me-contate {
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+    background-color: var(--my-color-4);
+}
+
+.me-contate p {
+    color: var(--my-color-1);
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+/* Estilos do rodapé */
+footer {
+    position: relative;
+    width: 100%;
+    padding: 50px 0;
+    background-color: var(--my-color-1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer h6 {
+    font-size: 35px;
+    color: var(--my-color-2);
+    margin-bottom: 10px;
+}
+
+footer p {
+    color: var(--my-color-2);
+    font-size: 16px;
+    width: auto;
+    align-items: auto;
 }
 
 .Redes-sociais {
@@ -314,6 +297,7 @@ footer p {
     transition: .3s;
 }
 
+/* Estilos da última seção do rodapé */
 .rodape {
     position: relative;
     width: 100%;
@@ -326,12 +310,13 @@ footer p {
 }
 
 .end {
-    position: absolute;
     color: var(--my-color-2);
     bottom: 35px;
     font-size: 14px;
+    align-items: auto;
 }
 
+/* Estilos para tabelas */
 th,
 td {
     border: 1px solid var(--my-color-5);

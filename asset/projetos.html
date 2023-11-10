@@ -3,114 +3,132 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="img\Icon.png" />
+    <link rel="icon" type="image/png" href="img/Icon.png" />
     <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/tab.css">   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap">
-    <title>Projetos - otavioaugust</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Projetos - otavioaugust</title>   
 </head>
 
 <body>
-    <div class="background-menu">
-        <nav>
-            <h2 class="logo">Portfo<span>lio</span></h2>
-            <ul class="cabeçalho-link">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../asset/sobre.html">Sobre mim</a></li>
-                <li><a href="../asset/projetos.html">Projetos</a></li>
-                <li><a href="../index.html#contatos">Contato</a></li>
-            </ul>
-                <a href="../asset/sobre.html#contatos" class="btn">e-mail</a>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">Portfo<span>lio</span></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-cog"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../asset/sobre.html">Sobre mim</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../asset/projetos.html">Projetos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html#contatos">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="#contatos" class="btn btn-primary">e-mail</a>
+            </div>
         </nav>
-    </div>
+
 
     <section>
         <a name="projetos"></a>
-        <div class="Container-serviços-2">
-            <div class="title">
+        <div class="container">
+            <div class="Text-sobre">
                 <h2>Meus Projetos</h2>
                 <h5>"Projetos que desenvolvi ao longo da minha jornada de desenvolvimento <span>pessoal</span> e
                     <span>profissional.</span>
                 </h5>
             </div>
+        </div>
     </section>
+
     <section>
         <table>
             <thead>
                 <tr>
-                    <th colspan="2">Pojetos:</th>
-                    <th>Escopo:</th>
-                    <th>Resultados:</th>
+                    <th>Projetos</th>
+                    <th>Escopo</th>
+                    <th>Resultados</th>
+                    <th>Link</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td>Previsão do Campeão da Copa do Qatar</td>
-                    <td><a href="https://github.com/otavioaugust1/FLAI_Data-Science_COPA_DO_MUNDO_2022" target="_blank"
-                            rel="noopener noreferrer"><button type="button">Ler Mais</button></a></td>
-                    <td>
-                        <p>"A variação no futebol é fascinante. Por exemplo, em um jogo, um time pode estar dominando
-                            completamente e, no entanto, perder devido a um gol de bola parada. Isso mostra como
-                            detalhes, que muitas vezes passam despercebidos, podem fazer toda a diferença no resultado.
-                            Se pudéssemos repetir o jogo algumas vezes, é provável que tivéssemos vários resultados
-                            diferentes, reforçando a importância desses detalhes minúsculos."</p>
-                    </td>
+                    <td>A variação no futebol é fascinante...</td>
                     <td>Body3 linha1</td>
+                    <td>
+                        <a href="https://github.com/otavioaugust1/FLAI_Data-Science_COPA_DO_MUNDO_2022" target="_blank"
+                            rel="noopener noreferrer">
+                            <button type="button">Ler Mais</button>
+                        </a>
+                    </td>
                 </tr>
                 <tr>
                     <td>BOT quebrando CAPTCHA</td>
-                    <td><a href="https://github.com/otavioaugust1/HashTag_Reconhecimento_CAPTCHA" target="_blank"
-                            rel="noopener noreferrer"><button type="button">Ler Mais</button></a></td>
-                    <td>"O CAPTCHA é uma medida de segurança que utiliza imagens de caracteres distorcidos e borrados
-                        para impedir que BOTs e outros sistemas automatizados acessem sites ou aplicações. Já imaginou
-                        um BOT que utiliza uma rede neural convolucional para interpretar imagens de CAPTCHA e tentar
-                        adivinhar o que está escrito nelas?"</td>
+                    <td>O CAPTCHA é uma medida de segurança...</td>
                     <td>Body3 linha2</td>
+                    <td>
+                        <a href="https://github.com/otavioaugust1/HashTag_Reconhecimento_CAPTCHA" target="_blank"
+                            rel="noopener noreferrer">
+                            <button type="button">Ler Mais</button>
+                        </a>
+                    </td>
                 </tr>
             </tbody>
             <tfoot>
-                <td>A</td>
-                <td>b </td>
-                <td>Foot 3</td>
-                <td>Foot 3</td>
+                <tr>
+                    <td colspan="4"></td>
+                </tr>
             </tfoot>
         </table>
     </section>
+
     <a name="contatos"></a>
     <div class="me-contate">
         <p>Você quer mandar uma mensagem para mim, é só clicar no botão abaixo:</p>
         <a href="mailto:otavioaugust@gmail.com?subject=Quero falar com você&body=Corpo do e-mail">
             <button>Enviar e-mail</button>
-          </a>
+        </a>
     </div>
 
     <!--Rodapé--->
-    <footer>
-        <h6>Otavio Augusto</h6>
-        <p>Para me conhecer mais - por favor clique no link abaixo para se inscrever nos meus canais</p>
-        <div class="Redes-sociais">
-            <a href="https://web.facebook.com/otavioaugust" target="_blank" rel="noopener noreferrer">
-                <i class="fab fa-facebook-f"></i></a>
-            <a href="https://www.instagram.com/otavioaugust/" target="_blank" rel="noopener noreferrer">
-                <i class="fab fa-instagram"></i></a>
-            <a href="https://twitter.com/0tavioaugust" target="_blank" rel="noopener noreferrer">
-                <i class="fab fa-twitter"></i></a>
-            <a href="https://www.youtube.com/@otavioaugust" target="_blank" rel="noopener noreferrer">
-                <i class="fab fa-youtube"></i></a>
-            <a href="https://www.linkedin.com/in/otavioaugust" target="_blank" rel="noopener noreferrer">
-                <i class="fab fa-linkedin-in"></i></a>
-            <a href="https://github.com/otavioaugust1" target="_blank" rel="noopener noreferrer">
-                <i class="fab fa-github"></i></a>
-            <a href="http://lattes.cnpq.br/1250109562083947" target="_blank" rel="noopener noreferrer">
-                <i class="fa-solid fa-head-side-virus"></i></a>
-            <a href="https://www.kooapp.com/profile/otavioaugust" target="_blank" rel="noopener noreferrer">
-                <i class="fa-solid fa-crow"></i></a>
+    <footer class="bg-light text-center">
+        <div class="container">
+            <h6>Otavio Augusto</h6>
+            <p>Para me conhecer mais - por favor clique no link abaixo para se inscrever nos meus canais</p>
+            <div class="Redes-sociais">
+                <a href="https://web.facebook.com/otavioaugust" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/otavioaugust/" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com/0tavioaugust" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-twitter"></i></a>
+                <a href="https://www.youtube.com/@otavioaugust" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-youtube"></i></a>
+                <a href="https://www.linkedin.com/in/otavioaugust" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/otavioaugust1" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-github"></i></a>
+                <a href="http://lattes.cnpq.br/1250109562083947" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-head-side-virus"></i></a>
+                <a href="https://www.kooapp.com/profile/otavioaugust" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-crow"></i></a>
+            </div>
+            <p class="end">CopyRight By @otavioaugust - CNPJ: 47.440.092/0001-94</p>
         </div>
-        <!--Redes-sociais-->
-        <p class="end">CopyRight By @otavioaugust - CNPJ: 47.440.092/0001-94</p>
     </footer>
 </body>
 
