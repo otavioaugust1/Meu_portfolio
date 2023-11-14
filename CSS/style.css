@@ -83,6 +83,11 @@ body {
     letter-spacing: 2px;
     font-size: 20px;
 }
+h6 {
+    color: var(--my-color-5);
+    letter-spacing: 2px;
+    font-size: 20px;
+}
 
 .Main h3 {
     color: var(--my-color-1);

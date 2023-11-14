@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/Icon.png" />
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/tab.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Previsão do Campeão da Copa do Qatar - otavioaugust</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Portfo<span>lio</span></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-cog"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../asset/sobre.html">Sobre mim</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../asset/projetos.html">Projetos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html#contatos">Contato</a>
+                    </li>
+                </ul>
+            </div>
+            <a href="#contatos" class="btn btn-primary">e-mail</a>
+        </div>
+    </nav>
+
+    <section>
+        <a name="projetos"></a>
+        <div class="container">
+            <div class="Text-sobre">
+                <h2>Meus Projetos</h2>
+                <h5>"Projetos que desenvolvi ao longo da minha jornada de desenvolvimento <span>pessoal</span> e
+                    <span>profissional.</span>
+                </h5>
+            </div>
+        </div>
+    </section>
+
+    <!-- Adicionando seção para o projeto-->
+    <section>
+        <div class="container">
+            <h3>Previsão do Campeão da Copa do Qatar</h3>
+            <p>
+                A variação no futebol é fascinante... Modelar não é apenas representar a realidade, mas sim transmitir
+                uma equação útil. Tentamos quantificar as possíveis variações nas partidas de futebol, colocando assim
+                os intricados problemas do jogo em detalhes minuciosos. Ao quantificar todas as incertezas possíveis no
+                futebol, buscamos prever os resultados de todos os jogos na Copa do Mundo.
+            </p>
+            <!-- Adicione uma imagem ou gif -->
+            <img src="../img/projeto_02.jpeg" alt="Imagem do Projeto">
+
+            <p></p>
+            <a href="https://github.com/otavioaugust1/FLAI_Data-Science_COPA_DO_MUNDO_2022" target="_blank"
+                rel="noopener noreferrer">
+                <button type="button">Ler Mais - CODIGO FONTE NO GITHUB! </button>
+            </a>
+            <a href="../asset/projetos.html">
+                <button type="button">Voltar</button>
+            </a>
+            <p></p>
+
+
+            <h4>Como Contribuir</h4>
+            <p>
+                Se este projeto é de código aberto e aceita contribuições, todo o material, videos, formulas e codigo
+                fonte estão disponiveis no meu GitHub.
+            </p>
+
+            <!-- Adicione uma seção de história do projeto -->
+            <h4>História do Projeto</h4>
+            <p>
+                Eu queria responder duas questões:
+            </p>
+
+            <h6>Questão 1: Como modelar a distribuição de gols das equipes em um jogo:</h6>
+            <p>
+                Utilizamos a Distribuição de Poisson para quantificar a probabilidade de marcar gols. Essa escolha é
+                respaldada por sua eficácia em dados de futebol para a contagem de gols em partidas.
+            </p>
+
+            <h6>Onde:</h6>
+            <img src="../img/projeto_02a.png">
+            <strong>K</strong> - número de ocorrências;
+            <strong>e</strong> - número de Euler.
+            <p>
+                Calculamos a probabilidade de cada gol multiplicando as chances de um time marcar tantos gols pela
+                probabilidade do outro time marcar a mesma quantidade. A probabilidade de empate em uma partida é a soma
+                das probabilidades de empate em cada resultado, enquanto as vitórias são calculadas somando as
+                probabilidades de suas combinações de pontos.
+            </p>
+
+            <h6>Questão 2: Como calcular o número médio de gols por equipe por jogo: </h6>
+            <p>
+                A partir da média histórica de gols na Copa do Mundo e considerando alguns fatores, estabelecemos a
+                média
+                esperada de gols para esta Copa como 2,75.
+            </p>
+            <p><strong>m = m¹ + m²</strong></p>
+            <p>
+                Onde m é a média total.
+
+                Agora, para cada equipe, determinamos a média restante usando o fator de força de cada equipe.</p>
+
+            <h6>Onde:</h6>
+            <p><strong>f¹ - força da Seleção 1 </strong></p>
+            <p><strong>f² - força da Seleção 2</strong> </p>
+            <p>Utilizando o ranking da FIFA, convertemos os valores para um intervalo (a, 1), onde 1 representa a
+                escolha mais forte.
+            </p>
+
+            <h6>Modelo para a Copa do Mundo:</h6>
+            <p>
+                Com essa modelagem, os grandes favoritos para a COPA do Mundo no Qatar de 2022 são: BRASIL, BÉLGICA ou
+                ARGENTINA.
+            </p>
+            <p>
+                A <strong>ARGENTINA</strong> foi a CAMPEÃ da Copa do Mundo de 2022, confirmando minha analise.
+            </p>
+
+            <img src="../img/projeto_02b.png">
+            <p></p>
+
+
+
+
+
+
+        </div>
+    </section>
+
+    <!-- Adicionando a seção de Contato no final de cada projeto -->
+    <div class="me-contate">
+        <p>Você quer mandar uma mensagem para mim, é só clicar no botão abaixo:</p>
+        <a href="mailto:otavioaugust@gmail.com?subject=Quero falar com você&body=Corpo do e-mail">
+            <button>Enviar e-mail</button>
+        </a>
+    </div>
+
+    <!--Rodapé--->
+    <footer class="bg-light text-center">
+        <div class="container">
+            <h6>Otavio Augusto</h6>
+            <p>Para me conhecer mais - por favor clique no link abaixo para se inscrever nos meus canais</p>
+            <div class="Redes-sociais">
+                <a href="https://web.facebook.com/otavioaugust" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/otavioaugust/" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com/0tavioaugust" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-twitter"></i></a>
+                <a href="https://www.youtube.com/@otavioaugust" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-youtube"></i></a>
+                <a href="https://www.linkedin.com/in/otavioaugust" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/otavioaugust1" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-github"></i></a>
+                <a href="http://lattes.cnpq.br/1250109562083947" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-head-side-virus"></i></a>
+                <a href="https://www.kooapp.com/profile/otavioaugust" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-crow"></i></a>
+            </div>
+            <p class="end">CopyRight By @otavioaugust - CNPJ: 47.440.092/0001-94</p>
+        </div>
+    </footer>
+
+</body>
+<!-- Adicione scripts para carregar os vídeos do YouTube -->
+<script src="https://www.youtube.com/iframe_api"></script>
+<script src="../script/script.js"></script>
+
+</html>

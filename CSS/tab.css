@@ -38,3 +38,15 @@ a button {
 a button:hover {
     background-color: #0056b3;
 }
+
+
+.youtube-video {
+    max-width: 560px;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+.youtube-video iframe {
+    width: 100%;
+    height: 315px;
+}
