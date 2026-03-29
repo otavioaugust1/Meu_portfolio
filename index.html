@@ -190,26 +190,68 @@
     <section class="projects" id="projetos">
         <div class="container">
             <div class="section-header">
-                <h2>Meus Projetos</h2>
-                <p class="section-subtitle">Projetos em destaque do meu GitHub</p>
+                <h2>Projetos em Destaque</h2>
+                <p class="section-subtitle">Seleção dos principais projetos de Data Science e Automação</p>
             </div>
 
-            <div class="filter-buttons">
-                <button class="filter-btn active" data-filter="all">Todos</button>
-                <button class="filter-btn" data-filter="data-science">Data Science</button>
-                <button class="filter-btn" data-filter="web">Web</button>
-                <button class="filter-btn" data-filter="automation">Automação</button>
-            </div>
+            <div class="projects-grid">
+                <!-- Card 1 -->
+                <div class="project-card reveal">
+                    <div class="project-image"><i class="fas fa-brain"></i></div>
+                    <div class="project-content">
+                        <h3 class="project-title">Sistemas de Recomendação — SOFTEX</h3>
+                        <p class="project-description">Motor de recomendação com abordagens colaborativa, por conteúdo e híbrida. O projeto mais bem avaliado do portfólio.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">Scikit-learn</span>
+                            <span class="project-tag">ML</span>
+                        </div>
+                        <div class="project-footer">
+                            <div class="project-stats"><span><i class="fas fa-star"></i> 4 · <i class="fas fa-code-branch"></i> 2</span></div>
+                            <a href="projeto/projeto_03.html" class="project-link">Ver mais →</a>
+                        </div>
+                    </div>
+                </div>
 
-            <div class="projects-grid" id="projectsGrid">
-                <div class="loading">
-                    <i class="fas fa-spinner fa-spin"></i>
-                    <p>Carregando projetos...</p>
+                <!-- Card 2 -->
+                <div class="project-card reveal">
+                    <div class="project-image"><i class="fas fa-hospital-alt"></i></div>
+                    <div class="project-content">
+                        <h3 class="project-title">Analisador de Filas — OCI</h3>
+                        <p class="project-description">Aplicação Streamlit para análise geoespacial de filas de espera do SUS por procedimento, município e especialidade.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">Streamlit</span>
+                            <span class="project-tag">Geopandas</span>
+                        </div>
+                        <div class="project-footer">
+                            <div class="project-stats"><span><i class="fas fa-star"></i> 2 · <i class="fas fa-code-branch"></i> 1</span></div>
+                            <a href="projeto/projeto_01.html" class="project-link">Ver mais →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="project-card reveal">
+                    <div class="project-image"><i class="fas fa-globe-americas"></i></div>
+                    <div class="project-content">
+                        <h3 class="project-title">Copa do Mundo 2026 🔮</h3>
+                        <p class="project-description">Previsão do campeão com Machine Learning — evoluindo o modelo Poisson (Qatar 2022) para XGBoost com 48 seleções e 3 países-sede.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">XGBoost</span>
+                            <span class="project-tag">Em curso</span>
+                        </div>
+                        <div class="project-footer">
+                            <div class="project-stats"><span><i class="fas fa-spinner fa-pulse"></i> Em andamento</span></div>
+                            <a href="projeto/projeto_05.html" class="project-link">Ver mais →</a>
+                        </div>
+                    </div>
                 </div>
             </div>
 
             <div style="text-align: center; margin-top: 3rem;">
-                <a href="asset/projetos.html" class="btn btn-secondary" style="font-size: 1rem; padding: 0.9rem 2.5rem;">
+                <a href="asset/projetos.html" class="btn btn-primary" style="font-size: 1rem; padding: 0.9rem 2.5rem;">
                     <i class="fas fa-th-large"></i> Ver todos os projetos
                 </a>
             </div>

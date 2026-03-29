@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Consolidação Portaria 90 SUS — Automação de Dados | Otavio Augusto">
+    <meta name="author" content="Otavio Augusto">
+
+    <link rel="icon" type="image/png" href="../img/Icon.png" />
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <title>Consolidação Portaria 90 | Otavio Augusto</title>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="navbar-brand">
+                <a href="../index.html">OTAVIO<span>.</span></a>
+            </div>
+            <button class="nav-toggle" id="navToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="../index.html#home" class="nav-link">Início</a></li>
+                <li><a href="../index.html#sobre" class="nav-link">Sobre</a></li>
+                <li><a href="../index.html#skills" class="nav-link">Skills</a></li>
+                <li><a href="../asset/projetos.html" class="nav-link">Projetos</a></li>
+                <li><a href="../index.html#contatos" class="nav-link">Contato</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="dark-toggle" id="darkToggle" title="Alternar modo escuro">
+                    <i class="fas fa-moon" id="darkIcon"></i>
+                </button>
+                <a href="mailto:otavioaugust@gmail.com" class="nav-cta">Enviar E-mail</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Hero -->
+    <section class="hero" style="min-height: 35vh; padding: 120px 20px 60px;">
+        <div class="hero-content" style="grid-template-columns: 1fr; text-align: center;">
+            <div class="hero-text" style="max-width: 700px; margin: 0 auto;">
+                <div class="hero-badge"><i class="fas fa-file-medical-alt"></i> Automação · SUS · Portaria 90</div>
+                <h1 class="hero-title">Consolidação <span class="highlight">Portaria 90</span></h1>
+                <p class="hero-subtitle" style="font-size: 1rem;">$ python main.py --input data/raw/ --output data/results/</p>
+                <p class="hero-description">Automação completa para consolidação de dados da Portaria GM/MS nº 90/2023, unificando planilhas e gerando relatórios para apoio à gestão do SUS.</p>
+                <div class="hero-buttons" style="justify-content: center;">
+                    <a href="https://github.com/otavioaugust1/CONSOLIDACAO_PORTARIA_90" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                        <i class="fab fa-github"></i> Ver no GitHub
+                    </a>
+                    <a href="https://bvs.saude.gov.br/bvs/saudelegis/gm/2023/prt0090_06_02_2023.html" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                        <i class="fas fa-scroll"></i> Portaria Oficial
+                    </a>
+                    <a href="../asset/projetos.html" class="btn btn-secondary">
+                        <i class="fas fa-arrow-left"></i> Voltar
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section style="padding: 60px 0; background-color: var(--bg-light);">
+        <div class="container">
+
+            <!-- Contexto -->
+            <div style="background: var(--bg-card); padding: 3rem; border-radius: 15px; box-shadow: var(--shadow); margin-bottom: 3rem;">
+                <h2 style="color: var(--text-dark); margin-bottom: 1rem; font-size: 1.8rem;">
+                    <i class="fas fa-info-circle" style="color: var(--primary-color);"></i> O Problema
+                </h2>
+                <p style="color: var(--text-light); font-size: 1.05rem; line-height: 1.9; margin-bottom: 1rem;">
+                    A <strong>Portaria GM/MS nº 90, de 6 de fevereiro de 2023</strong>, estabelece diretrizes para organização e funcionamento das redes de atenção à saúde no SUS. O acompanhamento de sua execução envolve grandes volumes de dados distribuídos em múltiplas planilhas e competências.
+                </p>
+                <p style="color: var(--text-light); font-size: 1.05rem; line-height: 1.9;">
+                    Este projeto automatiza todo o processo de <strong>consolidação dos dados</strong>: une as planilhas brutas de diferentes competências, aplica as transformações necessárias e gera relatórios consolidados prontos para análise e tomada de decisão.
+                </p>
+            </div>
+
+            <!-- Fluxo -->
+            <div style="margin-bottom: 3rem;">
+                <h2 style="color: var(--text-dark); margin-bottom: 2rem; font-size: 1.8rem; text-align: center;">
+                    <i class="fas fa-arrows-alt-h" style="color: var(--primary-color);"></i> Fluxo de Processamento
+                </h2>
+                <div class="projects-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+
+                    <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.8rem; text-align: center; box-shadow: var(--shadow);">
+                        <div style="width: 60px; height: 60px; background: var(--primary-glow); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-size: 1.5rem; color: var(--primary-color);">
+                            <i class="fas fa-folder-open"></i>
+                        </div>
+                        <h4 style="color: var(--primary-color); margin-bottom: 0.5rem;">1. Dados Brutos</h4>
+                        <p style="color: var(--text-light); font-size: 0.9rem;">Planilhas por competência colocadas em <code>data/raw/</code></p>
+                    </div>
+
+                    <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.8rem; text-align: center; box-shadow: var(--shadow);">
+                        <div style="width: 60px; height: 60px; background: rgba(59,130,246,0.12); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-size: 1.5rem; color: #3b82f6;">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h4 style="color: #3b82f6; margin-bottom: 0.5rem;">2. Processamento</h4>
+                        <p style="color: var(--text-light); font-size: 0.9rem;">Limpeza, padronização e transformação com Pandas</p>
+                    </div>
+
+                    <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.8rem; text-align: center; box-shadow: var(--shadow);">
+                        <div style="width: 60px; height: 60px; background: rgba(245,158,11,0.12); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-size: 1.5rem; color: #f59e0b;">
+                            <i class="fas fa-compress-alt"></i>
+                        </div>
+                        <h4 style="color: #f59e0b; margin-bottom: 0.5rem;">3. Consolidação</h4>
+                        <p style="color: var(--text-light); font-size: 0.9rem;">Junção de todas as competências em um único dataset</p>
+                    </div>
+
+                    <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.8rem; text-align: center; box-shadow: var(--shadow);">
+                        <div style="width: 60px; height: 60px; background: rgba(139,92,246,0.12); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-size: 1.5rem; color: #8b5cf6;">
+                            <i class="fas fa-file-excel"></i>
+                        </div>
+                        <h4 style="color: #8b5cf6; margin-bottom: 0.5rem;">4. Relatório</h4>
+                        <p style="color: var(--text-light); font-size: 0.9rem;">Saída em <code>data/results/</code> pronta para análise</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Funcionalidades -->
+            <div style="background: var(--bg-card); padding: 3rem; border-radius: 15px; box-shadow: var(--shadow); margin-bottom: 3rem;">
+                <h2 style="color: var(--text-dark); margin-bottom: 2rem; font-size: 1.8rem;">
+                    <i class="fas fa-check-circle" style="color: var(--primary-color);"></i> Funcionalidades
+                </h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem;">
+                    <div style="display: flex; align-items: flex-start; gap: 0.8rem; padding: 1rem; background: var(--bg-light); border-radius: 8px;">
+                        <i class="fas fa-check" style="color: var(--primary-color); margin-top: 2px;"></i>
+                        <div>
+                            <strong style="color: var(--text-dark);">Consolidação de Múltiplas Planilhas</strong>
+                            <p style="color: var(--text-light); font-size: 0.85rem; margin-top: 0.2rem;">Une automaticamente todos os arquivos da pasta de entrada</p>
+                        </div>
+                    </div>
+                    <div style="display: flex; align-items: flex-start; gap: 0.8rem; padding: 1rem; background: var(--bg-light); border-radius: 8px;">
+                        <i class="fas fa-check" style="color: var(--primary-color); margin-top: 2px;"></i>
+                        <div>
+                            <strong style="color: var(--text-dark);">Geração de Relatórios</strong>
+                            <p style="color: var(--text-light); font-size: 0.85rem; margin-top: 0.2rem;">Exporta resultado consolidado em formatos prontos para uso</p>
+                        </div>
+                    </div>
+                    <div style="display: flex; align-items: flex-start; gap: 0.8rem; padding: 1rem; background: var(--bg-light); border-radius: 8px;">
+                        <i class="fas fa-check" style="color: var(--primary-color); margin-top: 2px;"></i>
+                        <div>
+                            <strong style="color: var(--text-dark);">Arquitetura Modular</strong>
+                            <p style="color: var(--text-light); font-size: 0.85rem; margin-top: 0.2rem;">Separação em controller, models e views para fácil manutenção</p>
+                        </div>
+                    </div>
+                    <div style="display: flex; align-items: flex-start; gap: 0.8rem; padding: 1rem; background: var(--bg-light); border-radius: 8px;">
+                        <i class="fas fa-check" style="color: var(--primary-color); margin-top: 2px;"></i>
+                        <div>
+                            <strong style="color: var(--text-dark);">Conformidade com a Portaria</strong>
+                            <p style="color: var(--text-light); font-size: 0.85rem; margin-top: 0.2rem;">Validação dos dados conforme diretrizes da GM/MS nº 90/2023</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stack + Impacto -->
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-bottom: 3rem;">
+
+                <div class="skills" style="border-radius: 15px;">
+                    <div style="padding: 2.5rem;">
+                        <h3 style="color: white; margin-bottom: 1.5rem; font-size: 1.3rem;">
+                            <i class="fas fa-layer-group"></i> Stack Técnica
+                        </h3>
+                        <div style="display: flex; flex-direction: column; gap: 1rem;">
+                            <div class="skill-tags"><span class="skill-tag">Python</span><span class="skill-tag">Pandas</span><span class="skill-tag">OpenPyXL</span></div>
+                            <div class="skill-tags"><span class="skill-tag">MVC</span><span class="skill-tag">Git</span><span class="skill-tag">requirements.txt</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; padding: 2.5rem; box-shadow: var(--shadow);">
+                    <h3 style="color: var(--text-dark); margin-bottom: 1.5rem; font-size: 1.3rem;">
+                        <i class="fas fa-chart-bar" style="color: var(--primary-color);"></i> Impacto
+                    </h3>
+                    <div style="display: flex; flex-direction: column; gap: 1rem;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; padding: 0.8rem; background: var(--bg-light); border-radius: 8px;">
+                            <span style="color: var(--text-light);">⭐ Stars</span>
+                            <span style="color: var(--primary-color); font-weight: 700; font-family: var(--font-mono);">3</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; align-items: center; padding: 0.8rem; background: var(--bg-light); border-radius: 8px;">
+                            <span style="color: var(--text-light);">🍴 Forks</span>
+                            <span style="color: var(--primary-color); font-weight: 700; font-family: var(--font-mono);">1</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; align-items: center; padding: 0.8rem; background: var(--bg-light); border-radius: 8px;">
+                            <span style="color: var(--text-light);">Linguagem</span>
+                            <span style="color: var(--primary-color); font-weight: 700; font-family: var(--font-mono);">Python 100%</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; align-items: center; padding: 0.8rem; background: var(--bg-light); border-radius: 8px;">
+                            <span style="color: var(--text-light);">Contexto</span>
+                            <span style="color: var(--primary-color); font-weight: 700; font-family: var(--font-mono);">SUS / DRAC</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- CTA -->
+            <div style="text-align: center; display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <a href="https://github.com/otavioaugust1/CONSOLIDACAO_PORTARIA_90" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">
+                    <i class="fab fa-github"></i> Acessar Repositório
+                </a>
+                <a href="../asset/projetos.html" class="btn btn-secondary btn-lg">
+                    <i class="fas fa-th-large"></i> Ver mais projetos
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>OTAVIO<span style="color: var(--primary-color);">.</span></h4>
+                    <p>Cientista de Dados especializado em saúde pública. Transformando dados em decisões para o SUS.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="../index.html">Início</a></li>
+                        <li><a href="../asset/sobre.html">Sobre Mim</a></li>
+                        <li><a href="../asset/projetos.html">Projetos</a></li>
+                        <li><a href="../index.html#contatos">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <ul>
+                        <li><a href="mailto:otavioaugust@gmail.com"><i class="fas fa-envelope"></i> otavioaugust@gmail.com</a></li>
+                        <li><a href="https://github.com/otavioaugust1" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a></li>
+                        <li><a href="https://www.linkedin.com/in/otavioaugust" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Otavio Augusto. Feito com <i class="fas fa-heart" style="color: var(--primary-color);"></i> e dados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script/script.js"></script>
+</body>
+</html>

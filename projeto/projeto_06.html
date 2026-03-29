@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BOT Reconhecimento de CAPTCHA com Visão Computacional | Otavio Augusto">
+    <meta name="author" content="Otavio Augusto">
+
+    <link rel="icon" type="image/png" href="../img/Icon.png" />
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <title>BOT CAPTCHA | Otavio Augusto</title>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="navbar-brand">
+                <a href="../index.html">OTAVIO<span>.</span></a>
+            </div>
+            <button class="nav-toggle" id="navToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="../index.html#home" class="nav-link">Início</a></li>
+                <li><a href="../index.html#sobre" class="nav-link">Sobre</a></li>
+                <li><a href="../index.html#skills" class="nav-link">Skills</a></li>
+                <li><a href="../asset/projetos.html" class="nav-link">Projetos</a></li>
+                <li><a href="../index.html#contatos" class="nav-link">Contato</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="dark-toggle" id="darkToggle" title="Alternar modo escuro">
+                    <i class="fas fa-moon" id="darkIcon"></i>
+                </button>
+                <a href="mailto:otavioaugust@gmail.com" class="nav-cta">Enviar E-mail</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Hero -->
+    <section class="hero" style="min-height: 35vh; padding: 120px 20px 60px;">
+        <div class="hero-content" style="grid-template-columns: 1fr; text-align: center;">
+            <div class="hero-text" style="max-width: 700px; margin: 0 auto;">
+                <div class="hero-badge"><i class="fas fa-eye"></i> Computer Vision · CNN · Python</div>
+                <h1 class="hero-title">BOT <span class="highlight">CAPTCHA</span></h1>
+                <p class="hero-subtitle" style="font-size: 1rem;">$ python Bot_resolver.py --model IA_CAPTCHA.hdf5</p>
+                <p class="hero-description">Reconhecimento e resolução automática de CAPTCHAs usando visão computacional e rede neural convolucional treinada com TensorFlow/Keras.</p>
+                <div class="hero-buttons" style="justify-content: center;">
+                    <a href="https://github.com/otavioaugust1/HashTag_Reconhecimento_CAPTCHA" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                        <i class="fab fa-github"></i> Ver no GitHub
+                    </a>
+                    <a href="../asset/projetos.html" class="btn btn-secondary">
+                        <i class="fas fa-arrow-left"></i> Voltar aos Projetos
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section style="padding: 60px 0; background-color: var(--bg-light);">
+        <div class="container">
+
+            <!-- Overview -->
+            <div style="background: var(--bg-card); padding: 3rem; border-radius: 15px; box-shadow: var(--shadow); margin-bottom: 3rem;">
+                <h2 style="color: var(--text-dark); margin-bottom: 1rem; font-size: 1.8rem;">
+                    <i class="fas fa-info-circle" style="color: var(--primary-color);"></i> Visão Geral
+                </h2>
+                <p style="color: var(--text-light); font-size: 1.05rem; line-height: 1.9; margin-bottom: 1rem;">
+                    Este projeto utiliza <strong>visão computacional</strong> e <strong>aprendizado de máquina</strong> para reconhecer e resolver CAPTCHAs — aqueles testes visuais usados em formulários para provar que o usuário é humano.
+                </p>
+                <p style="color: var(--text-light); font-size: 1.05rem; line-height: 1.9;">
+                    O bot passa por todo o pipeline: desde o tratamento da imagem bruta, separação dos caracteres, treinamento da rede neural convolucional (CNN), até a resolução automática dos CAPTCHAs em produção.
+                    Inspirado nas aulas práticas da <strong>Hashtag Programação</strong>, o projeto consolida aprendizados de CV e deep learning aplicados a automação real.
+                </p>
+            </div>
+
+            <!-- Pipeline -->
+            <div style="margin-bottom: 3rem;">
+                <h2 style="color: var(--text-dark); margin-bottom: 2rem; font-size: 1.8rem; text-align: center;">
+                    <i class="fas fa-project-diagram" style="color: var(--primary-color);"></i> Pipeline do Bot
+                </h2>
+                <div class="projects-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+
+                    <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.8rem; text-align: center; box-shadow: var(--shadow);">
+                        <div style="width: 60px; height: 60px; background: var(--primary-glow); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-size: 1.5rem; color: var(--primary-color);">
+                            <i class="fas fa-image"></i>
+                        </div>
+                        <h4 style="color: var(--primary-color); margin-bottom: 0.5rem;">1. Tratamento</h4>
+                        <p style="color: var(--text-light); font-size: 0.9rem;">Converte para escala de cinza, remove ruídos e fundo da imagem CAPTCHA</p>
+                        <code style="font-size: 0.75rem; color: var(--primary-color); background: var(--bg-light); padding: 2px 6px; border-radius: 4px;">Bot_imagem.py</code>
+                    </div>
+
+                    <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.8rem; text-align: center; box-shadow: var(--shadow);">
+                        <div style="width: 60px; height: 60px; background: rgba(59,130,246,0.12); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-size: 1.5rem; color: #3b82f6;">
+                            <i class="fas fa-cut"></i>
+                        </div>
+                        <h4 style="color: #3b82f6; margin-bottom: 0.5rem;">2. Separação</h4>
+                        <p style="color: var(--text-light); font-size: 0.9rem;">Isola cada caractere da imagem e organiza em pastas por letra</p>
+                        <code style="font-size: 0.75rem; color: #3b82f6; background: var(--bg-light); padding: 2px 6px; border-radius: 4px;">Bot_separar.py</code>
+                    </div>
+
+                    <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.8rem; text-align: center; box-shadow: var(--shadow);">
+                        <div style="width: 60px; height: 60px; background: rgba(245,158,11,0.12); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-size: 1.5rem; color: #f59e0b;">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h4 style="color: #f59e0b; margin-bottom: 0.5rem;">3. Treinamento</h4>
+                        <p style="color: var(--text-light); font-size: 0.9rem;">Treina CNN com TensorFlow/Keras. Modelo salvo em <code>.hdf5</code></p>
+                        <code style="font-size: 0.75rem; color: #f59e0b; background: var(--bg-light); padding: 2px 6px; border-radius: 4px;">Bot_treinar.py</code>
+                    </div>
+
+                    <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.8rem; text-align: center; box-shadow: var(--shadow);">
+                        <div style="width: 60px; height: 60px; background: rgba(139,92,246,0.12); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-size: 1.5rem; color: #8b5cf6;">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h4 style="color: #8b5cf6; margin-bottom: 0.5rem;">4. Resolução</h4>
+                        <p style="color: var(--text-light); font-size: 0.9rem;">Usa o modelo treinado para resolver CAPTCHAs automaticamente</p>
+                        <code style="font-size: 0.75rem; color: #8b5cf6; background: var(--bg-light); padding: 2px 6px; border-radius: 4px;">Bot_resolver.py</code>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Funcionalidades -->
+            <div style="background: var(--bg-card); padding: 3rem; border-radius: 15px; box-shadow: var(--shadow); margin-bottom: 3rem;">
+                <h2 style="color: var(--text-dark); margin-bottom: 2rem; font-size: 1.8rem;">
+                    <i class="fas fa-check-circle" style="color: var(--primary-color);"></i> Funcionalidades
+                </h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem;">
+                    <div style="display: flex; align-items: flex-start; gap: 0.8rem; padding: 1rem; background: var(--bg-light); border-radius: 8px;">
+                        <i class="fas fa-check" style="color: var(--primary-color); margin-top: 2px; flex-shrink: 0;"></i>
+                        <div>
+                            <strong style="color: var(--text-dark);">Pré-processamento de imagem</strong>
+                            <p style="color: var(--text-light); font-size: 0.85rem; margin-top: 0.2rem;">Escala de cinza, binarização, remoção de ruído</p>
+                        </div>
+                    </div>
+                    <div style="display: flex; align-items: flex-start; gap: 0.8rem; padding: 1rem; background: var(--bg-light); border-radius: 8px;">
+                        <i class="fas fa-check" style="color: var(--primary-color); margin-top: 2px; flex-shrink: 0;"></i>
+                        <div>
+                            <strong style="color: var(--text-dark);">Segmentação de caracteres</strong>
+                            <p style="color: var(--text-light); font-size: 0.85rem; margin-top: 0.2rem;">Contour detection para isolar cada letra/número</p>
+                        </div>
+                    </div>
+                    <div style="display: flex; align-items: flex-start; gap: 0.8rem; padding: 1rem; background: var(--bg-light); border-radius: 8px;">
+                        <i class="fas fa-check" style="color: var(--primary-color); margin-top: 2px; flex-shrink: 0;"></i>
+                        <div>
+                            <strong style="color: var(--text-dark);">CNN com TensorFlow/Keras</strong>
+                            <p style="color: var(--text-light); font-size: 0.85rem; margin-top: 0.2rem;">Rede neural convolucional para classificação de caracteres</p>
+                        </div>
+                    </div>
+                    <div style="display: flex; align-items: flex-start; gap: 0.8rem; padding: 1rem; background: var(--bg-light); border-radius: 8px;">
+                        <i class="fas fa-check" style="color: var(--primary-color); margin-top: 2px; flex-shrink: 0;"></i>
+                        <div>
+                            <strong style="color: var(--text-dark);">Modelo persistente</strong>
+                            <p style="color: var(--text-light); font-size: 0.85rem; margin-top: 0.2rem;">Modelo treinado salvo em <code>.hdf5</code> reutilizável</p>
+                        </div>
+                    </div>
+                    <div style="display: flex; align-items: flex-start; gap: 0.8rem; padding: 1rem; background: var(--bg-light); border-radius: 8px;">
+                        <i class="fas fa-check" style="color: var(--primary-color); margin-top: 2px; flex-shrink: 0;"></i>
+                        <div>
+                            <strong style="color: var(--text-dark);">Automação completa</strong>
+                            <p style="color: var(--text-light); font-size: 0.85rem; margin-top: 0.2rem;">Do download ao preenchimento automático do CAPTCHA</p>
+                        </div>
+                    </div>
+                    <div style="display: flex; align-items: flex-start; gap: 0.8rem; padding: 1rem; background: var(--bg-light); border-radius: 8px;">
+                        <i class="fas fa-check" style="color: var(--primary-color); margin-top: 2px; flex-shrink: 0;"></i>
+                        <div>
+                            <strong style="color: var(--text-dark);">Renomeação automática</strong>
+                            <p style="color: var(--text-light); font-size: 0.85rem; margin-top: 0.2rem;">Organização do dataset para treinamento futuro</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stack Técnica -->
+            <div class="skills" style="border-radius: 15px; margin-bottom: 3rem;">
+                <div style="padding: 3rem;">
+                    <h2 style="color: white; margin-bottom: 2rem; font-size: 1.8rem; text-align: center;">
+                        <i class="fas fa-layer-group"></i> Stack Técnica
+                    </h2>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem;">
+                        <div>
+                            <h4 style="color: var(--primary-color); margin-bottom: 1rem;"><i class="fas fa-eye"></i> Visão Computacional</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">OpenCV</span>
+                                <span class="skill-tag">Pillow</span>
+                                <span class="skill-tag">NumPy</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 style="color: var(--primary-color); margin-bottom: 1rem;"><i class="fas fa-brain"></i> Deep Learning</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">TensorFlow</span>
+                                <span class="skill-tag">Keras</span>
+                                <span class="skill-tag">CNN</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 style="color: var(--primary-color); margin-bottom: 1rem;"><i class="fas fa-robot"></i> Automação</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">Selenium</span>
+                                <span class="skill-tag">imutils</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <div style="text-align: center; display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <a href="https://github.com/otavioaugust1/HashTag_Reconhecimento_CAPTCHA" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">
+                    <i class="fab fa-github"></i> Acessar Repositório
+                </a>
+                <a href="../asset/projetos.html" class="btn btn-secondary btn-lg">
+                    <i class="fas fa-th-large"></i> Ver mais projetos
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>OTAVIO<span style="color: var(--primary-color);">.</span></h4>
+                    <p>Cientista de Dados especializado em saúde pública. Transformando dados em decisões para o SUS.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="../index.html">Início</a></li>
+                        <li><a href="../asset/sobre.html">Sobre Mim</a></li>
+                        <li><a href="../asset/projetos.html">Projetos</a></li>
+                        <li><a href="../index.html#contatos">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <ul>
+                        <li><a href="mailto:otavioaugust@gmail.com"><i class="fas fa-envelope"></i> otavioaugust@gmail.com</a></li>
+                        <li><a href="https://github.com/otavioaugust1" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a></li>
+                        <li><a href="https://www.linkedin.com/in/otavioaugust" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Otavio Augusto. Feito com <i class="fas fa-heart" style="color: var(--primary-color);"></i> e dados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script/script.js"></script>
+</body>
+</html>

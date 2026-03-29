@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bootcamp DIO Unimed-BH Ciência de Dados | Otavio Augusto">
+    <meta name="author" content="Otavio Augusto">
+
+    <link rel="icon" type="image/png" href="../img/Icon.png" />
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <title>Bootcamp DIO Unimed-BH | Otavio Augusto</title>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="navbar-brand">
+                <a href="../index.html">OTAVIO<span>.</span></a>
+            </div>
+            <button class="nav-toggle" id="navToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="../index.html#home" class="nav-link">Início</a></li>
+                <li><a href="../index.html#sobre" class="nav-link">Sobre</a></li>
+                <li><a href="../index.html#skills" class="nav-link">Skills</a></li>
+                <li><a href="../asset/projetos.html" class="nav-link">Projetos</a></li>
+                <li><a href="../index.html#contatos" class="nav-link">Contato</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="dark-toggle" id="darkToggle" title="Alternar modo escuro">
+                    <i class="fas fa-moon" id="darkIcon"></i>
+                </button>
+                <a href="mailto:otavioaugust@gmail.com" class="nav-cta">Enviar E-mail</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Hero -->
+    <section class="hero" style="min-height: 35vh; padding: 120px 20px 60px;">
+        <div class="hero-content" style="grid-template-columns: 1fr; text-align: center;">
+            <div class="hero-text" style="max-width: 700px; margin: 0 auto;">
+                <div class="hero-badge"><i class="fas fa-graduation-cap"></i> Bootcamp · DIO · Unimed-BH</div>
+                <h1 class="hero-title">Ciência de Dados <span class="highlight">Unimed-BH</span></h1>
+                <p class="hero-subtitle" style="font-size: 1rem;">$ jupyter notebook ProjetoCovid_DIO.ipynb</p>
+                <p class="hero-description">Desafios e projetos completos do Bootcamp DIO Unimed-BH Ciência de Dados — cobrindo Python, SQL, NoSQL, Cloud e Machine Learning com 95% de progresso total.</p>
+                <div class="hero-buttons" style="justify-content: center;">
+                    <a href="https://github.com/otavioaugust1/DIO_Unimed-BH_CienciaDeDados" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                        <i class="fab fa-github"></i> Ver no GitHub
+                    </a>
+                    <a href="../asset/projetos.html" class="btn btn-secondary">
+                        <i class="fas fa-arrow-left"></i> Voltar aos Projetos
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section style="padding: 60px 0; background-color: var(--bg-light);">
+        <div class="container">
+
+            <!-- Overview -->
+            <div style="background: var(--bg-card); padding: 3rem; border-radius: 15px; box-shadow: var(--shadow); margin-bottom: 3rem;">
+                <h2 style="color: var(--text-dark); margin-bottom: 1rem; font-size: 1.8rem;">
+                    <i class="fas fa-info-circle" style="color: var(--primary-color);"></i> Sobre o Bootcamp
+                </h2>
+                <p style="color: var(--text-light); font-size: 1.05rem; line-height: 1.9; margin-bottom: 1rem;">
+                    O <strong>Bootcamp DIO Unimed-BH Ciência de Dados</strong> é uma jornada educacional completa voltada para profissionais que atuam ou desejam ingressar na área de Data Science. O programa une fundamentos teóricos com aplicações práticas reais.
+                </p>
+                <p style="color: var(--text-light); font-size: 1.05rem; line-height: 1.9;">
+                    Este repositório consolida todos os desafios de código, projetos práticos e notebooks desenvolvidos ao longo do programa, incluindo o projeto final de <strong>Machine Learning para previsão da evolução do COVID-19 no Brasil</strong>.
+                </p>
+            </div>
+
+            <!-- Módulos -->
+            <div style="margin-bottom: 3rem;">
+                <h2 style="color: var(--text-dark); margin-bottom: 2rem; font-size: 1.8rem; text-align: center;">
+                    <i class="fas fa-layer-group" style="color: var(--primary-color);"></i> Módulos do Programa
+                </h2>
+                <div class="projects-grid" style="grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));">
+
+                    <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.8rem; box-shadow: var(--shadow); border-top: 3px solid var(--primary-color);">
+                        <div style="font-size: 2rem; margin-bottom: 0.8rem;">🐍</div>
+                        <h4 style="color: var(--primary-color); margin-bottom: 0.5rem;">Python para Ciência de Dados</h4>
+                        <p style="color: var(--text-light); font-size: 0.9rem; margin-bottom: 0.8rem;">Fundamentos e aplicações práticas com Python, Pandas e análise de dados.</p>
+                        <span style="background: var(--primary-color); color: #000; font-size: 0.7rem; font-weight: 700; padding: 2px 8px; border-radius: 20px;">21/21 ✅ 100%</span>
+                    </div>
+
+                    <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.8rem; box-shadow: var(--shadow); border-top: 3px solid #3b82f6;">
+                        <div style="font-size: 2rem; margin-bottom: 0.8rem;">🗄️</div>
+                        <h4 style="color: #3b82f6; margin-bottom: 0.5rem;">Bancos de Dados SQL e NoSQL</h4>
+                        <p style="color: var(--text-light); font-size: 0.9rem; margin-bottom: 0.8rem;">SQL relacional, modelagem conceitual, DynamoDB e MongoDB.</p>
+                        <span style="background: #3b82f6; color: #fff; font-size: 0.7rem; font-weight: 700; padding: 2px 8px; border-radius: 20px;">17/17 ✅ 100%</span>
+                    </div>
+
+                    <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.8rem; box-shadow: var(--shadow); border-top: 3px solid #f59e0b;">
+                        <div style="font-size: 2rem; margin-bottom: 0.8rem;">☁️</div>
+                        <h4 style="color: #f59e0b; margin-bottom: 0.5rem;">Imersão Cloud Computing</h4>
+                        <p style="color: var(--text-light); font-size: 0.9rem; margin-bottom: 0.8rem;">Big Data na AWS, dados demográficos e infraestrutura em nuvem.</p>
+                        <span style="background: #f59e0b; color: #000; font-size: 0.7rem; font-weight: 700; padding: 2px 8px; border-radius: 20px;">6/6 ✅ 100%</span>
+                    </div>
+
+                    <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.8rem; box-shadow: var(--shadow); border-top: 3px solid #8b5cf6;">
+                        <div style="font-size: 2rem; margin-bottom: 0.8rem;">🤖</div>
+                        <h4 style="color: #8b5cf6; margin-bottom: 0.5rem;">Machine Learning</h4>
+                        <p style="color: var(--text-light); font-size: 0.9rem; margin-bottom: 0.8rem;">Algoritmos, Transfer Learning e projeto de previsão do COVID-19.</p>
+                        <span style="background: #8b5cf6; color: #fff; font-size: 0.7rem; font-weight: 700; padding: 2px 8px; border-radius: 20px;">5/5 ✅ 100%</span>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Projeto Destaque -->
+            <div style="background: var(--bg-card); padding: 3rem; border-radius: 15px; box-shadow: var(--shadow); margin-bottom: 3rem; border-left: 4px solid var(--primary-color);">
+                <h2 style="color: var(--text-dark); margin-bottom: 1.5rem; font-size: 1.5rem;">
+                    <i class="fas fa-star" style="color: var(--primary-color);"></i> Projeto de Destaque — Previsão COVID-19
+                </h2>
+                <p style="color: var(--text-light); line-height: 1.9; margin-bottom: 1.5rem;">
+                    O projeto final do bootcamp aplica <strong>Machine Learning</strong> para modelar e prever a evolução da pandemia de COVID-19 no Brasil, usando dados reais do <em>JHU CSSE COVID-19 Dataset</em>.
+                </p>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem;">
+                    <div style="background: var(--bg-light); padding: 1rem; border-radius: 8px; text-align: center;">
+                        <i class="fas fa-chart-line" style="color: var(--primary-color); font-size: 1.5rem; margin-bottom: 0.5rem;"></i>
+                        <p style="color: var(--text-dark); font-weight: 600; font-size: 0.9rem;">Curvas de Evolução</p>
+                        <p style="color: var(--text-light); font-size: 0.8rem;">Casos, mortes e recuperados ao longo do tempo</p>
+                    </div>
+                    <div style="background: var(--bg-light); padding: 1rem; border-radius: 8px; text-align: center;">
+                        <i class="fas fa-network-wired" style="color: #3b82f6; font-size: 1.5rem; margin-bottom: 0.5rem;"></i>
+                        <p style="color: var(--text-dark); font-weight: 600; font-size: 0.9rem;">Redes Neurais</p>
+                        <p style="color: var(--text-light); font-size: 0.8rem;">Previsão de tendência com LSTM</p>
+                    </div>
+                    <div style="background: var(--bg-light); padding: 1rem; border-radius: 8px; text-align: center;">
+                        <i class="fas fa-globe-americas" style="color: #f59e0b; font-size: 1.5rem; margin-bottom: 0.5rem;"></i>
+                        <p style="color: var(--text-dark); font-weight: 600; font-size: 0.9rem;">Dados Globais</p>
+                        <p style="color: var(--text-light); font-size: 0.8rem;">JHU CSSE · dados reais abertos</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Progresso Geral -->
+            <div style="background: var(--bg-card); padding: 3rem; border-radius: 15px; box-shadow: var(--shadow); margin-bottom: 3rem; text-align: center;">
+                <h2 style="color: var(--text-dark); margin-bottom: 0.5rem; font-size: 1.5rem;">Progresso Total do Bootcamp</h2>
+                <div style="font-size: 4rem; font-weight: 700; color: var(--primary-color); font-family: var(--font-mono);">95%</div>
+                <p style="color: var(--text-light);">57 de 60 atividades concluídas · <strong style="color: var(--primary-color);">3⭐ · 1 fork</strong></p>
+                <div style="background: var(--bg-light); border-radius: 50px; height: 10px; margin: 1.5rem auto; max-width: 400px; overflow: hidden;">
+                    <div style="background: var(--primary-color); width: 95%; height: 100%; border-radius: 50px;"></div>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <div style="text-align: center; display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <a href="https://github.com/otavioaugust1/DIO_Unimed-BH_CienciaDeDados" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">
+                    <i class="fab fa-github"></i> Acessar Repositório
+                </a>
+                <a href="../asset/projetos.html" class="btn btn-secondary btn-lg">
+                    <i class="fas fa-th-large"></i> Ver mais projetos
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>OTAVIO<span style="color: var(--primary-color);">.</span></h4>
+                    <p>Cientista de Dados especializado em saúde pública. Transformando dados em decisões para o SUS.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="../index.html">Início</a></li>
+                        <li><a href="../asset/sobre.html">Sobre Mim</a></li>
+                        <li><a href="../asset/projetos.html">Projetos</a></li>
+                        <li><a href="../index.html#contatos">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <ul>
+                        <li><a href="mailto:otavioaugust@gmail.com"><i class="fas fa-envelope"></i> otavioaugust@gmail.com</a></li>
+                        <li><a href="https://github.com/otavioaugust1" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a></li>
+                        <li><a href="https://www.linkedin.com/in/otavioaugust" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Otavio Augusto. Feito com <i class="fas fa-heart" style="color: var(--primary-color);"></i> e dados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script/script.js"></script>
+</body>
+</html>
