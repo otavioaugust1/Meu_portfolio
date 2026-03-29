@@ -9,7 +9,7 @@ const GITHUB_API = 'https://api.github.com';
 // ================================
 (function initTheme() {
     const htmlEl = document.documentElement;
-    const savedTheme = localStorage.getItem('theme') || 'light';
+    const savedTheme = localStorage.getItem('theme') || 'dark';
     htmlEl.setAttribute('data-theme', savedTheme);
 
     const darkIcon = document.getElementById('darkIcon');
@@ -141,7 +141,7 @@ function classifyProject(repo) {
 // Display Projects
 // ================================
 function displayProjects(repos) {
-    const projectsGrid = document.getElementById('projectsGrid');
+    const projectsGrid = document.getElementById('projectsGrid') || document.getElementById('projects-grid');
     
     if (!repos || repos.length === 0) {
         projectsGrid.innerHTML = '<p class="loading">Nenhum projeto encontrado</p>';
@@ -222,7 +222,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 // ================================
 const observerOptions = {
     threshold: 0.1,
-    rootMargin: '0px 0px -100px 0px'
+    rootMargin: '0px 0px -60px 0px'
 };
 
 const observer = new IntersectionObserver(function(entries) {
@@ -233,6 +233,16 @@ const observer = new IntersectionObserver(function(entries) {
         }
     });
 }, observerOptions);
+
+// Scroll reveal for .reveal elements
+const revealObserver = new IntersectionObserver(function(entries) {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            revealObserver.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
 
 // ================================
 // Initialize on Load
@@ -248,6 +258,11 @@ document.addEventListener('DOMContentLoaded', async () => {
         section.style.transform = 'translateY(20px)';
         section.style.transition = 'all 0.6s ease-out';
         observer.observe(section);
+    });
+
+    // Scroll reveal for cards and highlighted elements
+    document.querySelectorAll('.reveal').forEach(el => {
+        revealObserver.observe(el);
     });
 });
 

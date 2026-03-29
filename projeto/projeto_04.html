@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Projeto 03 - Otavio Augusto">
+    <meta name="description" content="BOT Portaria 90 - Automação de Dados SUS | Otavio Augusto">
     <meta name="author" content="Otavio Augusto">
 
     <link rel="icon" type="image/png" href="../img/Icon.png" />
     <link rel="stylesheet" href="../CSS/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
-    <title>Sistemas de Recomendação | Otavio Augusto</title>
+    <title>BOT Portaria 90 | Otavio Augusto</title>
 </head>
 <body>
     <!-- Navigation -->
@@ -42,12 +42,12 @@
     <section class="hero" style="min-height: 35vh; padding: 120px 20px 60px;">
         <div class="hero-content" style="grid-template-columns: 1fr; text-align: center;">
             <div class="hero-text" style="max-width: 700px; margin: 0 auto;">
-                <div class="hero-badge"><i class="fas fa-star"></i> Machine Learning · Python</div>
-                <h1 class="hero-title">Sistemas de <span class="highlight">Recomendação</span></h1>
-                <p class="hero-subtitle" style="font-size: 1rem;">$ python recomendacao.py --algoritmo collaborative_filtering</p>
-                <p class="hero-description">Implementação de sistemas de recomendação com Python — filtragem colaborativa, baseada em conteúdo e modelos híbridos para personalização de experiências.</p>
+                <div class="hero-badge"><i class="fas fa-robot"></i> Automação · SUS · Jupyter</div>
+                <h1 class="hero-title">BOT <span class="highlight">Portaria 90</span></h1>
+                <p class="hero-subtitle" style="font-size: 1rem;">$ jupyter nbconvert portaria_90.ipynb --execute --to notebook</p>
+                <p class="hero-description">Automação do download, tratamento e consolidação dos dados do painel INVESTSUS — Crédito Financeiro e Modalidade 1 do Ministério da Saúde do Brasil.</p>
                 <div class="hero-buttons" style="justify-content: center;">
-                    <a href="https://github.com/otavioaugust1/SOFTEX_Python-Sistemas-Recomendacao" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                    <a href="https://github.com/otavioaugust1/BOT_PORTARIA-90" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
                         <i class="fab fa-github"></i> Ver no GitHub
                     </a>
                     <a href="../asset/projetos.html" class="btn btn-secondary">
@@ -66,36 +66,62 @@
             <div style="margin-bottom: 3rem;">
                 <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1.5rem;">
                     <div style="width: 4px; height: 2rem; background: var(--primary-color); border-radius: 2px;"></div>
-                    <h2 style="color: var(--text-dark); font-size: 1.6rem;">Visão Geral</h2>
+                    <h2 style="color: var(--text-dark); font-size: 1.6rem;">Visão Geral do Projeto</h2>
                 </div>
                 <p style="color: var(--text-light); line-height: 1.9; font-size: 1.05rem; margin-bottom: 1rem;">
-                    Os sistemas de recomendação estão presentes em plataformas como Netflix, Spotify e Amazon — filtrando e sugerindo conteúdos com base no comportamento do usuário. Este projeto explora as principais abordagens algorítmicas com implementação prática em Python.
+                    A <strong style="color: var(--text-dark);">Portaria GM/MS nº 90</strong> regulamenta os critérios de transferência de recursos financeiros para estados e municípios no âmbito do SUS. Monitorar esses dados manualmente é um processo trabalhoso e sujeito a erros.
                 </p>
                 <p style="color: var(--text-light); line-height: 1.9; font-size: 1.05rem;">
-                    Desenvolvido durante o programa <strong style="color: var(--text-dark);">SOFTEX Python para Sistemas de Recomendação</strong>, com foco em aplicações reais de machine learning personalizável.
+                    Este bot automatiza todo o pipeline: acessa o painel <strong style="color: var(--text-dark);">INVESTSUS</strong>, faz o download dos dados de Crédito Financeiro e Modalidade 1, realiza o tratamento e entrega dados consolidados prontos para análise.
                 </p>
             </div>
 
-            <!-- Abordagens -->
+            <!-- Pipeline -->
             <div style="margin-bottom: 3rem;">
                 <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1.5rem;">
                     <div style="width: 4px; height: 2rem; background: var(--primary-color); border-radius: 2px;"></div>
-                    <h2 style="color: var(--text-dark); font-size: 1.6rem;">Abordagens Implementadas</h2>
+                    <h2 style="color: var(--text-dark); font-size: 1.6rem;">Pipeline de Automação</h2>
+                </div>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 2rem;">
+                    <div style="background: var(--bg-light); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.5rem; text-align: center;">
+                        <div style="color: var(--primary-color); font-size: 2rem; margin-bottom: 0.8rem;"><i class="fas fa-globe"></i></div>
+                        <div style="color: var(--text-dark); font-weight: 600; margin-bottom: 0.3rem;">1. Acesso Web</div>
+                        <div style="color: var(--text-light); font-size: 0.9rem;">Navegação automática ao painel INVESTSUS</div>
+                    </div>
+                    <div style="background: var(--bg-light); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.5rem; text-align: center;">
+                        <div style="color: var(--primary-color); font-size: 2rem; margin-bottom: 0.8rem;"><i class="fas fa-download"></i></div>
+                        <div style="color: var(--text-dark); font-weight: 600; margin-bottom: 0.3rem;">2. Download</div>
+                        <div style="color: var(--text-light); font-size: 0.9rem;">Extração automática dos arquivos de dados</div>
+                    </div>
+                    <div style="background: var(--bg-light); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.5rem; text-align: center;">
+                        <div style="color: var(--primary-color); font-size: 2rem; margin-bottom: 0.8rem;"><i class="fas fa-broom"></i></div>
+                        <div style="color: var(--text-dark); font-weight: 600; margin-bottom: 0.3rem;">3. Tratamento</div>
+                        <div style="color: var(--text-light); font-size: 0.9rem;">Limpeza, padronização e enriquecimento</div>
+                    </div>
+                    <div style="background: var(--bg-light); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.5rem; text-align: center;">
+                        <div style="color: var(--primary-color); font-size: 2rem; margin-bottom: 0.8rem;"><i class="fas fa-table"></i></div>
+                        <div style="color: var(--text-dark); font-weight: 600; margin-bottom: 0.3rem;">4. Consolidação</div>
+                        <div style="color: var(--text-light); font-size: 0.9rem;">Dados prontos para análise e relatórios</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dados tratados -->
+            <div style="margin-bottom: 3rem;">
+                <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1.5rem;">
+                    <div style="width: 4px; height: 2rem; background: var(--primary-color); border-radius: 2px;"></div>
+                    <h2 style="color: var(--text-dark); font-size: 1.6rem;">Dados Tratados</h2>
                 </div>
 
                 <div style="background: var(--bg-light); border: 1px solid var(--border-color); border-radius: 12px; padding: 2rem; margin-bottom: 1.5rem;">
-                    <h3 style="color: var(--primary-color); font-size: 1.1rem; margin-bottom: 1rem; font-family: var(--font-mono);"><i class="fas fa-users"></i> Filtragem Colaborativa</h3>
-                    <p style="color: var(--text-light); line-height: 1.8;">Recomendações baseadas no comportamento coletivo de usuários similares. Se usuários com gostos parecidos aos seus gostaram de X, você provavelmente também vai. Utiliza métricas como cosine similarity e correlação de Pearson.</p>
-                </div>
-
-                <div style="background: var(--bg-light); border: 1px solid var(--border-color); border-radius: 12px; padding: 2rem; margin-bottom: 1.5rem;">
-                    <h3 style="color: var(--primary-color); font-size: 1.1rem; margin-bottom: 1rem; font-family: var(--font-mono);"><i class="fas fa-file-alt"></i> Filtragem Baseada em Conteúdo</h3>
-                    <p style="color: var(--text-light); line-height: 1.8;">Analisa os atributos dos itens para recomendar similares ao que o usuário já consumiu. Usa TF-IDF e vetorização para calcular similaridade entre descrições e características dos itens.</p>
+                    <h3 style="color: var(--primary-color); font-size: 1.1rem; margin-bottom: 1rem; font-family: var(--font-mono);"><i class="fas fa-coins"></i> Crédito Financeiro</h3>
+                    <p style="color: var(--text-light); line-height: 1.8;">Valores transferidos pela União para estados e municípios via Fundo Nacional de Saúde, organizados por período, UF, município e bloco de financiamento.</p>
                 </div>
 
                 <div style="background: var(--bg-light); border: 1px solid var(--border-color); border-radius: 12px; padding: 2rem;">
-                    <h3 style="color: var(--primary-color); font-size: 1.1rem; margin-bottom: 1rem; font-family: var(--font-mono);"><i class="fas fa-layer-group"></i> Modelo Híbrido</h3>
-                    <p style="color: var(--text-light); line-height: 1.8;">Combina as duas abordagens para superar as limitações individuais: resolve o problema do cold start (usuário novo) e melhora a precisão das recomendações.</p>
+                    <h3 style="color: var(--primary-color); font-size: 1.1rem; margin-bottom: 1rem; font-family: var(--font-mono);"><i class="fas fa-file-invoice-dollar"></i> Modalidade 1</h3>
+                    <p style="color: var(--text-light); line-height: 1.8;">Dados de repasses na modalidade fundo a fundo, com detalhamento por ação orçamentária, programa e grupo de despesa, facilitando o controle social e a transparência.</p>
                 </div>
             </div>
 
@@ -108,12 +134,12 @@
                 <div style="background: var(--bg-light); border: 1px solid var(--border-color); border-radius: 12px; padding: 2rem;">
                     <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
                         <span style="background: rgba(27,185,31,0.15); color: var(--primary-color); padding: 0.5rem 1.2rem; border-radius: 50px; font-weight: 600; border: 1px solid rgba(27,185,31,0.3); font-family: var(--font-mono); font-size: 0.9rem;"><i class="fab fa-python"></i> Python</span>
-                        <span style="background: var(--bg-card); color: var(--text-dark); padding: 0.5rem 1.2rem; border-radius: 50px; border: 1px solid var(--border-color); font-family: var(--font-mono); font-size: 0.9rem;">Scikit-learn</span>
-                        <span style="background: var(--bg-card); color: var(--text-dark); padding: 0.5rem 1.2rem; border-radius: 50px; border: 1px solid var(--border-color); font-family: var(--font-mono); font-size: 0.9rem;">Pandas</span>
-                        <span style="background: var(--bg-card); color: var(--text-dark); padding: 0.5rem 1.2rem; border-radius: 50px; border: 1px solid var(--border-color); font-family: var(--font-mono); font-size: 0.9rem;">NumPy</span>
-                        <span style="background: var(--bg-card); color: var(--text-dark); padding: 0.5rem 1.2rem; border-radius: 50px; border: 1px solid var(--border-color); font-family: var(--font-mono); font-size: 0.9rem;">Surprise</span>
-                        <span style="background: var(--bg-card); color: var(--text-dark); padding: 0.5rem 1.2rem; border-radius: 50px; border: 1px solid var(--border-color); font-family: var(--font-mono); font-size: 0.9rem;">TF-IDF</span>
                         <span style="background: var(--bg-card); color: var(--text-dark); padding: 0.5rem 1.2rem; border-radius: 50px; border: 1px solid var(--border-color); font-family: var(--font-mono); font-size: 0.9rem;">Jupyter Notebook</span>
+                        <span style="background: var(--bg-card); color: var(--text-dark); padding: 0.5rem 1.2rem; border-radius: 50px; border: 1px solid var(--border-color); font-family: var(--font-mono); font-size: 0.9rem;">Selenium</span>
+                        <span style="background: var(--bg-card); color: var(--text-dark); padding: 0.5rem 1.2rem; border-radius: 50px; border: 1px solid var(--border-color); font-family: var(--font-mono); font-size: 0.9rem;">Pandas</span>
+                        <span style="background: var(--bg-card); color: var(--text-dark); padding: 0.5rem 1.2rem; border-radius: 50px; border: 1px solid var(--border-color); font-family: var(--font-mono); font-size: 0.9rem;">Requests</span>
+                        <span style="background: var(--bg-card); color: var(--text-dark); padding: 0.5rem 1.2rem; border-radius: 50px; border: 1px solid var(--border-color); font-family: var(--font-mono); font-size: 0.9rem;">BeautifulSoup</span>
+                        <span style="background: var(--bg-card); color: var(--text-dark); padding: 0.5rem 1.2rem; border-radius: 50px; border: 1px solid var(--border-color); font-family: var(--font-mono); font-size: 0.9rem;">OpenPyXL</span>
                     </div>
                 </div>
             </div>
@@ -121,12 +147,12 @@
             <!-- Stats -->
             <div style="background: var(--bg-light); border: 1px solid var(--border-color); border-left: 4px solid var(--primary-color); border-radius: 12px; padding: 2rem; margin-bottom: 3rem;">
                 <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1.5rem;">
-                    <i class="fas fa-trophy" style="color: var(--primary-color); margin-right: 0.5rem;"></i>
-                    Projeto mais bem avaliado do portfólio — com <strong style="color: var(--primary-color);">4 estrelas</strong> e <strong style="color: var(--primary-color);">2 forks</strong> no GitHub, demonstrando valor prático para outros desenvolvedores.
+                    <i class="fas fa-chart-line" style="color: var(--primary-color); margin-right: 0.5rem;"></i>
+                    Projeto amplamente utilizado pela comunidade de gestores do SUS, com <strong style="color: var(--primary-color);">3 estrelas</strong> e <strong style="color: var(--primary-color);">2 forks</strong> — evidenciando impacto real na gestão pública de saúde.
                 </p>
                 <div style="display: flex; gap: 2rem; flex-wrap: wrap;">
                     <div style="text-align: center;">
-                        <div style="font-size: 1.8rem; font-weight: 700; color: var(--primary-color); font-family: var(--font-mono);">4 ⭐</div>
+                        <div style="font-size: 1.8rem; font-weight: 700; color: var(--primary-color); font-family: var(--font-mono);">3 ⭐</div>
                         <div style="color: var(--text-light); font-size: 0.85rem;">Stars no GitHub</div>
                     </div>
                     <div style="text-align: center;">
@@ -134,14 +160,14 @@
                         <div style="color: var(--text-light); font-size: 0.85rem;">Forks</div>
                     </div>
                     <div style="text-align: center;">
-                        <div style="font-size: 1.8rem; font-weight: 700; color: var(--primary-color); font-family: var(--font-mono);">ML</div>
-                        <div style="color: var(--text-light); font-size: 0.85rem;">Machine Learning</div>
+                        <div style="font-size: 1.8rem; font-weight: 700; color: var(--primary-color); font-family: var(--font-mono);">SUS</div>
+                        <div style="color: var(--text-light); font-size: 0.85rem;">Aplicação Real</div>
                     </div>
                 </div>
             </div>
 
             <div style="text-align: center; padding: 2rem;">
-                <a href="https://github.com/otavioaugust1/SOFTEX_Python-Sistemas-Recomendacao" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="margin-right: 1rem;">
+                <a href="https://github.com/otavioaugust1/BOT_PORTARIA-90" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="margin-right: 1rem;">
                     <i class="fab fa-github"></i> Ver Código no GitHub
                 </a>
                 <a href="../asset/projetos.html" class="btn btn-secondary">

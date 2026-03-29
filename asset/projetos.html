@@ -66,10 +66,30 @@
                     <i class="fas fa-star" style="color: var(--primary-color);"></i> Projetos em Destaque
                 </h3>
                 <div class="projects-grid">
-                    <div class="project-card">
+
+                    <!-- Projeto 1 -->
+                    <div class="project-card reveal">
+                        <div class="project-image"><i class="fas fa-hospital-alt"></i></div>
+                        <div class="project-content">
+                            <h3 class="project-title">Analisador de Filas — OCI</h3>
+                            <p class="project-description">Aplicação Streamlit para análise geoespacial de filas de espera do SUS por procedimento, município e especialidade.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Python</span>
+                                <span class="project-tag">Streamlit</span>
+                                <span class="project-tag">Geopandas</span>
+                            </div>
+                            <div class="project-footer">
+                                <div class="project-stats"><span><i class="fas fa-star"></i> 2 · <i class="fas fa-code-branch"></i> 1</span></div>
+                                <a href="../projeto/projeto_01.html" class="project-link">Ver mais →</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Projeto 2 -->
+                    <div class="project-card reveal">
                         <div class="project-image"><i class="fas fa-futbol"></i></div>
                         <div class="project-content">
-                            <h3 class="project-title">Previsão Copa do Qatar</h3>
+                            <h3 class="project-title">Previsão Copa do Qatar 2022</h3>
                             <p class="project-description">Previsão do campeão da Copa do Qatar usando Distribuição de Poisson para modelar probabilidades de gols e simular partidas.</p>
                             <div class="project-tags">
                                 <span class="project-tag">Python</span>
@@ -77,20 +97,79 @@
                                 <span class="project-tag">Poisson</span>
                             </div>
                             <div class="project-footer">
-                                <div class="project-stats"><span><i class="fas fa-chart-bar"></i> Data Science</span></div>
+                                <div class="project-stats"><span><i class="fas fa-star"></i> 3 · <i class="fas fa-chart-bar"></i> Data Science</span></div>
                                 <a href="../projeto/projeto_02.html" class="project-link">Ver mais →</a>
                             </div>
                         </div>
                     </div>
-                    <div class="project-card">
-                        <div class="project-image"><i class="fas fa-robot"></i></div>
+
+                    <!-- Projeto 3 -->
+                    <div class="project-card reveal" style="border: 1px solid var(--primary-color);">
+                        <div class="project-image" style="position:relative;">
+                            <i class="fas fa-brain"></i>
+                            <span style="position:absolute;top:8px;right:8px;background:var(--primary-color);color:#000;font-size:0.65rem;font-weight:700;padding:2px 7px;border-radius:20px;">⭐ TOP</span>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Sistemas de Recomendação — SOFTEX</h3>
+                            <p class="project-description">Motor de recomendação com três abordagens: colaborativa, conteúdo e híbrida. Projeto com maior avaliação do portfólio.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Python</span>
+                                <span class="project-tag">Scikit-learn</span>
+                                <span class="project-tag">Surprise</span>
+                            </div>
+                            <div class="project-footer">
+                                <div class="project-stats"><span><i class="fas fa-star"></i> 4 · <i class="fas fa-code-branch"></i> 2</span></div>
+                                <a href="../projeto/projeto_03.html" class="project-link">Ver mais →</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Projeto 4 -->
+                    <div class="project-card reveal">
+                        <div class="project-image"><i class="fas fa-file-medical"></i></div>
+                        <div class="project-content">
+                            <h3 class="project-title">BOT Portaria-90 SUS</h3>
+                            <p class="project-description">Bot de automação que consolida dados do DATASUS referentes à Portaria 90, tratando crédito financeiro e modalidade por competência.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Python</span>
+                                <span class="project-tag">Selenium</span>
+                                <span class="project-tag">Pandas</span>
+                            </div>
+                            <div class="project-footer">
+                                <div class="project-stats"><span><i class="fas fa-star"></i> 3 · <i class="fas fa-code-branch"></i> 2</span></div>
+                                <a href="../projeto/projeto_04.html" class="project-link">Ver mais →</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Projeto 5 -->
+                    <div class="project-card reveal">
+                        <div class="project-image"><i class="fas fa-globe-americas"></i></div>
+                        <div class="project-content">
+                            <h3 class="project-title">Copa do Mundo 2026 🔮</h3>
+                            <p class="project-description">Previsão do campeão da Copa 2026 com Machine Learning evoluindo o modelo Poisson de 2022 para XGBoost com 48 seleções e 3 países-sede.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Python</span>
+                                <span class="project-tag">XGBoost</span>
+                                <span class="project-tag">Em curso</span>
+                            </div>
+                            <div class="project-footer">
+                                <div class="project-stats"><span><i class="fas fa-spinner fa-pulse"></i> Em andamento</span></div>
+                                <a href="../projeto/projeto_05.html" class="project-link">Ver mais →</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Projeto 6 -->
+                    <div class="project-card reveal">
+                        <div class="project-image"><i class="fas fa-eye"></i></div>
                         <div class="project-content">
                             <h3 class="project-title">BOT Quebrando CAPTCHA</h3>
                             <p class="project-description">Automação com visão computacional para reconhecimento e resolução de CAPTCHAs usando técnicas de processamento de imagem.</p>
                             <div class="project-tags">
                                 <span class="project-tag">Python</span>
                                 <span class="project-tag">Computer Vision</span>
-                                <span class="project-tag">Automação</span>
+                                <span class="project-tag">OpenCV</span>
                             </div>
                             <div class="project-footer">
                                 <div class="project-stats"><span><i class="fas fa-code"></i> Machine Learning</span></div>
@@ -98,6 +177,7 @@
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
 
@@ -105,7 +185,7 @@
             <h3 style="color: var(--text-dark); margin-bottom: 1.5rem; font-size: 1.3rem; display: flex; align-items: center; gap: 0.5rem;">
                 <i class="fab fa-github" style="color: var(--primary-color);"></i> Todos os Repositórios GitHub
             </h3>
-            <div class="projects-grid" id="projects-grid">
+            <div class="projects-grid" id="projectsGrid">
                 <div class="loading">
                     <i class="fas fa-circle-notch fa-spin"></i>
                     <p>Carregando projetos do GitHub...</p>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Data Science Copa do Mundo 2026 - Previsão com Machine Learning | Otavio Augusto">
+    <meta name="author" content="Otavio Augusto">
+
+    <link rel="icon" type="image/png" href="../img/Icon.png" />
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <title>Copa do Mundo 2026 | Otavio Augusto</title>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="navbar-brand">
+                <a href="../index.html">OTAVIO<span>.</span></a>
+            </div>
+            <button class="nav-toggle" id="navToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="../index.html#home" class="nav-link">Início</a></li>
+                <li><a href="../index.html#sobre" class="nav-link">Sobre</a></li>
+                <li><a href="../index.html#skills" class="nav-link">Skills</a></li>
+                <li><a href="../index.html#projetos" class="nav-link">Projetos</a></li>
+                <li><a href="../index.html#contatos" class="nav-link">Contato</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="dark-toggle" id="darkToggle" title="Alternar modo escuro">
+                    <i class="fas fa-moon" id="darkIcon"></i>
+                </button>
+                <a href="mailto:otavioaugust@gmail.com" class="nav-cta">Enviar E-mail</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Hero -->
+    <section class="hero" style="min-height: 35vh; padding: 120px 20px 60px;">
+        <div class="hero-content" style="grid-template-columns: 1fr; text-align: center;">
+            <div class="hero-text" style="max-width: 700px; margin: 0 auto;">
+                <div class="hero-badge"><i class="fas fa-futbol"></i> Data Science · Machine Learning · Em Andamento</div>
+                <h1 class="hero-title">Copa do Mundo <span class="highlight">2026</span></h1>
+                <p class="hero-subtitle" style="font-size: 1rem;">$ python copa2026.py --modelo ensemble --simulacoes 10000</p>
+                <p class="hero-description">Previsão do campeão da Copa do Mundo 2026 — EUA, Canadá e México — utilizando Machine Learning, dados históricos e modelagem estatística avançada.</p>
+                <div class="hero-buttons" style="justify-content: center;">
+                    <a href="https://github.com/otavioaugust1/DATA_SCIENCE_COPA_DO_MUNDO_2026" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                        <i class="fab fa-github"></i> Ver no GitHub
+                    </a>
+                    <a href="../projeto/projeto_02.html" class="btn btn-secondary">
+                        <i class="fas fa-futbol"></i> Ver Copa 2022
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content -->
+    <section style="padding: 60px 0; background-color: var(--bg-white);">
+        <div class="container" style="max-width: 900px;">
+
+            <!-- Visão Geral -->
+            <div style="margin-bottom: 3rem;">
+                <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1.5rem;">
+                    <div style="width: 4px; height: 2rem; background: var(--primary-color); border-radius: 2px;"></div>
+                    <h2 style="color: var(--text-dark); font-size: 1.6rem;">O Desafio</h2>
+                </div>
+                <p style="color: var(--text-light); line-height: 1.9; font-size: 1.05rem; margin-bottom: 1rem;">
+                    Após o sucesso prevendo a Copa do Qatar 2022 com Distribuição de Poisson, a missão agora é mais ambiciosa: prever o campeão da <strong style="color: var(--text-dark);">Copa do Mundo 2026</strong>, a maior da história com <strong style="color: var(--primary-color);">48 seleções</strong> e sede tripla nos EUA, Canadá e México.
+                </p>
+                <p style="color: var(--text-light); line-height: 1.9; font-size: 1.05rem;">
+                    O modelo evolui da Distribuição de Poisson para abordagens de <strong style="color: var(--text-dark);">Machine Learning</strong>, incorporando mais variáveis e maior poder preditivo.
+                </p>
+            </div>
+
+            <!-- Evolução do modelo -->
+            <div style="margin-bottom: 3rem;">
+                <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1.5rem;">
+                    <div style="width: 4px; height: 2rem; background: var(--primary-color); border-radius: 2px;"></div>
+                    <h2 style="color: var(--text-dark); font-size: 1.6rem;">Evolução do Modelo</h2>
+                </div>
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 2rem;">
+                    <div style="background: var(--bg-light); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.5rem; opacity: 0.8;">
+                        <div style="font-size: 0.85rem; color: var(--text-light); font-family: var(--font-mono); margin-bottom: 0.5rem;">// Copa 2022</div>
+                        <h4 style="color: var(--text-dark); margin-bottom: 0.8rem;"><i class="fas fa-chart-bar" style="color: var(--primary-color); margin-right: 0.5rem;"></i> Distribuição de Poisson</h4>
+                        <p style="color: var(--text-light); font-size: 0.9rem; line-height: 1.7;">Modelagem da média de gols por seleção com ranking FIFA e força relativa. Simples, interpretável e preciso.</p>
+                    </div>
+                    <div style="background: var(--bg-light); border: 2px solid var(--primary-color); border-radius: 12px; padding: 1.5rem;">
+                        <div style="font-size: 0.85rem; color: var(--primary-color); font-family: var(--font-mono); margin-bottom: 0.5rem;">// Copa 2026 — atual</div>
+                        <h4 style="color: var(--text-dark); margin-bottom: 0.8rem;"><i class="fas fa-brain" style="color: var(--primary-color); margin-right: 0.5rem;"></i> Machine Learning</h4>
+                        <p style="color: var(--text-light); font-size: 0.9rem; line-height: 1.7;">Modelos ensemble com Random Forest, XGBoost e redes neurais — mais features, mais precisão.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Features do modelo -->
+            <div style="margin-bottom: 3rem;">
+                <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1.5rem;">
+                    <div style="width: 4px; height: 2rem; background: var(--primary-color); border-radius: 2px;"></div>
+                    <h2 style="color: var(--text-dark); font-size: 1.6rem;">Variáveis do Modelo</h2>
+                </div>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
+                    <div style="background: var(--bg-light); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.2rem; display: flex; align-items: center; gap: 0.8rem;">
+                        <i class="fas fa-list-ol" style="color: var(--primary-color); font-size: 1.2rem;"></i>
+                        <span style="color: var(--text-dark); font-size: 0.95rem;">Ranking FIFA</span>
+                    </div>
+                    <div style="background: var(--bg-light); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.2rem; display: flex; align-items: center; gap: 0.8rem;">
+                        <i class="fas fa-history" style="color: var(--primary-color); font-size: 1.2rem;"></i>
+                        <span style="color: var(--text-dark); font-size: 0.95rem;">Histórico últimas 5 Copas</span>
+                    </div>
+                    <div style="background: var(--bg-light); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.2rem; display: flex; align-items: center; gap: 0.8rem;">
+                        <i class="fas fa-futbol" style="color: var(--primary-color); font-size: 1.2rem;"></i>
+                        <span style="color: var(--text-dark); font-size: 0.95rem;">Média de gols marcados/sofridos</span>
+                    </div>
+                    <div style="background: var(--bg-light); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.2rem; display: flex; align-items: center; gap: 0.8rem;">
+                        <i class="fas fa-map-marker-alt" style="color: var(--primary-color); font-size: 1.2rem;"></i>
+                        <span style="color: var(--text-dark); font-size: 0.95rem;">Vantagem de sede</span>
+                    </div>
+                    <div style="background: var(--bg-light); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.2rem; display: flex; align-items: center; gap: 0.8rem;">
+                        <i class="fas fa-users" style="color: var(--primary-color); font-size: 1.2rem;"></i>
+                        <span style="color: var(--text-dark); font-size: 0.95rem;">Geração de jogadores</span>
+                    </div>
+                    <div style="background: var(--bg-light); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.2rem; display: flex; align-items: center; gap: 0.8rem;">
+                        <i class="fas fa-shield-alt" style="color: var(--primary-color); font-size: 1.2rem;"></i>
+                        <span style="color: var(--text-dark); font-size: 0.95rem;">Desempenho defensivo</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Status -->
+            <div style="background: var(--bg-light); border: 1px solid var(--border-color); border-left: 4px solid var(--primary-color); border-radius: 12px; padding: 2rem; margin-bottom: 3rem;">
+                <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1rem;">
+                    <div style="width: 10px; height: 10px; background: var(--primary-color); border-radius: 50%; animation: pulse 2s infinite;"></div>
+                    <span style="color: var(--primary-color); font-weight: 600; font-family: var(--font-mono);">Em andamento — Copa começa em junho 2026</span>
+                </div>
+                <p style="color: var(--text-light); line-height: 1.8;">
+                    O projeto está em desenvolvimento ativo. Acompanhe o repositório para ver as previsões sendo atualizadas conforme os jogos acontecem. A Copa do Mundo 2026 será a maior da história — 48 seleções, 104 jogos, 3 países-sede!
+                </p>
+                <div style="margin-top: 1.5rem; display: flex; flex-wrap: wrap; gap: 1.5rem;">
+                    <div style="text-align: center;">
+                        <div style="font-size: 1.5rem; font-weight: 700; color: var(--primary-color); font-family: var(--font-mono);">48</div>
+                        <div style="color: var(--text-light); font-size: 0.85rem;">Seleções</div>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="font-size: 1.5rem; font-weight: 700; color: var(--primary-color); font-family: var(--font-mono);">3</div>
+                        <div style="color: var(--text-light); font-size: 0.85rem;">Países-sede</div>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="font-size: 1.5rem; font-weight: 700; color: var(--primary-color); font-family: var(--font-mono);">10K+</div>
+                        <div style="color: var(--text-light); font-size: 0.85rem;">Simulações</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stack -->
+            <div style="margin-bottom: 3rem;">
+                <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1.5rem;">
+                    <div style="width: 4px; height: 2rem; background: var(--primary-color); border-radius: 2px;"></div>
+                    <h2 style="color: var(--text-dark); font-size: 1.6rem;">Stack Técnica</h2>
+                </div>
+                <div style="background: var(--bg-light); border: 1px solid var(--border-color); border-radius: 12px; padding: 2rem;">
+                    <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
+                        <span style="background: rgba(27,185,31,0.15); color: var(--primary-color); padding: 0.5rem 1.2rem; border-radius: 50px; font-weight: 600; border: 1px solid rgba(27,185,31,0.3); font-family: var(--font-mono); font-size: 0.9rem;"><i class="fab fa-python"></i> Python</span>
+                        <span style="background: var(--bg-card); color: var(--text-dark); padding: 0.5rem 1.2rem; border-radius: 50px; border: 1px solid var(--border-color); font-family: var(--font-mono); font-size: 0.9rem;">Scikit-learn</span>
+                        <span style="background: var(--bg-card); color: var(--text-dark); padding: 0.5rem 1.2rem; border-radius: 50px; border: 1px solid var(--border-color); font-family: var(--font-mono); font-size: 0.9rem;">XGBoost</span>
+                        <span style="background: var(--bg-card); color: var(--text-dark); padding: 0.5rem 1.2rem; border-radius: 50px; border: 1px solid var(--border-color); font-family: var(--font-mono); font-size: 0.9rem;">Pandas</span>
+                        <span style="background: var(--bg-card); color: var(--text-dark); padding: 0.5rem 1.2rem; border-radius: 50px; border: 1px solid var(--border-color); font-family: var(--font-mono); font-size: 0.9rem;">SciPy / Poisson</span>
+                        <span style="background: var(--bg-card); color: var(--text-dark); padding: 0.5rem 1.2rem; border-radius: 50px; border: 1px solid var(--border-color); font-family: var(--font-mono); font-size: 0.9rem;">Matplotlib</span>
+                        <span style="background: var(--bg-card); color: var(--text-dark); padding: 0.5rem 1.2rem; border-radius: 50px; border: 1px solid var(--border-color); font-family: var(--font-mono); font-size: 0.9rem;">Jupyter Notebook</span>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center; padding: 2rem;">
+                <a href="https://github.com/otavioaugust1/DATA_SCIENCE_COPA_DO_MUNDO_2026" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="margin-right: 1rem;">
+                    <i class="fab fa-github"></i> Acompanhar no GitHub
+                </a>
+                <a href="./projeto_02.html" class="btn btn-secondary">
+                    <i class="fas fa-futbol"></i> Ver Copa 2022
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>OTAVIO<span style="color: var(--primary-color);">.</span></h4>
+                    <p>Cientista de Dados especializado em saúde pública. Transformando dados em decisões para o SUS.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="../index.html">Início</a></li>
+                        <li><a href="../asset/sobre.html">Sobre Mim</a></li>
+                        <li><a href="../asset/projetos.html">Projetos</a></li>
+                        <li><a href="../index.html#contatos">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <ul>
+                        <li><a href="mailto:otavioaugust@gmail.com"><i class="fas fa-envelope"></i> otavioaugust@gmail.com</a></li>
+                        <li><a href="https://github.com/otavioaugust1" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a></li>
+                        <li><a href="https://www.linkedin.com/in/otavioaugust" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Otavio Augusto. Feito com <i class="fas fa-heart" style="color: var(--primary-color);"></i> e dados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script/script.js"></script>
+</body>
+</html>

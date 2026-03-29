@@ -1070,3 +1070,87 @@ section {
         grid-template-columns: 1fr;
     }
 }
+
+/* ===========================
+   SCROLL REVEAL ANIMATION
+   =========================== */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Stagger effect for grid items */
+.projects-grid .reveal:nth-child(1) { transition-delay: 0.05s; }
+.projects-grid .reveal:nth-child(2) { transition-delay: 0.15s; }
+.projects-grid .reveal:nth-child(3) { transition-delay: 0.25s; }
+.projects-grid .reveal:nth-child(4) { transition-delay: 0.35s; }
+.projects-grid .reveal:nth-child(5) { transition-delay: 0.45s; }
+.projects-grid .reveal:nth-child(6) { transition-delay: 0.55s; }
+
+/* ===========================
+   PROJECT CARD — GLOW ON HOVER
+   =========================== */
+.project-card:hover {
+    border-color: var(--primary-color);
+    box-shadow: 0 8px 30px var(--primary-glow), var(--shadow-lg);
+}
+
+.project-card .project-image {
+    transition: var(--transition);
+}
+
+.project-card:hover .project-image {
+    background: linear-gradient(135deg, #0d1117 0%, #1a2a1a 100%);
+}
+
+[data-theme="light"] .project-card:hover .project-image {
+    background: linear-gradient(135deg, #1a237e 0%, #1b5e20 100%);
+}
+
+/* ===========================
+   PUBLICAÇÕES — HOVER LIFT
+   =========================== */
+.pub-item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pub-item:hover {
+    transform: translateX(6px);
+    box-shadow: -4px 0 0 var(--primary-color);
+}
+
+/* ===========================
+   SCROLLBAR CUSTOM
+   =========================== */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-white);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-color);
+    opacity: 0.8;
+}
+
+/* ===========================
+   SELECTION COLOR
+   =========================== */
+::selection {
+    background: var(--primary-color);
+    color: #000;
+}
+

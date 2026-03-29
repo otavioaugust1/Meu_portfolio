@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../CSS/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
-    <title>Projeto 01 | Otavio Augusto</title>
+    <title>Analisador de Filas de Espera | Otavio Augusto</title>
 </head>
 <body>
     <!-- Navigation -->
@@ -42,13 +42,13 @@
     <section class="hero" style="min-height: 35vh; padding: 120px 20px 60px;">
         <div class="hero-content" style="grid-template-columns: 1fr; text-align: center;">
             <div class="hero-text" style="max-width: 700px; margin: 0 auto;">
-                <div class="hero-badge"><i class="fas fa-database"></i> Em Desenvolvimento</div>
-                <h1 class="hero-title">Projeto <span class="highlight">01</span></h1>
-                <p class="hero-subtitle" style="font-size: 1rem;">$ status: em_construcao.py</p>
-                <p class="hero-description">Projeto em desenvolvimento. Em breve mais detalhes sobre este projeto de análise de dados.</p>
+                <div class="hero-badge"><i class="fas fa-hospital-alt"></i> Saúde Pública · Python</div>
+                <h1 class="hero-title">Analisador de <span class="highlight">Filas de Espera</span></h1>
+                <p class="hero-subtitle" style="font-size: 1rem;">$ python analisador_filas.py --setor saude --output relatorio</p>
+                <p class="hero-description">Ferramenta desenvolvida para auxiliar gestores de saúde na análise das filas de espera e identificação de gargalos no acesso a serviços de saúde pública.</p>
                 <div class="hero-buttons" style="justify-content: center;">
-                    <a href="https://github.com/otavioaugust1" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-                        <i class="fab fa-github"></i> Acompanhar no GitHub
+                    <a href="https://github.com/otavioaugust1/APP_Analisador_Filas_Espera_OCI" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                        <i class="fab fa-github"></i> Ver no GitHub
                     </a>
                     <a href="../asset/projetos.html" class="btn btn-secondary">
                         <i class="fas fa-arrow-left"></i> Voltar aos Projetos
@@ -61,22 +61,102 @@
     <!-- Content -->
     <section style="padding: 60px 0; background-color: var(--bg-white);">
         <div class="container" style="max-width: 900px;">
-            <div style="text-align: center; padding: 4rem 2rem; background: var(--bg-light); border-radius: 16px; border: 1px solid var(--border-color);">
-                <div style="font-size: 4rem; margin-bottom: 1.5rem; color: var(--primary-color);">
-                    <i class="fas fa-laptop-code"></i>
+
+            <!-- Visão Geral -->
+            <div style="margin-bottom: 3rem;">
+                <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1.5rem;">
+                    <div style="width: 4px; height: 2rem; background: var(--primary-color); border-radius: 2px;"></div>
+                    <h2 style="color: var(--text-dark); font-size: 1.6rem;">Visão Geral do Projeto</h2>
                 </div>
-                <h2 style="color: var(--text-dark); margin-bottom: 1rem;">Projeto em Construção</h2>
-                <p style="color: var(--text-light); max-width: 500px; margin: 0 auto 2rem; line-height: 1.8;">
-                    Este projeto está sendo desenvolvido. Acompanhe meu GitHub para atualizações em tempo real sobre este e outros projetos de ciência de dados.
+                <p style="color: var(--text-light); line-height: 1.9; font-size: 1.05rem; margin-bottom: 1rem;">
+                    As filas de espera por serviços de saúde representam um dos maiores desafios do SUS. Este aplicativo foi desenvolvido para auxiliar gestores estaduais e municipais na análise dessas filas, identificando gargalos e apoiando a tomada de decisão baseada em dados.
                 </p>
-                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-                    <a href="https://github.com/otavioaugust1" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-                        <i class="fab fa-github"></i> Meu GitHub
-                    </a>
-                    <a href="../asset/projetos.html" class="btn btn-secondary">
-                        <i class="fas fa-th-large"></i> Outros Projetos
-                    </a>
+                <p style="color: var(--text-light); line-height: 1.9; font-size: 1.05rem;">
+                    A ferramenta processa dados de filas de espera, gera relatórios gerenciais e apresenta indicadores estratégicos para priorização do atendimento.
+                </p>
+            </div>
+
+            <!-- Funcionalidades -->
+            <div style="margin-bottom: 3rem;">
+                <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1.5rem;">
+                    <div style="width: 4px; height: 2rem; background: var(--primary-color); border-radius: 2px;"></div>
+                    <h2 style="color: var(--text-dark); font-size: 1.6rem;">Funcionalidades</h2>
                 </div>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
+                    <div style="background: var(--bg-light); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.5rem;">
+                        <div style="color: var(--primary-color); font-size: 1.8rem; margin-bottom: 1rem;"><i class="fas fa-upload"></i></div>
+                        <h4 style="color: var(--text-dark); margin-bottom: 0.5rem;">Importação de Dados</h4>
+                        <p style="color: var(--text-light); font-size: 0.95rem; line-height: 1.7;">Suporte a arquivos CSV e XLSX com dados de filas de espera dos sistemas municipais e estaduais.</p>
+                    </div>
+                    <div style="background: var(--bg-light); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.5rem;">
+                        <div style="color: var(--primary-color); font-size: 1.8rem; margin-bottom: 1rem;"><i class="fas fa-chart-bar"></i></div>
+                        <h4 style="color: var(--text-dark); margin-bottom: 0.5rem;">Análise Estatística</h4>
+                        <p style="color: var(--text-light); font-size: 0.95rem; line-height: 1.7;">Geração automática de indicadores: tempo médio de espera, volume por especialidade, priorização por urgência.</p>
+                    </div>
+                    <div style="background: var(--bg-light); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.5rem;">
+                        <div style="color: var(--primary-color); font-size: 1.8rem; margin-bottom: 1rem;"><i class="fas fa-file-pdf"></i></div>
+                        <h4 style="color: var(--text-dark); margin-bottom: 0.5rem;">Relatórios Gerenciais</h4>
+                        <p style="color: var(--text-light); font-size: 0.95rem; line-height: 1.7;">Exportação de relatórios estruturados para apoio à gestão e prestação de contas.</p>
+                    </div>
+                    <div style="background: var(--bg-light); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.5rem;">
+                        <div style="color: var(--primary-color); font-size: 1.8rem; margin-bottom: 1rem;"><i class="fas fa-map-marked-alt"></i></div>
+                        <h4 style="color: var(--text-dark); margin-bottom: 0.5rem;">Geolocalização</h4>
+                        <p style="color: var(--text-light); font-size: 0.95rem; line-height: 1.7;">Mapeamento geoespacial dos dados para identificação de regiões críticas com alta demanda reprimida.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stack Técnica -->
+            <div style="margin-bottom: 3rem;">
+                <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1.5rem;">
+                    <div style="width: 4px; height: 2rem; background: var(--primary-color); border-radius: 2px;"></div>
+                    <h2 style="color: var(--text-dark); font-size: 1.6rem;">Stack Técnica</h2>
+                </div>
+                <div style="background: var(--bg-light); border: 1px solid var(--border-color); border-radius: 12px; padding: 2rem;">
+                    <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
+                        <span style="background: rgba(27,185,31,0.15); color: var(--primary-color); padding: 0.5rem 1.2rem; border-radius: 50px; font-weight: 600; border: 1px solid rgba(27,185,31,0.3); font-family: var(--font-mono); font-size: 0.9rem;"><i class="fab fa-python"></i> Python</span>
+                        <span style="background: var(--bg-card); color: var(--text-dark); padding: 0.5rem 1.2rem; border-radius: 50px; border: 1px solid var(--border-color); font-family: var(--font-mono); font-size: 0.9rem;">Pandas</span>
+                        <span style="background: var(--bg-card); color: var(--text-dark); padding: 0.5rem 1.2rem; border-radius: 50px; border: 1px solid var(--border-color); font-family: var(--font-mono); font-size: 0.9rem;">NumPy</span>
+                        <span style="background: var(--bg-card); color: var(--text-dark); padding: 0.5rem 1.2rem; border-radius: 50px; border: 1px solid var(--border-color); font-family: var(--font-mono); font-size: 0.9rem;">Matplotlib</span>
+                        <span style="background: var(--bg-card); color: var(--text-dark); padding: 0.5rem 1.2rem; border-radius: 50px; border: 1px solid var(--border-color); font-family: var(--font-mono); font-size: 0.9rem;">Streamlit</span>
+                        <span style="background: var(--bg-card); color: var(--text-dark); padding: 0.5rem 1.2rem; border-radius: 50px; border: 1px solid var(--border-color); font-family: var(--font-mono); font-size: 0.9rem;">Geopandas</span>
+                        <span style="background: var(--bg-card); color: var(--text-dark); padding: 0.5rem 1.2rem; border-radius: 50px; border: 1px solid var(--border-color); font-family: var(--font-mono); font-size: 0.9rem;">OpenPyXL</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Impacto -->
+            <div style="margin-bottom: 3rem;">
+                <div style="background: var(--bg-light); border: 1px solid var(--border-color); border-left: 4px solid var(--primary-color); border-radius: 12px; padding: 2rem;">
+                    <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1rem;">
+                        <i class="fas fa-quote-left" style="color: var(--primary-color); margin-right: 0.5rem;"></i>
+                        Projeto desenvolvido no contexto da <strong style="color: var(--text-dark);">OCI (Organização de Cuidados Integrados)</strong>, com foco real na gestão das listas de espera do SUS. A ferramenta foi prototipada para auxiliar estados e municípios na tomada de decisão baseada em dados.
+                    </p>
+                    <div style="display: flex; gap: 2rem; flex-wrap: wrap; margin-top: 1.5rem;">
+                        <div style="text-align: center;">
+                            <div style="font-size: 1.8rem; font-weight: 700; color: var(--primary-color); font-family: var(--font-mono);">2 ⭐</div>
+                            <div style="color: var(--text-light); font-size: 0.85rem;">Stars no GitHub</div>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="font-size: 1.8rem; font-weight: 700; color: var(--primary-color); font-family: var(--font-mono);">1 🍴</div>
+                            <div style="color: var(--text-light); font-size: 0.85rem;">Fork</div>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="font-size: 1.8rem; font-weight: 700; color: var(--primary-color); font-family: var(--font-mono);">SUS</div>
+                            <div style="color: var(--text-light); font-size: 0.85rem;">Aplicação Real</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <div style="text-align: center; padding: 2rem;">
+                <a href="https://github.com/otavioaugust1/APP_Analisador_Filas_Espera_OCI" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="margin-right: 1rem;">
+                    <i class="fab fa-github"></i> Ver Código no GitHub
+                </a>
+                <a href="../asset/projetos.html" class="btn btn-secondary">
+                    <i class="fas fa-th-large"></i> Outros Projetos
+                </a>
             </div>
         </div>
     </section>
