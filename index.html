@@ -3,182 +3,319 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="Palavras-chave, separadas, por, vírgulas">
+    <meta name="description" content="Portfólio de Otavio Augusto - Cientista de Dados, Desenvolvedor e Consultor Técnico em Saúde">
+    <meta name="keywords" content="Data Science, Python, GitHub, Análise de Dados, SUS, Saúde Pública">
     <meta name="author" content="Otavio Augusto">
     
     <link rel="icon" type="image/png" href="img/Icon.png" />
     <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap">
-    <style>
-        .background {
-            background-image: url(img/background.jpg);
-            background-size: cover;
-            background-position: right;
-            height: 100vh;
-        }
-    </style>
-    <title>Portfolio - otavioaugust</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <title>Otavio Augusto - Portfólio</title>
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="#">Portfo<span>lio</span></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fas fa-cog"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Início</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="asset/sobre.html">Sobre mim</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="asset/projetos.html">Projetos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html#contatos">Contato</a>
-                    </li>
-                </ul>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="navbar-brand">
+                <a href="#home">OTAVIO<span>.</span></a>
             </div>
-            <a href="mailto:otavioaugust@gmail.com?subject=Quero falar com você&body=Corpo do e-mail" class="btn btn-primary">e-mail</a>
+            <button class="nav-toggle" id="navToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Início</a></li>
+                <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projetos" class="nav-link">Projetos</a></li>
+                <li><a href="#contatos" class="nav-link">Contato</a></li>
+            </ul>
+            <a href="mailto:otavioaugust@gmail.com" class="nav-cta">Enviar E-mail</a>
         </div>
     </nav>
-    
-    <!-- Main Section -->
-    <div class="background">
-        <div class="container">
-            <div class="Main text-center text-white">
-                <h4>Olá, meu nome é</h4>
-                <h1>Otávio <span>Augusto</span></h1>
-                <h3>Eu sou um <span>(estudante)</span> cientista de dados <span>apaixonado</span> pelo que faço.</h3>
-            </div>
-        </div>
-    </div>
 
-    <!-- Sobre Section -->
-    <section class="bg-light">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <img src="img/main-img.jpg" alt="Imagem principal" class="img-fluid">
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Olá, eu sou <span class="highlight">Otavio Augusto</span></h1>
+                <p class="hero-subtitle">Consultor Técnico | Cientista de Dados | Desenvolvedor Entusiasta</p>
+                <p class="hero-description">
+                    17 anos transformando dados em estratégias para o SUS. Apaixonado por tecnologia, análise de dados e impacto social.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projetos" class="btn btn-primary">Ver Meus Projetos</a>
+                    <a href="#sobre" class="btn btn-secondary">Saiba Mais</a>
                 </div>
-                <div class="col-md-6">
-                    <div class="Text-sobre">
-                        <h2>Sobre-Mim</h2>
-                        <h5>Cientista de dados <span>& desenvolvedor</span></h5>
-                        <p>"Eu sou um cientista de dados ou data scientist (ainda aprendendo e me desenvolvendo nesta área).
-                            Trabalho com análise de dados e uso minhas habilidades em programação, estatística, machine learning
-                            e outras áreas para encontrar soluções para problemas complexos. Sou curioso e gosto de explorar
-                            dados e encontrar novas formas de resolver problemas."
-                        </p>
-                        <a href="asset/sobre.html" class="btn btn-primary">Saiba mais...</a>
-                    </div>
+                <div class="social-links-hero">
+                    <a href="https://github.com/otavioaugust1" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/otavioaugust" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://twitter.com/0tavioaugust" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/otavioaugust/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
-        </div>
-        <div class="cue text-center">
-            <a href="#sobre_mim"><i class="fas fa-chevron-down"></i></a>
+            <div class="hero-stats">
+                <div class="stat-card">
+                    <span class="stat-number" id="repoCount">0</span>
+                    <span class="stat-label">Repositórios</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number" id="starCount">0</span>
+                    <span class="stat-label">Stars</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">17+</span>
+                    <span class="stat-label">Anos em Saúde</span>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Projetos Section -->
-    <div class="Container-serviços">
+    <!-- About Section -->
+    <section class="about" id="sobre">
         <div class="container">
-            <div class="title text-center">
-                <h2>Meus Projetos</h2>
+            <div class="section-header">
+                <h2>Sobre Mim</h2>
+                <p class="section-subtitle">Minha jornada e propósito</p>
             </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="Card text-center">
-                        <i class="far fa-futbol"></i>
-                        <h5>Previsão do Campeão<br>da Copa do Qatar</h5>
-                        <div class="Paragrafo-button">
-                            <p>"A variação no futebol é fascinante. Por exemplo, em um jogo, um time pode estar dominando
-                                completamente e, no entanto, perder devido a um gol de bola parada. Se pudéssemos repetir o jogo
-                                algumas vezes, é provável que tivéssemos vários resultados diferentes, reforçando a importância
-                                desses detalhes minúsculos."</p>
-                            <a href="https://github.com/otavioaugust1/FLAI_Data-Science_COPA_DO_MUNDO_2022"
-                                class="btn btn-primary" target="_blank" rel="noopener noreferrer">Ler Mais</a>
-                        </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="about-intro">
+                        <p class="lead">Sou um aprendiz silencioso, que prefere resolver do que falar.</p>
+                        <p>Com 17 anos dedicados à gestão em saúde pública, sou atualmente <strong>Assessor Técnico no DEEQAE</strong> (Departamento de Estratégias para a Expansão e a Qualificação da Atenção Especializada) do Ministério da Saúde, trabalhando para reduzir o tempo de espera por consultas especializadas no SUS.</p>
+                    </div>
+
+                    <div class="about-highlights">
+                        <h3>Minha Expertise</h3>
+                        <ul class="highlight-list">
+                            <li><strong>Automatização</strong> de tarefas e otimização de processos</li>
+                            <li><strong>Mineração de dados</strong>, análise e criação de bancos de dados estratégicos</li>
+                            <li><strong>Estratégias baseadas em evidências</strong> para expansão de acesso à saúde</li>
+                            <li>Desenvolvimento de <strong>soluções web</strong> e integrações de sistema</li>
+                            <li><strong>Liderança em projetos</strong> como e-SUS Regulação e API-SISREG</li>
+                        </ul>
+                    </div>
+
+                    <div class="about-cta">
+                        <a href="asset/sobre.html" class="btn btn-primary">Leia Minha História Completa</a>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="Card text-center">
-                        <i class="fas fa-robot"></i>
-                        <h5>BOT quebrando <br> CAPTCHA</h5>
-                        <div class="Paragrafo-button">
-                            <p>"O CAPTCHA é uma medida de segurança que utiliza imagens de caracteres distorcidos e borrados
-                                para impedir que BOTs e outros sistemas automatizados acessem sites ou aplicações. Já imaginou
-                                um BOT que utiliza uma rede neural para interpretar imagens de CAPTCHA e tentar adivinhar o que
-                                está escrito nelas?"</p>
-                            <a href="https://github.com/otavioaugust1/HashTag_Reconhecimento_CAPTCHA"
-                                class="btn btn-primary" target="_blank" rel="noopener noreferrer">Ler Mais</a>
-                        </div>
+
+                <div class="about-image">
+                    <div class="image-wrapper">
+                        <img src="img/main-img.jpg" alt="Otavio Augusto" />
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="Card text-center">
-                        <i class="fas fa-robot"></i>
-                        <h5>Bot consolidador RFCE</h5>
-                        <div class="Paragrafo-button">
-                            <p>O objetivo deste bot é consolidar as planilhas de cirurgias eletivas enviadas de acordo com a
-                                PORTARIA GM/MS Nº 90, DE 3 DE FEVEREIRO DE 2023 Institui o Programa Nacional de Redução das
-                                Filas de CirurgiasEletivas, Exames Complementares e Consultas Especializadas, verificando se os
-                                dados estão em conformidade com as exigências da portaria.</p>
-                            <a href="https://github.com/otavioaugust1/CONSOLIDACAO_PORTARIA_90" class="btn btn-primary"
-                                target="_blank" rel="noopener noreferrer">Ler Mais</a>
-                        </div>
+                    <div class="location-badge">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Brasília, DF - Brasil</span>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <!-- Contato Section -->
-    <div class="me-contate text-center">
-        <p>Agora, se você quer mandar uma mensagem para mim, é só clicar no botão abaixo:</p>
-        <a href="mailto:otavioaugust@gmail.com?subject=Quero falar com você&body=Corpo do e-mail"
-            class="btn btn-primary">Enviar e-mail</a>
-    </div>
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2>Tecnologias & Ferramentas</h2>
+                <p class="section-subtitle">Linguagens, frameworks e ferramentas que domino</p>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skills-category">
+                    <h3><i class="fas fa-code"></i> Linguagens</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">HTML/CSS</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">Jupyter</span>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3><i class="fas fa-chart-line"></i> Data Science</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">NumPy</span>
+                        <span class="skill-tag">Matplotlib</span>
+                        <span class="skill-tag">Scikit-learn</span>
+                        <span class="skill-tag">Power BI</span>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3><i class="fas fa-tools"></i> Ferramentas</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">VS Code</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">APIs REST</span>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3><i class="fas fa-hospital"></i> Domínio</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">SUS</span>
+                        <span class="skill-tag">Saúde Pública</span>
+                        <span class="skill-tag">Regulação</span>
+                        <span class="skill-tag">Interoperabilidade</span>
+                        <span class="skill-tag">e-SUS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projetos">
+        <div class="container">
+            <div class="section-header">
+                <h2>Meus Projetos</h2>
+                <p class="section-subtitle">Projetos em destaque do meu GitHub</p>
+            </div>
+
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="data-science">Data Science</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="automation">Automação</button>
+            </div>
+
+            <div class="projects-grid" id="projectsGrid">
+                <div class="loading">
+                    <i class="fas fa-spinner fa-spin"></i>
+                    <p>Carregando projetos...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="statistics">
+        <div class="container">
+            <div class="section-header">
+                <h2>Estatísticas GitHub</h2>
+                <p class="section-subtitle">Minha atividade no GitHub</p>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3>Total de Repositórios</h3>
+                    <p class="stat-value" id="totalRepos">-</p>
+                </div>
+                <div class="stat-item">
+                    <h3>Total de Stars</h3>
+                    <p class="stat-value" id="totalStars">-</p>
+                </div>
+                <div class="stat-item">
+                    <h3>Linguagem Favorita</h3>
+                    <p class="stat-value" id="topLanguage">-</p>
+                </div>
+                <div class="stat-item">
+                    <h3>Seguidores</h3>
+                    <p class="stat-value" id="followers">-</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contatos">
+        <div class="container">
+            <div class="section-header">
+                <h2>Vamos Criar Algo Juntos?</h2>
+                <p class="section-subtitle">Entre em contato comigo</p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>E-mail</h4>
+                            <a href="mailto:otavioaugust@gmail.com">otavioaugust@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Localização</h4>
+                            <p>Brasília, DF - Brasil</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-link"></i>
+                        <div>
+                            <h4>Links</h4>
+                            <a href="https://github.com/otavioaugust1" target="_blank">GitHub</a>
+                            <a href="https://www.linkedin.com/in/otavioaugust" target="_blank">LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-buttons">
+                    <a href="mailto:otavioaugust@gmail.com?subject=Quero%20colaborar%20com%20você&body=Olá%20Otavio," class="btn btn-primary btn-lg">
+                        <i class="fas fa-envelope"></i> Enviar E-mail
+                    </a>
+                    <a href="https://www.linkedin.com/in/otavioaugust" target="_blank" class="btn btn-secondary btn-lg">
+                        <i class="fab fa-linkedin"></i> Conectar no LinkedIn
+                    </a>
+                </div>
+
+                <div class="social-links">
+                    <h4>Siga-me nas Redes Sociais</h4>
+                    <div class="social-icons">
+                        <a href="https://github.com/otavioaugust1" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/otavioaugust" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://twitter.com/0tavioaugust" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/otavioaugust/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/@otavioaugust" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="https://web.facebook.com/otavioaugust" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="http://lattes.cnpq.br/1250109562083947" target="_blank" title="Lattes"><i class="fas fa-graduation-cap"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
-    <footer class="bg-light text-center">
+    <footer class="footer">
         <div class="container">
-            <h6>Otavio Augusto</h6>
-            <p>Para me conhecer mais - por favor clique no link abaixo para se inscrever nos meus canais</p>
-            <div class="Redes-sociais">
-                <a href="https://web.facebook.com/otavioaugust" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-facebook-f"></i></a>
-                <a href="https://www.instagram.com/otavioaugust/" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-instagram"></i></a>
-                <a href="https://twitter.com/0tavioaugust" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-twitter"></i></a>
-                <a href="https://www.youtube.com/@otavioaugust" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-youtube"></i></a>
-                <a href="https://www.linkedin.com/in/otavioaugust" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-linkedin-in"></i></a>
-                <a href="https://github.com/otavioaugust1" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-github"></i></a>
-                <a href="http://lattes.cnpq.br/1250109562083947" target="_blank" rel="noopener noreferrer">
-                    <i class="fas fa-head-side-virus"></i></a>
-                <a href="https://www.kooapp.com/profile/otavioaugust" target="_blank" rel="noopener noreferrer">
-                    <i class="fas fa-crow"></i></a>
-                <a href="https://otavioaugust-guia.notion.site/7f195bc8a9f14787b12323677fa605b1?v=9c422ca372f94b5ba5546699b7f5c319&pvs=4" target="_blank" rel="noopener noreferrer">
-                    <i class="fa-solid fa-book-open"></i></a>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>OTAVIO AUGUSTO</h4>
+                    <p>Transformando dados em estratégias para um SUS mais eficiente e humano.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#projetos">Projetos</a></li>
+                        <li><a href="#contatos">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Redes Sociais</h4>
+                    <ul>
+                        <li><a href="https://github.com/otavioaugust1" target="_blank">GitHub</a></li>
+                        <li><a href="https://www.linkedin.com/in/otavioaugust" target="_blank">LinkedIn</a></li>
+                        <li><a href="https://twitter.com/0tavioaugust" target="_blank">Twitter</a></li>
+                        <li><a href="https://www.instagram.com/otavioaugust/" target="_blank">Instagram</a></li>
+                    </ul>
+                </div>
             </div>
-            <p class="end">CopyRight By @otavioaugust - CNPJ: 47.440.092/0001-94</p>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Otavio Augusto. Todos os direitos reservados. CNPJ: 47.440.092/0001-94</p>
+            </div>
         </div>
     </footer>
 
-    <!-- Bootstrap JS e Popper.js (Necessários para os componentes Bootstrap) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script/script.js"></script>
 </body>
 </html>

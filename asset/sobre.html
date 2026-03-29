@@ -3,98 +3,305 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="Palavras-chave, separadas, por, vírgulas">
+    <meta name="description" content="Sobre Otavio Augusto - Cientista de Dados e Consultor Técnico em Saúde">
     <meta name="author" content="Otavio Augusto">
-
-    <link rel="icon" type="image/png" href="img/Icon.png"/>
+    
+    <link rel="icon" type="image/png" href="../img/Icon.png" />
     <link rel="stylesheet" href="../CSS/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <title>Sobre mim - otavioaugust</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <title>Sobre - Otavio Augusto</title>
 </head>
-
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="#">Portfo<span>lio</span></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fas fa-cog"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../index.html">Início</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../asset/sobre.html">Sobre mim</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../asset/projetos.html">Projetos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../index.html#contatos">Contato</a>
-                    </li>
-                </ul>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="navbar-brand">
+                <a href="../index.html">OTAVIO<span>.</span></a>
             </div>
-            <a href="#contatos" class="btn btn-primary">e-mail</a>
+            <button class="nav-toggle" id="navToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="../index.html#home" class="nav-link">Início</a></li>
+                <li><a href="../index.html#sobre" class="nav-link">Sobre</a></li>
+                <li><a href="../index.html#skills" class="nav-link">Skills</a></li>
+                <li><a href="../index.html#projetos" class="nav-link">Projetos</a></li>
+                <li><a href="../index.html#contatos" class="nav-link">Contato</a></li>
+            </ul>
+            <a href="mailto:otavioaugust@gmail.com" class="nav-cta">Enviar E-mail</a>
         </div>
     </nav>
 
-    <div class="background-menu">
-        <section class="bg-light">
-            <div class="container">
-                <div class="row">
-                    <img class="image img-fluid" src="../img/sobre_mim.jpg">
-                    <div class="Text-sobre">
-                        <h2>Sobre-Mim</h2>
-                        <h5>Cientistas de dados <span>& desenvolvedor</span></h5>
-                        <p>Sou uma pessoa positiva, sempre buscando o lado bom da vida. Adoro fazer as pessoas ao meu redor se sentirem bem, e meu objetivo é encontrar a felicidade em tudo que faço, seja no trabalho ou na vida pessoal. Tenho um espírito animado, adoro rir e aprecio conversas com pessoas interessantes, buscando sempre aprender com elas. Valorizo os relacionamentos com aqueles que têm muito a ensinar e compartilhar.</p>
-                        <p>Sou de Pindamonhangaba-SP. Moro em Brasilia-DF há cerca de 8 anos e me sinto quase brasiliense, já que criei raízes aqui. Trabalho há 14 anos na área de gestão de saúde, com foco em regulação, assistência, planejamento, controle e avaliação de saúde. Atualmente, sou consultor técnico do Departamento de Regulação Assistencial (DRAC) da Secretaria de Atenção Especializada à Saúde (SAES) no Ministério da Saúde.</p>
-                        <p>"Sou um administrador e tenho pós-graduação em Micropolítica da Gestão e Trabalho em Saúde pela UFF, além de pós-graduação em Apoio ao Processo Seletivo: Regulação em Saúde no SUS como profissão. Sou também pesquisador, cientista de dados e desenvolvedor entusiasta. Recém formado em Análise e Desenvolvimento de Sistemas (ADS), estou me concentrando em Data Science. Estou trabalhando para me tornar um especialista analítico com habilidades técnicas para resolver problemas complexos e a curiosidade de descobrir o que precisa ser resolvido."</p>
-                        <p>Ao longo do último ano, mergulhei em uma jornada literária rica e diversificada, explorando os cantos mais profundos da imaginação humana e adquirindo conhecimento sobre os mais variados temas. Além dos fascinantes livros de Tecnologia da Informação que alimentam minha paixão profissional, algumas das obras que me cativaram recentemente incluem: "Sapiens - Uma Breve História da Humanidade", "Fortaleza Digital", "A Biblioteca da Meia-Noite" e outros.</p>
-                        <p>Criei este portfólio para compartilhar não apenas meus projetos profissionais, mas também minha paixão pela leitura. Adoraria trocar experiências sobre livros e conversar mais sobre o que nos inspira. Para conhecer mais sobre mim e minhas leituras, basta clicar no link abaixo e se inscrever em meus canais.</p>
+    <!-- Main Content -->
+    <section style="padding-top: 100px; background-color: var(--bg-light);">
+        <div class="container">
+            <div class="section-header">
+                <h2>Minha História</h2>
+                <p class="section-subtitle">Jornada, Expertise e Propósito</p>
+            </div>
 
-                        <div class="Redes-sociais">
-                            <a href="https://web.facebook.com/otavioaugust" target="_blank" rel="noopener noreferrer">
-                                <i class="fab fa-facebook-f"></i></a>
-                            <a href="https://www.instagram.com/otavioaugust/" target="_blank" rel="noopener noreferrer">
-                                <i class="fab fa-instagram"></i></a>
-                            <a href="https://twitter.com/0tavioaugust" target="_blank" rel="noopener noreferrer">
-                                <i class="fab fa-twitter"></i></a>
-                            <a href="https://www.youtube.com/@otavioaugust" target="_blank" rel="noopener noreferrer">
-                                <i class="fab fa-youtube"></i></a>
-                            <a href="https://www.linkedin.com/in/otavioaugust" target="_blank" rel="noopener noreferrer">
-                                <i class="fab fa-linkedin-in"></i></a>
-                            <a href="https://github.com/otavioaugust1" target="_blank" rel="noopener noreferrer">
-                                <i class="fab fa-github"></i></a>
-                            <a href="http://lattes.cnpq.br/1250109562083947" target="_blank" rel="noopener noreferrer">
-                                <i class="fa-solid fa-head-side-virus"></i></a>
-                            <a href="https://www.kooapp.com/profile/otavioaugust" target="_blank" rel="noopener noreferrer">
-                                <i class="fa-solid fa-crow"></i></a>
-                            <a href="https://otavioaugust-guia.notion.site/7f195bc8a9f14787b12323677fa605b1?v=9c422ca372f94b5ba5546699b7f5c319&pvs=4" target="_blank" rel="noopener noreferrer">
-                                <i class="fa-solid fa-book-open"></i></a>
-                        </div>
-                        <a name="contatos"></a>
-                        <p>Agora se você quer mandar uma mensagem para mim, é só clicar no botão abaixo:</p>
-                        <a href="mailto:otavioaugust@gmail.com?subject=Quero falar com você&body=Corpo do e-mail"
-                            class="btn btn-primary">Enviar e-mail</a>
+            <!-- Hero Summary -->
+            <div class="about-content" style="margin-bottom: 4rem;">
+                <div class="about-text">
+                    <h3 style="color: var(--primary-color); margin-bottom: 1.5rem;">Quem Sou Eu?</h3>
+                    <p style="color: var(--text-light); font-size: 1.1rem; line-height: 1.8; margin-bottom: 1rem;">
+                        <strong>Sou um aprendiz silencioso, que prefere resolver do que falar.</strong> Não sou "positivo" no sentido tradicional — 
+                        mas sou curioso, persistente e acredito que até os problemas têm uma lógica a ser decifrada.
+                    </p>
+                    <p style="color: var(--text-light); font-size: 1.1rem; line-height: 1.8; margin-bottom: 1rem;">
+                        Com 17 anos dedicados à gestão em saúde pública e transformação digital, sou atualmente <strong>Assessor Técnico no DEEQAE</strong> 
+                        (Departamento de Estratégias para a Expansão e a Qualificação da Atenção Especializada) do Ministério da Saúde, 
+                        um departamento criado em maio de 2025 com a missão de reduzir o tempo de espera por consultas e procedimentos especializados no SUS.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Journey Timeline -->
+            <div style="background: white; padding: 3rem; border-radius: 15px; box-shadow: var(--shadow); margin-bottom: 3rem;">
+                <h3 style="color: var(--text-dark); margin-bottom: 2rem; font-size: 1.5rem;">
+                    <i class="fas fa-timeline"></i> Minha Jornada Profissional
+                </h3>
+
+                <div style="position: relative; padding-left: 2rem;">
+                    <div style="position: absolute; left: 0; top: 0; width: 2px; height: 100%; background: var(--primary-color);"></div>
+
+                    <div style="margin-bottom: 2.5rem; padding: 1.5rem; background: var(--bg-light); border-radius: 10px;">
+                        <h4 style="color: var(--primary-color); margin-bottom: 0.5rem;">2025 - Presente</h4>
+                        <p style="font-weight: 600; color: var(--text-dark); margin-bottom: 0.5rem;">
+                            Assessor Técnico | DEEQAE / Ministério da Saúde
+                        </p>
+                        <p style="color: var(--text-light); font-size: 0.95rem;">
+                            Coordenação do programa "Agora tem Especialistas" com foco em redução de tempo de espera e estratégias baseadas em dados 
+                            para expansão do acesso à atenção especializada.
+                        </p>
+                    </div>
+
+                    <div style="margin-bottom: 2.5rem; padding: 1.5rem; background: var(--bg-light); border-radius: 10px;">
+                        <h4 style="color: var(--primary-color); margin-bottom: 0.5rem;">2015-2025 | ~10 anos</h4>
+                        <p style="font-weight: 600; color: var(--text-dark); margin-bottom: 0.5rem;">
+                            DRAC - Departamento de Regulação, Avaliação e Controle
+                        </p>
+                        <p style="color: var(--text-light); font-size: 0.95rem; margin-bottom: 1rem;">
+                            Pilares de trabalho:
+                        </p>
+                        <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.5rem;">
+                            <li style="color: var(--text-light); padding-left: 1.5rem; position: relative;">
+                                <span style="position: absolute; left: 0; color: var(--primary-color); font-weight: 700;">✓</span>
+                                Líder da equipe desenvolvedora do <strong>e-SUS Regulação</strong> — sistema nacional de regulação
+                            </li>
+                            <li style="color: var(--text-light); padding-left: 1.5rem; position: relative;">
+                                <span style="position: absolute; left: 0; color: var(--primary-color); font-weight: 700;">✓</span>
+                                Autor do <strong>Manual e-SUS Regulação v1.0</strong> (publicado agosto 2024)
+                            </li>
+                            <li style="color: var(--text-light); padding-left: 1.5rem; position: relative;">
+                                <span style="position: absolute; left: 0; color: var(--primary-color); font-weight: 700;">✓</span>
+                                Desenvolvimento de <strong>BI-SISREG</strong> e <strong>API-SISREG</strong> para inteligência de dados
+                            </li>
+                            <li style="color: var(--text-light); padding-left: 1.5rem; position: relative;">
+                                <span style="position: absolute; left: 0; color: var(--primary-color); font-weight: 700;">✓</span>
+                                Palestrante SISREG — capacitação de gestores do SUS
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div style="margin-bottom: 2.5rem; padding: 1.5rem; background: var(--bg-light); border-radius: 10px;">
+                        <h4 style="color: var(--primary-color); margin-bottom: 0.5rem;">Educação & Certificações</h4>
+                        <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.8rem;">
+                            <li style="color: var(--text-light); padding-left: 1.5rem; position: relative;">
+                                <span style="position: absolute; left: 0; color: var(--primary-color); font-weight: 700;">✓</span>
+                                <strong>Graduação:</strong> Administração
+                            </li>
+                            <li style="color: var(--text-light); padding-left: 1.5rem; position: relative;">
+                                <span style="position: absolute; left: 0; color: var(--primary-color); font-weight: 700;">✓</span>
+                                <strong>Pós-Graduação:</strong> Micropolítica da Gestão e Trabalho em Saúde (UFF)
+                            </li>
+                            <li style="color: var(--text-light); padding-left: 1.5rem; position: relative;">
+                                <span style="position: absolute; left: 0; color: var(--primary-color); font-weight: 700;">✓</span>
+                                <strong>Em Formação:</strong> Cientista de Dados (previsão: 2026)
+                            </li>
+                            <li style="color: var(--text-light); padding-left: 1.5rem; position: relative;">
+                                <span style="position: absolute; left: 0; color: var(--primary-color); font-weight: 700;">✓</span>
+                                <strong>Currículo Lattes:</strong> <a href="http://lattes.cnpq.br/1250109562083947" target="_blank" style="color: var(--primary-color); text-decoration: none;">http://lattes.cnpq.br/1250109562083947</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </section>
-    </div>
 
-    <footer class="bg-light text-center">
+            <!-- Core Values -->
+            <div class="skills" style="padding: 0; margin-bottom: 3rem; border-radius: 15px;">
+                <div style="padding: 3rem;">
+                    <h3 style="color: white; margin-bottom: 2rem; font-size: 1.5rem;">
+                        <i class="fas fa-lightbulb"></i> Meus Pilares
+                    </h3>
+
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem;">
+                        <div style="background-color: rgba(255, 255, 255, 0.1); padding: 1.5rem; border-radius: 10px; border: 1px solid rgba(255, 255, 255, 0.2);">
+                            <h4 style="margin-bottom: 1rem; color: var(--primary-color);">
+                                <i class="fas fa-cogs"></i> Automatização & Otimização
+                            </h4>
+                            <p style="color: rgba(255, 255, 255, 0.9); font-size: 0.95rem;">
+                                Transformar tarefas manuais em processos eficientes e escaláveis
+                            </p>
+                        </div>
+
+                        <div style="background-color: rgba(255, 255, 255, 0.1); padding: 1.5rem; border-radius: 10px; border: 1px solid rgba(255, 255, 255, 0.2);">
+                            <h4 style="margin-bottom: 1rem; color: var(--primary-color);">
+                                <i class="fas fa-database"></i> Data-Driven Decisions
+                            </h4>
+                            <p style="color: rgba(255, 255, 255, 0.9); font-size: 0.95rem;">
+                                Dados bem aplicados salvam vidas e transformam organizações
+                            </p>
+                        </div>
+
+                        <div style="background-color: rgba(255, 255, 255, 0.1); padding: 1.5rem; border-radius: 10px; border: 1px solid rgba(255, 255, 255, 0.2);">
+                            <h4 style="margin-bottom: 1rem; color: var(--primary-color);">
+                                <i class="fas fa-heart"></i> Impacto Social
+                            </h4>
+                            <p style="color: rgba(255, 255, 255, 0.9); font-size: 0.95rem;">
+                                Tecnologia deve servir à equidade e fortalecer políticas públicas
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Expertise Details -->
+            <div style="background: white; padding: 3rem; border-radius: 15px; box-shadow: var(--shadow); margin-bottom: 3rem;">
+                <h3 style="color: var(--text-dark); margin-bottom: 2rem; font-size: 1.5rem;">
+                    <i class="fas fa-star"></i> Áreas de Expertise
+                </h3>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
+                    <div>
+                        <h4 style="color: var(--primary-color); margin-bottom: 1rem;">Automação & Scripts</h4>
+                        <ul style="list-style: none; color: var(--text-light);">
+                            <li style="padding: 0.5rem 0;">✓ Python (Automação & Data Science)</li>
+                            <li style="padding: 0.5rem 0;">✓ Bots consolidadores de dados</li>
+                            <li style="padding: 0.5rem 0;">✓ Web scraping & APIs</li>
+                            <li style="padding: 0.5rem 0;">✓ Validação de conformidade de portarias</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4 style="color: var(--primary-color); margin-bottom: 1rem;">Sistemas & Regulação</h4>
+                        <ul style="list-style: none; color: var(--text-light);">
+                            <li style="padding: 0.5rem 0;">✓ e-SUS Regulação (líder técnico)</li>
+                            <li style="padding: 0.5rem 0;">✓ SISREG (sistema nacional)</li>
+                            <li style="padding: 0.5rem 0;">✓ Interoperabilidade de sistemas</li>
+                            <li style="padding: 0.5rem 0;">✓ Mapeamento de processos SUS</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4 style="color: var(--primary-color); margin-bottom: 1rem;">Análise & BI</h4>
+                        <ul style="list-style: none; color: var(--text-light);">
+                            <li style="padding: 0.5rem 0;">✓ Pandas, NumPy, Matplotlib</li>
+                            <li style="padding: 0.5rem 0;">✓ Criação de dashboards (Power BI)</li>
+                            <li style="padding: 0.5rem 0;">✓ Mineração e limpeza de dados</li>
+                            <li style="padding: 0.5rem 0;">✓ Storytelling com dados</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4 style="color: var(--primary-color); margin-bottom: 1rem;">Desenvolvimento Web</h4>
+                        <ul style="list-style: none; color: var(--text-light);">
+                            <li style="padding: 0.5rem 0;">✓ HTML5 / CSS3 / JavaScript</li>
+                            <li style="padding: 0.5rem 0;">✓ Design responsivo</li>
+                            <li style="padding: 0.5rem 0;">✓ APIs REST</li>
+                            <li style="padding: 0.5rem 0;">✓ Git & GitHub</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4 style="color: var(--primary-color); margin-bottom: 1rem;">Gestão & Liderança</h4>
+                        <ul style="list-style: none; color: var(--text-light);">
+                            <li style="padding: 0.5rem 0;">✓ Coordenação de equipes técnicas</li>
+                            <li style="padding: 0.5rem 0;">✓ Educação & capacitação (cursos SISREG)</li>
+                            <li style="padding: 0.5rem 0;">✓ Estratégia baseada em dados</li>
+                            <li style="padding: 0.5rem 0;">✓ Políticas públicas (SUS)</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4 style="color: var(--primary-color); margin-bottom: 1rem;">Domínio de Saúde</h4>
+                        <ul style="list-style: none; color: var(--text-light);">
+                            <li style="padding: 0.5rem 0;">✓ Sistema Único de Saúde (SUS)</li>
+                            <li style="padding: 0.5rem 0;">✓ Regulação do acesso à saúde</li>
+                            <li style="padding: 0.5rem 0;">✓ Saúde pública e gestão</li>
+                            <li style="padding: 0.5rem 0;">✓ Portarias e legislação sanitária</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Localização -->
+            <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 3rem; border-radius: 15px; text-align: center; margin-bottom: 3rem;">
+                <h3 style="margin-bottom: 1rem; font-size: 1.8rem;">
+                    <i class="fas fa-map-marker-alt"></i> Localização
+                </h3>
+                <p style="font-size: 1.1rem; margin-bottom: 0.5rem;">Brasília, DF - Brasil</p>
+                <p style="font-size: 0.95rem; opacity: 0.9;">
+                    Morando em Brasília há 11 anos | Originário de Pindamonhangaba-SP 🧡
+                </p>
+                <p style="font-size: 0.9rem; margin-top: 1rem; opacity: 0.8;">
+                    "A tecnologia é apenas uma ferramenta. O verdadeiro diferencial está em quem sabe usá-la 
+                    para transformar realidades."
+                </p>
+            </div>
+
+            <!-- CTA -->
+            <div style="text-align: center; padding: 2rem; background: white; border-radius: 15px; box-shadow: var(--shadow);">
+                <h3 style="color: var(--text-dark); margin-bottom: 1.5rem;">Quer colaborar?</h3>
+                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                    <a href="mailto:otavioaugust@gmail.com" class="btn btn-primary">
+                        <i class="fas fa-envelope"></i> Enviar E-mail
+                    </a>
+                    <a href="https://www.linkedin.com/in/otavioaugust" target="_blank" class="btn btn-secondary">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                    <a href="https://github.com/otavioaugust1" target="_blank" class="btn btn-secondary">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
         <div class="container">
-            <p class="end">CopyRight By @otavioaugust - CNPJ: 47.440.092/0001-94</p>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>OTAVIO AUGUSTO</h4>
+                    <p>Transformando dados em estratégias para um SUS mais eficiente e humano.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="../index.html">Início</a></li>
+                        <li><a href="../index.html#sobre">Sobre</a></li>
+                        <li><a href="../index.html#projetos">Projetos</a></li>
+                        <li><a href="../index.html#contatos">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Redes Sociais</h4>
+                    <ul>
+                        <li><a href="https://github.com/otavioaugust1" target="_blank">GitHub</a></li>
+                        <li><a href="https://www.linkedin.com/in/otavioaugust" target="_blank">LinkedIn</a></li>
+                        <li><a href="https://twitter.com/0tavioaugust" target="_blank">Twitter</a></li>
+                        <li><a href="https://www.instagram.com/otavioaugust/" target="_blank">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Otavio Augusto. Todos os direitos reservados. CNPJ: 47.440.092/0001-94</p>
+            </div>
         </div>
     </footer>
 
-    <!-- Bootstrap JS e Popper.js (Necessários para os componentes Bootstrap) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../script/script.js"></script>
 </body>
 </html>
