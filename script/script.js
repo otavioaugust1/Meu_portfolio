@@ -5,6 +5,40 @@ const GITHUB_USERNAME = 'otavioaugust1';
 const GITHUB_API = 'https://api.github.com';
 
 // ================================
+// Dark Mode Toggle
+// ================================
+(function initTheme() {
+    const htmlEl = document.documentElement;
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    htmlEl.setAttribute('data-theme', savedTheme);
+
+    const darkIcon = document.getElementById('darkIcon');
+    if (darkIcon) {
+        darkIcon.className = savedTheme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+    }
+})();
+
+function applyTheme(theme) {
+    const htmlEl = document.documentElement;
+    htmlEl.setAttribute('data-theme', theme);
+    const darkIcon = document.getElementById('darkIcon');
+    if (darkIcon) {
+        darkIcon.className = theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+    }
+    localStorage.setItem('theme', theme);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const darkToggle = document.getElementById('darkToggle');
+    if (darkToggle) {
+        darkToggle.addEventListener('click', () => {
+            const current = document.documentElement.getAttribute('data-theme');
+            applyTheme(current === 'dark' ? 'light' : 'dark');
+        });
+    }
+});
+
+// ================================
 // Mobile Menu Toggle
 // ================================
 const navToggle = document.getElementById('navToggle');

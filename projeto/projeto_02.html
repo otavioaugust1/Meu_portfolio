@@ -1,191 +1,234 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="img/Icon.png" />
-    <link rel="stylesheet" href="../CSS/style.css">
-    <link rel="stylesheet" href="../CSS/tab.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <title>Previsão do Campeão da Copa do Qatar - otavioaugust</title>
-</head>
+    <meta name="description" content="Previsão do Campeão da Copa do Qatar - Análise com Distribuição de Poisson">
+    <meta name="author" content="Otavio Augusto">
 
+    <link rel="icon" type="image/png" href="../img/Icon.png" />
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <title>Copa do Qatar - Distribuição de Poisson | Otavio Augusto</title>
+</head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="#">Portfo<span>lio</span></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fas fa-cog"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../index.html">Início</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../asset/sobre.html">Sobre mim</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../asset/projetos.html">Projetos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../index.html#contatos">Contato</a>
-                    </li>
-                </ul>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="navbar-brand">
+                <a href="../index.html">OTAVIO<span>.</span></a>
             </div>
-            <a href="#contatos" class="btn btn-primary">e-mail</a>
+            <button class="nav-toggle" id="navToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="../index.html#home" class="nav-link">Início</a></li>
+                <li><a href="../index.html#sobre" class="nav-link">Sobre</a></li>
+                <li><a href="../index.html#skills" class="nav-link">Skills</a></li>
+                <li><a href="../index.html#projetos" class="nav-link">Projetos</a></li>
+                <li><a href="../index.html#contatos" class="nav-link">Contato</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="dark-toggle" id="darkToggle" title="Alternar modo escuro">
+                    <i class="fas fa-moon" id="darkIcon"></i>
+                </button>
+                <a href="mailto:otavioaugust@gmail.com" class="nav-cta">Enviar E-mail</a>
+            </div>
         </div>
     </nav>
 
-    <section>
-        <a name="projetos"></a>
-        <div class="container">
-            <div class="Text-sobre">
-                <h2>Meus Projetos</h2>
-                <h5>"Projetos que desenvolvi ao longo da minha jornada de desenvolvimento <span>pessoal</span> e
-                    <span>profissional.</span>
-                </h5>
+    <!-- Project Hero -->
+    <section class="hero" style="min-height: 40vh; padding: 120px 20px 60px;">
+        <div class="hero-content" style="grid-template-columns: 1fr; text-align: center;">
+            <div class="hero-text" style="max-width: 800px; margin: 0 auto;">
+                <div class="hero-badge"><i class="fas fa-futbol"></i> Data Science · Estatística</div>
+                <h1 class="hero-title">Previsão do Campeão<br><span class="highlight">Copa do Qatar 2022</span></h1>
+                <p class="hero-subtitle" style="font-size: 1rem;">$ python poisson_model.py --copa qatar_2022</p>
+                <p class="hero-description">Modelagem estatística com Distribuição de Poisson para simular todas as partidas e prever o campeão mundial.</p>
+                <div class="hero-buttons" style="justify-content: center;">
+                    <a href="https://github.com/otavioaugust1/FLAI_Data-Science_COPA_DO_MUNDO_2022" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                        <i class="fab fa-github"></i> Ver no GitHub
+                    </a>
+                    <a href="../asset/projetos.html" class="btn btn-secondary">
+                        <i class="fas fa-arrow-left"></i> Voltar aos Projetos
+                    </a>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Adicionando seção para o projeto-->
-    <section>
-        <div class="container">
-            <h3>Previsão do Campeão da Copa do Qatar</h3>
-            <p>
-                A variação no futebol é fascinante... Modelar não é apenas representar a realidade, mas sim transmitir
-                uma equação útil. Tentamos quantificar as possíveis variações nas partidas de futebol, colocando assim
-                os intricados problemas do jogo em detalhes minuciosos. Ao quantificar todas as incertezas possíveis no
-                futebol, buscamos prever os resultados de todos os jogos na Copa do Mundo.
-            </p>
-            <!-- Adicione uma imagem ou gif -->
-            <img src="../img/projeto_02.jpeg" alt="Imagem do Projeto">
+    <!-- Project Content -->
+    <section style="padding: 60px 0; background-color: var(--bg-white);">
+        <div class="container" style="max-width: 900px;">
 
-            <p></p>
-            <a href="https://github.com/otavioaugust1/FLAI_Data-Science_COPA_DO_MUNDO_2022" target="_blank"
-                rel="noopener noreferrer">
-                <button type="button">Ler Mais - CODIGO FONTE NO GITHUB! </button>
-            </a>
-            <a href="../asset/projetos.html">
-                <button type="button">Voltar</button>
-            </a>
-            <p></p>
+            <!-- Overview -->
+            <div style="margin-bottom: 3rem;">
+                <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1.5rem;">
+                    <div style="width: 4px; height: 2rem; background: var(--primary-color); border-radius: 2px;"></div>
+                    <h2 style="color: var(--text-dark); font-size: 1.6rem;">Visão Geral do Projeto</h2>
+                </div>
+                <p style="color: var(--text-light); line-height: 1.9; font-size: 1.05rem; margin-bottom: 1rem;">
+                    A variação no futebol é fascinante... Modelar não é apenas representar a realidade, mas sim transmitir
+                    uma equação útil. Tentamos quantificar as possíveis variações nas partidas de futebol, colocando assim
+                    os intricados problemas do jogo em detalhes minuciosos.
+                </p>
+                <p style="color: var(--text-light); line-height: 1.9; font-size: 1.05rem;">
+                    Ao quantificar todas as incertezas possíveis no futebol, buscamos prever os resultados de todos os jogos na Copa do Mundo do Qatar 2022.
+                </p>
 
+                <!-- Image -->
+                <div style="margin: 2rem 0; border-radius: 12px; overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow);">
+                    <img src="../img/projeto_02.jpeg" alt="Copa do Qatar - Análise de Dados" style="width: 100%; display: block;">
+                </div>
+            </div>
 
-            <h4>Como Contribuir</h4>
-            <p>
-                Se este projeto é de código aberto e aceita contribuições, todo o material, videos, formulas e codigo
-                fonte estão disponiveis no meu GitHub.
-            </p>
+            <!-- Metodologia -->
+            <div style="margin-bottom: 3rem;">
+                <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1.5rem;">
+                    <div style="width: 4px; height: 2rem; background: var(--primary-color); border-radius: 2px;"></div>
+                    <h2 style="color: var(--text-dark); font-size: 1.6rem;">Metodologia</h2>
+                </div>
 
-            <!-- Adicione uma seção de história do projeto -->
-            <h4>História do Projeto</h4>
-            <p>
-                Eu queria responder duas questões:
-            </p>
+                <!-- Questão 1 -->
+                <div style="background: var(--bg-light); border: 1px solid var(--border-color); border-radius: 12px; padding: 2rem; margin-bottom: 1.5rem;">
+                    <h3 style="color: var(--primary-color); font-size: 1.1rem; margin-bottom: 1rem; font-family: var(--font-mono);">
+                        <i class="fas fa-question-circle"></i> Questão 1: Como modelar a distribuição de gols?
+                    </h3>
+                    <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1rem;">
+                        Utilizamos a <strong style="color: var(--text-dark);">Distribuição de Poisson</strong> para quantificar a probabilidade de marcar gols.
+                        Essa escolha é respaldada por sua eficácia em dados de futebol para a contagem de gols em partidas.
+                    </p>
+                    <div style="margin: 1.5rem 0; border-radius: 8px; overflow: hidden; border: 1px solid var(--border-color);">
+                        <img src="../img/projeto_02a.png" alt="Fórmula da Distribuição de Poisson" style="width: 100%; display: block; background: white; padding: 1rem;">
+                    </div>
+                    <div style="display: flex; gap: 2rem; flex-wrap: wrap; margin-top: 1rem;">
+                        <span style="color: var(--text-dark); font-family: var(--font-mono); font-size: 0.9rem;"><strong>K</strong> — número de ocorrências</span>
+                        <span style="color: var(--text-dark); font-family: var(--font-mono); font-size: 0.9rem;"><strong>e</strong> — número de Euler</span>
+                    </div>
+                    <p style="color: var(--text-light); line-height: 1.8; margin-top: 1rem;">
+                        Calculamos a probabilidade de cada gol multiplicando as chances de um time marcar tantos gols pela
+                        probabilidade do outro time marcar a mesma quantidade. A probabilidade de empate em uma partida é
+                        a soma das probabilidades de empate em cada resultado.
+                    </p>
+                </div>
 
-            <h6>Questão 1: Como modelar a distribuição de gols das equipes em um jogo:</h6>
-            <p>
-                Utilizamos a Distribuição de Poisson para quantificar a probabilidade de marcar gols. Essa escolha é
-                respaldada por sua eficácia em dados de futebol para a contagem de gols em partidas.
-            </p>
+                <!-- Questão 2 -->
+                <div style="background: var(--bg-light); border: 1px solid var(--border-color); border-radius: 12px; padding: 2rem; margin-bottom: 1.5rem;">
+                    <h3 style="color: var(--primary-color); font-size: 1.1rem; margin-bottom: 1rem; font-family: var(--font-mono);">
+                        <i class="fas fa-question-circle"></i> Questão 2: Como calcular a média de gols por equipe?
+                    </h3>
+                    <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1rem;">
+                        A partir da média histórica de gols na Copa do Mundo e considerando alguns fatores,
+                        estabelecemos a média esperada de gols para esta Copa como <strong style="color: var(--primary-color); font-family: var(--font-mono);">2.75</strong>.
+                    </p>
+                    <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 8px; padding: 1rem; font-family: var(--font-mono); font-size: 1.1rem; color: var(--primary-color); margin-bottom: 1rem;">
+                        m = m¹ + m²
+                    </div>
+                    <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 0.8rem;">
+                        Onde <code style="background: var(--bg-light); padding: 0.2rem 0.4rem; border-radius: 4px; color: var(--primary-color);">m</code> é a média total.
+                        Para cada equipe, determinamos a média restante usando o fator de força de cada equipe.
+                    </p>
+                    <div style="display: flex; gap: 2rem; flex-wrap: wrap;">
+                        <span style="color: var(--text-dark); font-family: var(--font-mono); font-size: 0.9rem;"><strong>f¹</strong> — força da Seleção 1</span>
+                        <span style="color: var(--text-dark); font-family: var(--font-mono); font-size: 0.9rem;"><strong>f²</strong> — força da Seleção 2</span>
+                    </div>
+                    <p style="color: var(--text-light); line-height: 1.8; margin-top: 1rem;">
+                        Utilizando o ranking da FIFA, convertemos os valores para um intervalo (a, 1), onde 1 representa a seleção mais forte.
+                    </p>
+                </div>
+            </div>
 
-            <h6>Onde:</h6>
-            <img src="../img/projeto_02a.png">
-            <strong>K</strong> - número de ocorrências;
-            <strong>e</strong> - número de Euler.
-            <p>
-                Calculamos a probabilidade de cada gol multiplicando as chances de um time marcar tantos gols pela
-                probabilidade do outro time marcar a mesma quantidade. A probabilidade de empate em uma partida é a soma
-                das probabilidades de empate em cada resultado, enquanto as vitórias são calculadas somando as
-                probabilidades de suas combinações de pontos.
-            </p>
+            <!-- Resultado -->
+            <div style="margin-bottom: 3rem;">
+                <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1.5rem;">
+                    <div style="width: 4px; height: 2rem; background: var(--primary-color); border-radius: 2px;"></div>
+                    <h2 style="color: var(--text-dark); font-size: 1.6rem;">Resultado</h2>
+                </div>
+                <div style="background: var(--bg-light); border: 1px solid var(--border-color); border-left: 4px solid var(--primary-color); border-radius: 12px; padding: 2rem; margin-bottom: 1.5rem;">
+                    <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1rem;">
+                        Com essa modelagem, os grandes favoritos para a COPA do Mundo no Qatar de 2022 eram:
+                    </p>
+                    <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 1.5rem;">
+                        <span style="background: rgba(27,185,31,0.15); color: var(--primary-color); padding: 0.5rem 1.2rem; border-radius: 50px; font-weight: 600; border: 1px solid rgba(27,185,31,0.3);">🇧🇷 Brasil</span>
+                        <span style="background: rgba(57,130,246,0.1); color: var(--text-dark); padding: 0.5rem 1.2rem; border-radius: 50px; font-weight: 600; border: 1px solid var(--border-color);">🇧🇪 Bélgica</span>
+                        <span style="background: rgba(57,130,246,0.1); color: var(--text-dark); padding: 0.5rem 1.2rem; border-radius: 50px; font-weight: 600; border: 1px solid var(--border-color);">🇦🇷 Argentina</span>
+                    </div>
+                    <p style="color: var(--primary-color); font-weight: 700; font-size: 1.1rem;">
+                        <i class="fas fa-trophy"></i> A ARGENTINA foi a CAMPEÃ da Copa do Mundo de 2022, confirmando minha análise!
+                    </p>
+                </div>
+                <div style="margin: 2rem 0; border-radius: 12px; overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow);">
+                    <img src="../img/projeto_02b.png" alt="Resultado da Análise - Copa Qatar" style="width: 100%; display: block;">
+                </div>
+            </div>
 
-            <h6>Questão 2: Como calcular o número médio de gols por equipe por jogo: </h6>
-            <p>
-                A partir da média histórica de gols na Copa do Mundo e considerando alguns fatores, estabelecemos a
-                média
-                esperada de gols para esta Copa como 2,75.
-            </p>
-            <p><strong>m = m¹ + m²</strong></p>
-            <p>
-                Onde m é a média total.
+            <!-- Stack técnico -->
+            <div style="margin-bottom: 3rem;">
+                <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1.5rem;">
+                    <div style="width: 4px; height: 2rem; background: var(--primary-color); border-radius: 2px;"></div>
+                    <h2 style="color: var(--text-dark); font-size: 1.6rem;">Stack Técnico</h2>
+                </div>
+                <div style="display: flex; flex-wrap: wrap; gap: 0.8rem;">
+                    <span class="project-tag" style="font-size: 0.95rem;">Python</span>
+                    <span class="project-tag" style="font-size: 0.95rem;">Pandas</span>
+                    <span class="project-tag" style="font-size: 0.95rem;">NumPy</span>
+                    <span class="project-tag" style="font-size: 0.95rem;">SciPy</span>
+                    <span class="project-tag" style="font-size: 0.95rem;">Matplotlib</span>
+                    <span class="project-tag" style="font-size: 0.95rem;">Distribuição de Poisson</span>
+                    <span class="project-tag" style="font-size: 0.95rem;">Ranking FIFA</span>
+                    <span class="project-tag" style="font-size: 0.95rem;">Jupyter Notebook</span>
+                </div>
+            </div>
 
-                Agora, para cada equipe, determinamos a média restante usando o fator de força de cada equipe.</p>
-
-            <h6>Onde:</h6>
-            <p><strong>f¹ - força da Seleção 1 </strong></p>
-            <p><strong>f² - força da Seleção 2</strong> </p>
-            <p>Utilizando o ranking da FIFA, convertemos os valores para um intervalo (a, 1), onde 1 representa a
-                escolha mais forte.
-            </p>
-
-            <h6>Modelo para a Copa do Mundo:</h6>
-            <p>
-                Com essa modelagem, os grandes favoritos para a COPA do Mundo no Qatar de 2022 são: BRASIL, BÉLGICA ou
-                ARGENTINA.
-            </p>
-            <p>
-                A <strong>ARGENTINA</strong> foi a CAMPEÃ da Copa do Mundo de 2022, confirmando minha analise.
-            </p>
-
-            <img src="../img/projeto_02b.png">
-            <p></p>
-
-
-
-
-
+            <!-- CTA -->
+            <div style="text-align: center; padding: 2rem; background: var(--bg-light); border-radius: 12px; border: 1px solid var(--border-color);">
+                <p style="color: var(--text-light); margin-bottom: 1.5rem;">Quer explorar o código fonte completo?</p>
+                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                    <a href="https://github.com/otavioaugust1/FLAI_Data-Science_COPA_DO_MUNDO_2022" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                        <i class="fab fa-github"></i> Código no GitHub
+                    </a>
+                    <a href="../asset/projetos.html" class="btn btn-secondary">
+                        <i class="fas fa-th-large"></i> Todos os Projetos
+                    </a>
+                </div>
+            </div>
 
         </div>
     </section>
 
-    <!-- Adicionando a seção de Contato no final de cada projeto -->
-    <div class="me-contate">
-        <p>Você quer mandar uma mensagem para mim, é só clicar no botão abaixo:</p>
-        <a href="mailto:otavioaugust@gmail.com?subject=Quero falar com você&body=Corpo do e-mail">
-            <button>Enviar e-mail</button>
-        </a>
-    </div>
-
-    <!--Rodapé--->
-    <footer class="bg-light text-center">
+    <!-- Footer -->
+    <footer class="footer">
         <div class="container">
-            <h6>Otavio Augusto</h6>
-            <p>Para me conhecer mais - por favor clique no link abaixo para se inscrever nos meus canais</p>
-            <div class="Redes-sociais">
-                <a href="https://web.facebook.com/otavioaugust" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-facebook-f"></i></a>
-                <a href="https://www.instagram.com/otavioaugust/" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-instagram"></i></a>
-                <a href="https://twitter.com/0tavioaugust" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-twitter"></i></a>
-                <a href="https://www.youtube.com/@otavioaugust" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-youtube"></i></a>
-                <a href="https://www.linkedin.com/in/otavioaugust" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-linkedin-in"></i></a>
-                <a href="https://github.com/otavioaugust1" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-github"></i></a>
-                <a href="http://lattes.cnpq.br/1250109562083947" target="_blank" rel="noopener noreferrer">
-                    <i class="fas fa-head-side-virus"></i></a>
-                <a href="https://www.kooapp.com/profile/otavioaugust" target="_blank" rel="noopener noreferrer">
-                    <i class="fas fa-crow"></i></a>
-                <a href="https://otavioaugust-guia.notion.site/7f195bc8a9f14787b12323677fa605b1?v=9c422ca372f94b5ba5546699b7f5c319&pvs=4" target="_blank" rel="noopener noreferrer">
-                    <i class="fa-solid fa-book-open"></i></a>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>OTAVIO<span style="color: var(--primary-color);">.</span></h4>
+                    <p>Cientista de Dados especializado em saúde pública. Transformando dados em decisões para o SUS.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="../index.html">Início</a></li>
+                        <li><a href="../asset/sobre.html">Sobre Mim</a></li>
+                        <li><a href="../asset/projetos.html">Projetos</a></li>
+                        <li><a href="../index.html#contatos">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <ul>
+                        <li><a href="mailto:otavioaugust@gmail.com"><i class="fas fa-envelope"></i> otavioaugust@gmail.com</a></li>
+                        <li><a href="https://github.com/otavioaugust1" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a></li>
+                        <li><a href="https://www.linkedin.com/in/otavioaugust" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                    </ul>
+                </div>
             </div>
-            <p class="end">CopyRight By @otavioaugust - CNPJ: 47.440.092/0001-94</p>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Otavio Augusto. Feito com <i class="fas fa-heart" style="color: var(--primary-color);"></i> e dados.</p>
+            </div>
         </div>
     </footer>
 
+    <script src="../script/script.js"></script>
 </body>
-<!-- Adicione scripts para carregar os vídeos do YouTube -->
-<script src="https://www.youtube.com/iframe_api"></script>
-<script src="../script/script.js"></script>
-
 </html>

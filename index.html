@@ -30,7 +30,12 @@
                 <li><a href="#projetos" class="nav-link">Projetos</a></li>
                 <li><a href="#contatos" class="nav-link">Contato</a></li>
             </ul>
-            <a href="mailto:otavioaugust@gmail.com" class="nav-cta">Enviar E-mail</a>
+            <div class="nav-actions">
+                <button class="dark-toggle" id="darkToggle" title="Alternar modo escuro">
+                    <i class="fas fa-moon" id="darkIcon"></i>
+                </button>
+                <a href="mailto:otavioaugust@gmail.com" class="nav-cta">Enviar E-mail</a>
+            </div>
         </div>
     </nav>
 
@@ -38,8 +43,9 @@
     <section class="hero" id="home">
         <div class="hero-content">
             <div class="hero-text">
+                <div class="hero-badge"><i class="fas fa-chart-line"></i> Cientista de Dados &amp; Analista em Saúde</div>
                 <h1 class="hero-title">Olá, eu sou <span class="highlight">Otavio Augusto</span></h1>
-                <p class="hero-subtitle">Consultor Técnico | Cientista de Dados | Desenvolvedor Entusiasta</p>
+                <p class="hero-subtitle">$ python analise_dados.py --setor saude</p>
                 <p class="hero-description">
                     17 anos transformando dados em estratégias para o SUS. Apaixonado por tecnologia, análise de dados e impacto social.
                 </p>
@@ -56,16 +62,25 @@
             </div>
             <div class="hero-stats">
                 <div class="stat-card">
-                    <span class="stat-number" id="repoCount">0</span>
-                    <span class="stat-label">Repositórios</span>
+                    <div class="stat-card-left">
+                        <span class="stat-number" id="repoCount">0</span>
+                        <span class="stat-label">Repositórios Públicos</span>
+                    </div>
+                    <i class="fab fa-github stat-icon"></i>
                 </div>
                 <div class="stat-card">
-                    <span class="stat-number" id="starCount">0</span>
-                    <span class="stat-label">Stars</span>
+                    <div class="stat-card-left">
+                        <span class="stat-number" id="starCount">0</span>
+                        <span class="stat-label">Stars no GitHub</span>
+                    </div>
+                    <i class="fas fa-star stat-icon"></i>
                 </div>
                 <div class="stat-card">
-                    <span class="stat-number">17+</span>
-                    <span class="stat-label">Anos em Saúde</span>
+                    <div class="stat-card-left">
+                        <span class="stat-number">17+</span>
+                        <span class="stat-label">Anos no SUS</span>
+                    </div>
+                    <i class="fas fa-heartbeat stat-icon"></i>
                 </div>
             </div>
         </div>

@@ -1,109 +1,118 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="img/Icon.png" />
-    <link rel="stylesheet" href="../CSS/style.css">
-    <link rel="stylesheet" href="../CSS/tab.css">   
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <title>Previsão do Campeão da Copa do Qatar - otavioaugust</title>   
-</head>
+    <meta name="description" content="Projeto 03 - Otavio Augusto">
+    <meta name="author" content="Otavio Augusto">
 
+    <link rel="icon" type="image/png" href="../img/Icon.png" />
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <title>Projeto 03 | Otavio Augusto</title>
+</head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="#">Portfo<span>lio</span></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fas fa-cog"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../index.html">Início</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../asset/sobre.html">Sobre mim</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../asset/projetos.html">Projetos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../index.html#contatos">Contato</a>
-                    </li>
-                </ul>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="navbar-brand">
+                <a href="../index.html">OTAVIO<span>.</span></a>
             </div>
-            <a href="#contatos" class="btn btn-primary">e-mail</a>
+            <button class="nav-toggle" id="navToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="../index.html#home" class="nav-link">Início</a></li>
+                <li><a href="../index.html#sobre" class="nav-link">Sobre</a></li>
+                <li><a href="../index.html#skills" class="nav-link">Skills</a></li>
+                <li><a href="../index.html#projetos" class="nav-link">Projetos</a></li>
+                <li><a href="../index.html#contatos" class="nav-link">Contato</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="dark-toggle" id="darkToggle" title="Alternar modo escuro">
+                    <i class="fas fa-moon" id="darkIcon"></i>
+                </button>
+                <a href="mailto:otavioaugust@gmail.com" class="nav-cta">Enviar E-mail</a>
+            </div>
         </div>
     </nav>
 
-    <section>
-        <a name="projetos"></a>
-        <div class="container">
-            <!-- ... Conteúdo anterior permanece inalterado ... -->
-
-            <!-- Adicionando o botão voltar -->
-            <button onclick="window.history.back()">Voltar</button>
-        </div>
-    </section>
-
-    <section>
-        <div class="container">
-            <h3>Previsão do Campeão da Copa do Qatar</h3>
-            <!-- ... Conteúdo anterior permanece inalterado ... -->
-
-            <!-- Adicionando vídeos do YouTube -->
-            <div class="youtube-video" data-id="https://www.youtube.com/watch?v=5Q2_2GYiBwM"></div>
-            <div class="youtube-video" data-id="https://www.youtube.com/watch?v=7eCjyJ-8Se4&t=7s"></div>
-            <!-- Adicione mais vídeos conforme necessário -->
-        </div>
-    </section>
-
-        <!-- Adicionando a seção de Contato no final de cada projeto -->
-        <div class="me-contate">
-            <p>Você quer mandar uma mensagem para mim, é só clicar no botão abaixo:</p>
-            <a href="mailto:otavioaugust@gmail.com?subject=Quero falar com você&body=Corpo do e-mail">
-                <button>Enviar e-mail</button>
-            </a>
-        </div>
-    
-        <!--Rodapé--->
-        <footer class="bg-light text-center">
-            <div class="container">
-                <h6>Otavio Augusto</h6>
-                <p>Para me conhecer mais - por favor clique no link abaixo para se inscrever nos meus canais</p>
-                <div class="Redes-sociais">
-                    <a href="https://web.facebook.com/otavioaugust" target="_blank" rel="noopener noreferrer">
-                        <i class="fab fa-facebook-f"></i></a>
-                    <a href="https://www.instagram.com/otavioaugust/" target="_blank" rel="noopener noreferrer">
-                        <i class="fab fa-instagram"></i></a>
-                    <a href="https://twitter.com/0tavioaugust" target="_blank" rel="noopener noreferrer">
-                        <i class="fab fa-twitter"></i></a>
-                    <a href="https://www.youtube.com/@otavioaugust" target="_blank" rel="noopener noreferrer">
-                        <i class="fab fa-youtube"></i></a>
-                    <a href="https://www.linkedin.com/in/otavioaugust" target="_blank" rel="noopener noreferrer">
-                        <i class="fab fa-linkedin-in"></i></a>
-                    <a href="https://github.com/otavioaugust1" target="_blank" rel="noopener noreferrer">
-                        <i class="fab fa-github"></i></a>
-                    <a href="http://lattes.cnpq.br/1250109562083947" target="_blank" rel="noopener noreferrer">
-                        <i class="fas fa-head-side-virus"></i></a>
-                    <a href="https://www.kooapp.com/profile/otavioaugust" target="_blank" rel="noopener noreferrer">
-                        <i class="fas fa-crow"></i></a>
-                    <a href="https://otavioaugust-guia.notion.site/7f195bc8a9f14787b12323677fa605b1?v=9c422ca372f94b5ba5546699b7f5c319&pvs=4" target="_blank" rel="noopener noreferrer">
-                        <i class="fa-solid fa-book-open"></i></a>
+    <!-- Project Hero -->
+    <section class="hero" style="min-height: 35vh; padding: 120px 20px 60px;">
+        <div class="hero-content" style="grid-template-columns: 1fr; text-align: center;">
+            <div class="hero-text" style="max-width: 700px; margin: 0 auto;">
+                <div class="hero-badge"><i class="fas fa-flask"></i> Em Desenvolvimento</div>
+                <h1 class="hero-title">Projeto <span class="highlight">03</span></h1>
+                <p class="hero-subtitle" style="font-size: 1rem;">$ status: em_construcao.py</p>
+                <p class="hero-description">Projeto em desenvolvimento. Em breve mais detalhes sobre este projeto de análise de dados.</p>
+                <div class="hero-buttons" style="justify-content: center;">
+                    <a href="https://github.com/otavioaugust1" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                        <i class="fab fa-github"></i> Acompanhar no GitHub
+                    </a>
+                    <a href="../asset/projetos.html" class="btn btn-secondary">
+                        <i class="fas fa-arrow-left"></i> Voltar aos Projetos
+                    </a>
                 </div>
-                <p class="end">CopyRight By @otavioaugust - CNPJ: 47.440.092/0001-94</p>
             </div>
-        </footer>
+        </div>
+    </section>
 
+    <!-- Content -->
+    <section style="padding: 60px 0; background-color: var(--bg-white);">
+        <div class="container" style="max-width: 900px;">
+            <div style="text-align: center; padding: 4rem 2rem; background: var(--bg-light); border-radius: 16px; border: 1px solid var(--border-color);">
+                <div style="font-size: 4rem; margin-bottom: 1.5rem; color: var(--primary-color);">
+                    <i class="fas fa-chart-network"></i>
+                </div>
+                <h2 style="color: var(--text-dark); margin-bottom: 1rem;">Projeto em Construção</h2>
+                <p style="color: var(--text-light); max-width: 500px; margin: 0 auto 2rem; line-height: 1.8;">
+                    Este projeto está sendo desenvolvido. Acompanhe meu GitHub para atualizações sobre este e outros projetos de ciência de dados.
+                </p>
+                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                    <a href="https://github.com/otavioaugust1" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                        <i class="fab fa-github"></i> Meu GitHub
+                    </a>
+                    <a href="../asset/projetos.html" class="btn btn-secondary">
+                        <i class="fas fa-th-large"></i> Outros Projetos
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>OTAVIO<span style="color: var(--primary-color);">.</span></h4>
+                    <p>Cientista de Dados especializado em saúde pública. Transformando dados em decisões para o SUS.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="../index.html">Início</a></li>
+                        <li><a href="../asset/sobre.html">Sobre Mim</a></li>
+                        <li><a href="../asset/projetos.html">Projetos</a></li>
+                        <li><a href="../index.html#contatos">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <ul>
+                        <li><a href="mailto:otavioaugust@gmail.com"><i class="fas fa-envelope"></i> otavioaugust@gmail.com</a></li>
+                        <li><a href="https://github.com/otavioaugust1" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a></li>
+                        <li><a href="https://www.linkedin.com/in/otavioaugust" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Otavio Augusto. Feito com <i class="fas fa-heart" style="color: var(--primary-color);"></i> e dados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script/script.js"></script>
 </body>
-
-<!-- Adicione scripts para carregar os vídeos do YouTube -->
-<script src="https://www.youtube.com/iframe_api"></script>
-<script src="../script/script.js"></script>
-
 </html>
