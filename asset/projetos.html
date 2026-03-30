@@ -55,28 +55,32 @@
         <div class="container">
             <div class="filter-buttons">
                 <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="saude">🏥 Saúde</button>
                 <button class="filter-btn" data-filter="python">Python</button>
                 <button class="filter-btn" data-filter="data">Data Science</button>
                 <button class="filter-btn" data-filter="web">Web</button>
             </div>
 
-            <!-- Destaque -->
-            <div style="margin-bottom: 3rem;">
-                <h3 style="color: var(--text-dark); margin-bottom: 1.5rem; font-size: 1.3rem; display: flex; align-items: center; gap: 0.5rem;">
-                    <i class="fas fa-star" style="color: var(--primary-color);"></i> Projetos em Destaque
+            <!-- ====== SEÇÃO: PROJETOS DE SAÚDE ====== -->
+            <div style="margin-bottom: 3.5rem;">
+                <h3 style="color: var(--text-dark); margin-bottom: 0.5rem; font-size: 1.4rem; display: flex; align-items: center; gap: 0.6rem;">
+                    <i class="fas fa-heartbeat" style="color: var(--primary-color);"></i> Projetos em Saúde Pública
                 </h3>
+                <p style="color: var(--text-light); margin-bottom: 1.5rem; font-size: 0.95rem;">Soluções desenvolvidas para o ecossistema SUS — regulação, automação, APIs e gestão da atenção especializada.</p>
                 <div class="projects-grid">
 
-                    <!-- Projeto 1 -->
-                    <div class="project-card reveal">
+                    <!-- Saúde 1: Analisador de Filas / OCI -->
+                    <div class="project-card reveal" style="border: 2px solid var(--primary-color); position: relative;">
+                        <div style="position: absolute; top: 10px; right: 10px; background: var(--primary-color); color: #000; font-size: 0.65rem; font-weight: 700; padding: 2px 8px; border-radius: 20px;">⭐ DESTAQUE</div>
                         <div class="project-image"><i class="fas fa-hospital-alt"></i></div>
                         <div class="project-content">
                             <h3 class="project-title">Analisador de Filas — OCI</h3>
-                            <p class="project-description">Aplicação Streamlit para análise geoespacial de filas de espera do SUS por procedimento, município e especialidade.</p>
+                            <p class="project-description">App Streamlit para análise geoespacial de filas do SUS e identificação de pacientes elegíveis para agrupamento em OCIs.</p>
                             <div class="project-tags">
                                 <span class="project-tag">Python</span>
                                 <span class="project-tag">Streamlit</span>
-                                <span class="project-tag">Geopandas</span>
+                                <span class="project-tag">OCI</span>
+                                <span class="project-tag">SUS</span>
                             </div>
                             <div class="project-footer">
                                 <div class="project-stats"><span><i class="fas fa-star"></i> 2 · <i class="fas fa-code-branch"></i> 1</span></div>
@@ -84,6 +88,116 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- Saúde 2: OCI -->
+                    <div class="project-card reveal" style="border: 2px solid var(--primary-color); position: relative;">
+                        <div style="position: absolute; top: 10px; right: 10px; background: var(--primary-color); color: #000; font-size: 0.65rem; font-weight: 700; padding: 2px 8px; border-radius: 20px;">⭐ DESTAQUE</div>
+                        <div class="project-image"><i class="fas fa-users"></i></div>
+                        <div class="project-content">
+                            <h3 class="project-title">OCI — Organização de Cuidados Integrados</h3>
+                            <p class="project-description">Automação de agrupamento de pacientes em listas de espera por perfil clínico e geolocalização — estratégia nacional do MS para reduzir filas no SUS.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Python</span>
+                                <span class="project-tag">Clustering</span>
+                                <span class="project-tag">Geopandas</span>
+                                <span class="project-tag">SUS</span>
+                            </div>
+                            <div class="project-footer">
+                                <div class="project-stats"><span><i class="fas fa-heartbeat"></i> Saúde Pública</span></div>
+                                <a href="../projeto/projeto_09.html" class="project-link">Ver mais →</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Saúde 3: DoctorCare -->
+                    <div class="project-card reveal" style="border: 2px solid var(--primary-color); position: relative;">
+                        <div style="position: absolute; top: 10px; right: 10px; background: var(--primary-color); color: #000; font-size: 0.65rem; font-weight: 700; padding: 2px 8px; border-radius: 20px;">⭐ DESTAQUE</div>
+                        <div class="project-image"><i class="fas fa-user-md"></i></div>
+                        <div class="project-content">
+                            <h3 class="project-title">DoctorCare</h3>
+                            <p class="project-description">Landing page responsiva para plataforma de saúde digital, conectando pacientes a especialistas com foco em acessibilidade e UX centrado no paciente.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">HTML</span>
+                                <span class="project-tag">CSS</span>
+                                <span class="project-tag">JavaScript</span>
+                                <span class="project-tag">Saúde Digital</span>
+                            </div>
+                            <div class="project-footer">
+                                <div class="project-stats"><span><i class="fas fa-globe"></i> Web</span></div>
+                                <a href="../projeto/projeto_10.html" class="project-link">Ver mais →</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Saúde 4: BOT Monitoramento -->
+                    <div class="project-card reveal" style="border: 2px solid var(--primary-color); position: relative;">
+                        <div style="position: absolute; top: 10px; right: 10px; background: var(--primary-color); color: #000; font-size: 0.65rem; font-weight: 700; padding: 2px 8px; border-radius: 20px;">⭐ DESTAQUE</div>
+                        <div class="project-image"><i class="fas fa-robot"></i></div>
+                        <div class="project-content">
+                            <h3 class="project-title">BOT Monitoramento Componente Geral</h3>
+                            <p class="project-description">Robô de automação para coleta e consolidação de dados do Componente Especializado da Assistência Farmacêutica (CEAF) no DATASUS, com alertas e relatórios automáticos.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Python</span>
+                                <span class="project-tag">Selenium</span>
+                                <span class="project-tag">CEAF</span>
+                                <span class="project-tag">SUS</span>
+                            </div>
+                            <div class="project-footer">
+                                <div class="project-stats"><span><i class="fas fa-pills"></i> Farmácia</span></div>
+                                <a href="../projeto/projeto_11.html" class="project-link">Ver mais →</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Saúde 5: API-REST -->
+                    <div class="project-card reveal" style="border: 2px solid var(--primary-color); position: relative;">
+                        <div style="position: absolute; top: 10px; right: 10px; background: var(--primary-color); color: #000; font-size: 0.65rem; font-weight: 700; padding: 2px 8px; border-radius: 20px;">⭐ DESTAQUE</div>
+                        <div class="project-image"><i class="fas fa-plug"></i></div>
+                        <div class="project-content">
+                            <h3 class="project-title">API-REST — Integração SISREG</h3>
+                            <p class="project-description">API RESTful para interoperabilidade entre sistemas de regulação do SUS — expõe dados de filas, vagas e indicadores com autenticação segura e documentação OpenAPI.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Python</span>
+                                <span class="project-tag">FastAPI</span>
+                                <span class="project-tag">SISREG</span>
+                                <span class="project-tag">RNDS</span>
+                            </div>
+                            <div class="project-footer">
+                                <div class="project-stats"><span><i class="fas fa-exchange-alt"></i> Interoperabilidade</span></div>
+                                <a href="../projeto/projeto_12.html" class="project-link">Ver mais →</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Saúde 6: Manual Regulação -->
+                    <div class="project-card reveal" style="border: 2px solid var(--primary-color); position: relative;">
+                        <div style="position: absolute; top: 10px; right: 10px; background: var(--primary-color); color: #000; font-size: 0.65rem; font-weight: 700; padding: 2px 8px; border-radius: 20px;">⭐ DESTAQUE</div>
+                        <div class="project-image"><i class="fas fa-book-medical"></i></div>
+                        <div class="project-content">
+                            <h3 class="project-title">Manual de Regulação SUS</h3>
+                            <p class="project-description">Guia técnico completo sobre regulação do acesso no SUS — fluxos, SISREG, OCI, base legal e e-SUS Regulação, construído com 17 anos de experiência no Ministério da Saúde.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Regulação</span>
+                                <span class="project-tag">SISREG</span>
+                                <span class="project-tag">e-SUS</span>
+                                <span class="project-tag">SUS</span>
+                            </div>
+                            <div class="project-footer">
+                                <div class="project-stats"><span><i class="fas fa-book"></i> 6 Módulos</span></div>
+                                <a href="../projeto/projeto_13.html" class="project-link">Ver mais →</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- ====== SEÇÃO: DEMAIS PROJETOS ====== -->
+            <div style="margin-bottom: 3rem;">
+                <h3 style="color: var(--text-dark); margin-bottom: 1.5rem; font-size: 1.3rem; display: flex; align-items: center; gap: 0.5rem;">
+                    <i class="fas fa-star" style="color: var(--primary-color);"></i> Outros Projetos em Destaque
+                </h3>
+                <div class="projects-grid">
 
                     <!-- Projeto 2 -->
                     <div class="project-card reveal">

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DoctorCare - Plataforma de Cuidado ao Paciente | Otavio Augusto">
+    <meta name="author" content="Otavio Augusto">
+
+    <link rel="icon" type="image/png" href="../img/Icon.png" />
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <title>DoctorCare — Plataforma de Cuidado ao Paciente | Otavio Augusto</title>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="navbar-brand">
+                <a href="../index.html">OTAVIO<span>.</span></a>
+            </div>
+            <button class="nav-toggle" id="navToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="../index.html#home" class="nav-link">Início</a></li>
+                <li><a href="../index.html#sobre" class="nav-link">Sobre</a></li>
+                <li><a href="../index.html#skills" class="nav-link">Skills</a></li>
+                <li><a href="../index.html#projetos" class="nav-link">Projetos</a></li>
+                <li><a href="../index.html#contatos" class="nav-link">Contato</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="dark-toggle" id="darkToggle" title="Alternar modo escuro">
+                    <i class="fas fa-moon" id="darkIcon"></i>
+                </button>
+                <a href="mailto:otavioaugust@gmail.com" class="nav-cta">Enviar E-mail</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Hero -->
+    <section class="hero" style="min-height: 35vh; padding: 120px 20px 60px;">
+        <div class="hero-content" style="grid-template-columns: 1fr; text-align: center;">
+            <div class="hero-text" style="max-width: 700px; margin: 0 auto;">
+                <div class="hero-badge"><i class="fas fa-user-md"></i> Saúde Digital · Web</div>
+                <h1 class="hero-title"><span class="highlight">DoctorCare</span> — Plataforma de Saúde</h1>
+                <p class="hero-subtitle" style="font-size: 1rem;">$ npm run dev — DoctorCare v1.0</p>
+                <p class="hero-description">Landing page responsiva para plataforma de cuidado médico, conectando pacientes a especialistas de forma simples, acessível e eficiente.</p>
+                <div class="hero-buttons" style="justify-content: center;">
+                    <a href="https://github.com/otavioaugust1/DoctorCare" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                        <i class="fab fa-github"></i> Ver no GitHub
+                    </a>
+                    <a href="../asset/projetos.html" class="btn btn-secondary">
+                        <i class="fas fa-arrow-left"></i> Voltar aos Projetos
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content -->
+    <section style="padding: 60px 0; background-color: var(--bg-white);">
+        <div class="container" style="max-width: 900px;">
+
+            <!-- Visão Geral -->
+            <div style="margin-bottom: 3rem;">
+                <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1.5rem;">
+                    <div style="width: 4px; height: 2rem; background: var(--primary-color); border-radius: 2px;"></div>
+                    <h2 style="color: var(--text-dark); font-size: 1.6rem;">Visão Geral do Projeto</h2>
+                </div>
+                <p style="color: var(--text-light); line-height: 1.9; font-size: 1.05rem; margin-bottom: 1rem;">
+                    O <strong>DoctorCare</strong> é uma plataforma web voltada para saúde digital, com foco em acessibilidade e experiência do usuário. O projeto apresenta uma landing page moderna para uma clínica médica, com seções de especialidades, depoimentos, planos de atendimento e agendamento.
+                </p>
+                <p style="color: var(--text-light); line-height: 1.9; font-size: 1.05rem;">
+                    Desenvolvido com HTML, CSS avançado e JavaScript puro, prioriza performance, design responsivo e boas práticas de acessibilidade — servindo como base para soluções de saúde digital no contexto do SUS e privado.
+                </p>
+            </div>
+
+            <!-- Funcionalidades -->
+            <div style="margin-bottom: 3rem;">
+                <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1.5rem;">
+                    <div style="width: 4px; height: 2rem; background: var(--primary-color); border-radius: 2px;"></div>
+                    <h2 style="color: var(--text-dark); font-size: 1.6rem;">Funcionalidades</h2>
+                </div>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
+                    <div style="background: var(--bg-light); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.5rem;">
+                        <div style="color: var(--primary-color); font-size: 1.8rem; margin-bottom: 1rem;"><i class="fas fa-mobile-alt"></i></div>
+                        <h4 style="color: var(--text-dark); margin-bottom: 0.5rem;">Design Responsivo</h4>
+                        <p style="color: var(--text-light); font-size: 0.95rem; line-height: 1.7;">Layout adaptado para mobile, tablet e desktop com CSS Grid e Flexbox modernos.</p>
+                    </div>
+                    <div style="background: var(--bg-light); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.5rem;">
+                        <div style="color: var(--primary-color); font-size: 1.8rem; margin-bottom: 1rem;"><i class="fas fa-stethoscope"></i></div>
+                        <h4 style="color: var(--text-dark); margin-bottom: 0.5rem;">Catálogo de Especialidades</h4>
+                        <p style="color: var(--text-light); font-size: 0.95rem; line-height: 1.7;">Apresentação visual das especialidades médicas disponíveis com ícones e descrições objetivas.</p>
+                    </div>
+                    <div style="background: var(--bg-light); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.5rem;">
+                        <div style="color: var(--primary-color); font-size: 1.8rem; margin-bottom: 1rem;"><i class="fas fa-calendar-check"></i></div>
+                        <h4 style="color: var(--text-dark); margin-bottom: 0.5rem;">Agendamento Online</h4>
+                        <p style="color: var(--text-light); font-size: 0.95rem; line-height: 1.7;">Seção de agendamento simplificado com formulário acessível e feedback visual imediato.</p>
+                    </div>
+                    <div style="background: var(--bg-light); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.5rem;">
+                        <div style="color: var(--primary-color); font-size: 1.8rem; margin-bottom: 1rem;"><i class="fas fa-moon"></i></div>
+                        <h4 style="color: var(--text-dark); margin-bottom: 0.5rem;">Modo Escuro</h4>
+                        <p style="color: var(--text-light); font-size: 0.95rem; line-height: 1.7;">Alternância entre tema claro e escuro com persistência via LocalStorage.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stack Técnica -->
+            <div style="margin-bottom: 3rem;">
+                <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1.5rem;">
+                    <div style="width: 4px; height: 2rem; background: var(--primary-color); border-radius: 2px;"></div>
+                    <h2 style="color: var(--text-dark); font-size: 1.6rem;">Stack Técnica</h2>
+                </div>
+                <div style="background: var(--bg-light); border: 1px solid var(--border-color); border-radius: 12px; padding: 2rem;">
+                    <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
+                        <span style="background: rgba(27,185,31,0.15); color: var(--primary-color); padding: 0.5rem 1.2rem; border-radius: 50px; font-weight: 600; border: 1px solid rgba(27,185,31,0.3); font-family: var(--font-mono); font-size: 0.9rem;"><i class="fab fa-html5"></i> HTML5</span>
+                        <span style="background: rgba(27,185,31,0.15); color: var(--primary-color); padding: 0.5rem 1.2rem; border-radius: 50px; font-weight: 600; border: 1px solid rgba(27,185,31,0.3); font-family: var(--font-mono); font-size: 0.9rem;"><i class="fab fa-css3-alt"></i> CSS3</span>
+                        <span style="background: var(--bg-card); color: var(--text-dark); padding: 0.5rem 1.2rem; border-radius: 50px; border: 1px solid var(--border-color); font-family: var(--font-mono); font-size: 0.9rem;"><i class="fab fa-js"></i> JavaScript</span>
+                        <span style="background: var(--bg-card); color: var(--text-dark); padding: 0.5rem 1.2rem; border-radius: 50px; border: 1px solid var(--border-color); font-family: var(--font-mono); font-size: 0.9rem;">CSS Grid</span>
+                        <span style="background: var(--bg-card); color: var(--text-dark); padding: 0.5rem 1.2rem; border-radius: 50px; border: 1px solid var(--border-color); font-family: var(--font-mono); font-size: 0.9rem;">Flexbox</span>
+                        <span style="background: var(--bg-card); color: var(--text-dark); padding: 0.5rem 1.2rem; border-radius: 50px; border: 1px solid var(--border-color); font-family: var(--font-mono); font-size: 0.9rem;">LocalStorage</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Impacto -->
+            <div style="margin-bottom: 3rem;">
+                <div style="background: var(--bg-light); border: 1px solid var(--border-color); border-left: 4px solid var(--primary-color); border-radius: 12px; padding: 2rem;">
+                    <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1rem;">
+                        <i class="fas fa-quote-left" style="color: var(--primary-color); margin-right: 0.5rem;"></i>
+                        O DoctorCare demonstra como <strong style="color: var(--text-dark);">soluções web modernas</strong> podem ser aplicadas na saúde para melhorar a experiência do paciente — desde o primeiro contato até o agendamento. Serve como protótipo replicável para clínicas, cooperativas médicas e integrações com sistemas como o e-SUS.
+                    </p>
+                    <div style="display: flex; gap: 2rem; flex-wrap: wrap; margin-top: 1.5rem;">
+                        <div style="text-align: center;">
+                            <div style="font-size: 1.8rem; font-weight: 700; color: var(--primary-color); font-family: var(--font-mono);">100%</div>
+                            <div style="color: var(--text-light); font-size: 0.85rem;">Responsivo</div>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="font-size: 1.8rem; font-weight: 700; color: var(--primary-color); font-family: var(--font-mono);">Web</div>
+                            <div style="color: var(--text-light); font-size: 0.85rem;">Saúde Digital</div>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="font-size: 1.8rem; font-weight: 700; color: var(--primary-color); font-family: var(--font-mono);">UX</div>
+                            <div style="color: var(--text-light); font-size: 0.85rem;">Foco no Paciente</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <div style="text-align: center; padding: 2rem;">
+                <a href="https://github.com/otavioaugust1/DoctorCare" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="margin-right: 1rem;">
+                    <i class="fab fa-github"></i> Ver Código no GitHub
+                </a>
+                <a href="../asset/projetos.html" class="btn btn-secondary">
+                    <i class="fas fa-th-large"></i> Outros Projetos
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>OTAVIO<span style="color: var(--primary-color);">.</span></h4>
+                    <p>Cientista de Dados especializado em saúde pública. Transformando dados em decisões para o SUS.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="../index.html">Início</a></li>
+                        <li><a href="../asset/sobre.html">Sobre Mim</a></li>
+                        <li><a href="../asset/projetos.html">Projetos</a></li>
+                        <li><a href="../index.html#contatos">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <ul>
+                        <li><a href="mailto:otavioaugust@gmail.com"><i class="fas fa-envelope"></i> otavioaugust@gmail.com</a></li>
+                        <li><a href="https://github.com/otavioaugust1" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a></li>
+                        <li><a href="https://www.linkedin.com/in/otavioaugust" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Otavio Augusto. Feito com <i class="fas fa-heart" style="color: var(--primary-color);"></i> e dados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script/script.js"></script>
+</body>
+</html>

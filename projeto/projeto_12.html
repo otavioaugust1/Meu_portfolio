@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="API-REST SISREG - Interface de Programação para Regulação SUS | Otavio Augusto">
+    <meta name="author" content="Otavio Augusto">
+
+    <link rel="icon" type="image/png" href="../img/Icon.png" />
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <title>API-REST — Integração SISREG | Otavio Augusto</title>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="navbar-brand">
+                <a href="../index.html">OTAVIO<span>.</span></a>
+            </div>
+            <button class="nav-toggle" id="navToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="../index.html#home" class="nav-link">Início</a></li>
+                <li><a href="../index.html#sobre" class="nav-link">Sobre</a></li>
+                <li><a href="../index.html#skills" class="nav-link">Skills</a></li>
+                <li><a href="../index.html#projetos" class="nav-link">Projetos</a></li>
+                <li><a href="../index.html#contatos" class="nav-link">Contato</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="dark-toggle" id="darkToggle" title="Alternar modo escuro">
+                    <i class="fas fa-moon" id="darkIcon"></i>
+                </button>
+                <a href="mailto:otavioaugust@gmail.com" class="nav-cta">Enviar E-mail</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Hero -->
+    <section class="hero" style="min-height: 35vh; padding: 120px 20px 60px;">
+        <div class="hero-content" style="grid-template-columns: 1fr; text-align: center;">
+            <div class="hero-text" style="max-width: 700px; margin: 0 auto;">
+                <div class="hero-badge"><i class="fas fa-plug"></i> API · REST · Interoperabilidade SUS</div>
+                <h1 class="hero-title"><span class="highlight">API-REST</span> — Integração SISREG</h1>
+                <p class="hero-subtitle" style="font-size: 1rem;">$ curl -X GET https://api.sisreg.sus.gov.br/v1/filas?uf=DF&amp;especialidade=cardio</p>
+                <p class="hero-description">Interface de Programação de Aplicação (API) RESTful para integração entre sistemas de regulação do SUS, possibilitando acesso padronizado a dados do SISREG e eliminando retrabalho entre secretarias estaduais e municipais.</p>
+                <div class="hero-buttons" style="justify-content: center;">
+                    <a href="https://github.com/otavioaugust1" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                        <i class="fab fa-github"></i> Ver no GitHub
+                    </a>
+                    <a href="../asset/projetos.html" class="btn btn-secondary">
+                        <i class="fas fa-arrow-left"></i> Voltar aos Projetos
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content -->
+    <section style="padding: 60px 0; background-color: var(--bg-white);">
+        <div class="container" style="max-width: 900px;">
+
+            <!-- Visão Geral -->
+            <div style="margin-bottom: 3rem;">
+                <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1.5rem;">
+                    <div style="width: 4px; height: 2rem; background: var(--primary-color); border-radius: 2px;"></div>
+                    <h2 style="color: var(--text-dark); font-size: 1.6rem;">Visão Geral do Projeto</h2>
+                </div>
+                <p style="color: var(--text-light); line-height: 1.9; font-size: 1.05rem; margin-bottom: 1rem;">
+                    A <strong>API-SISREG</strong> é um projeto de interoperabilidade que expõe dados do Sistema Nacional de Regulação (SISREG) através de endpoints RESTful padronizados. Permite que sistemas externos — municipais, estaduais e privados — consultem filas de espera, ofertas de vagas e indicadores de regulação de forma programática.
+                </p>
+                <p style="color: var(--text-light); line-height: 1.9; font-size: 1.05rem;">
+                    O projeto segue os padrões de interoperabilidade do e-SUS e RNDS (Rede Nacional de Dados em Saúde), com autenticação segura via token e documentação automática via Swagger/OpenAPI.
+                </p>
+            </div>
+
+            <!-- Endpoints em destaque -->
+            <div style="margin-bottom: 3rem;">
+                <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1.5rem;">
+                    <div style="width: 4px; height: 2rem; background: var(--primary-color); border-radius: 2px;"></div>
+                    <h2 style="color: var(--text-dark); font-size: 1.6rem;">Principais Endpoints</h2>
+                </div>
+                <div style="background: var(--bg-light); border: 1px solid var(--border-color); border-radius: 12px; padding: 2rem; font-family: var(--font-mono);">
+                    <div style="margin-bottom: 1rem; padding: 0.8rem; background: rgba(27,185,31,0.08); border-radius: 8px; border-left: 3px solid var(--primary-color);">
+                        <span style="color: var(--primary-color); font-weight: 700;">GET</span>
+                        <span style="color: var(--text-dark); margin-left: 1rem;">/v1/filas?uf={uf}&especialidade={codigo}</span>
+                        <p style="color: var(--text-light); font-size: 0.85rem; margin: 0.3rem 0 0 0;">Consulta filas de espera por UF e especialidade</p>
+                    </div>
+                    <div style="margin-bottom: 1rem; padding: 0.8rem; background: rgba(27,185,31,0.08); border-radius: 8px; border-left: 3px solid var(--primary-color);">
+                        <span style="color: var(--primary-color); font-weight: 700;">GET</span>
+                        <span style="color: var(--text-dark); margin-left: 1rem;">/v1/oferta-vagas/{municipio_ibge}</span>
+                        <p style="color: var(--text-light); font-size: 0.85rem; margin: 0.3rem 0 0 0;">Lista oferta de vagas disponíveis por município</p>
+                    </div>
+                    <div style="margin-bottom: 1rem; padding: 0.8rem; background: rgba(56,139,253,0.08); border-radius: 8px; border-left: 3px solid #388bfd;">
+                        <span style="color: #388bfd; font-weight: 700;">POST</span>
+                        <span style="color: var(--text-dark); margin-left: 1rem;">/v1/solicitacoes</span>
+                        <p style="color: var(--text-light); font-size: 0.85rem; margin: 0.3rem 0 0 0;">Envia nova solicitação de regulação ao SISREG</p>
+                    </div>
+                    <div style="padding: 0.8rem; background: rgba(27,185,31,0.08); border-radius: 8px; border-left: 3px solid var(--primary-color);">
+                        <span style="color: var(--primary-color); font-weight: 700;">GET</span>
+                        <span style="color: var(--text-dark); margin-left: 1rem;">/v1/indicadores/tempo-espera</span>
+                        <p style="color: var(--text-light); font-size: 0.85rem; margin: 0.3rem 0 0 0;">Retorna indicadores agregados de tempo de espera por especialidade</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Funcionalidades -->
+            <div style="margin-bottom: 3rem;">
+                <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1.5rem;">
+                    <div style="width: 4px; height: 2rem; background: var(--primary-color); border-radius: 2px;"></div>
+                    <h2 style="color: var(--text-dark); font-size: 1.6rem;">Arquitetura &amp; Funcionalidades</h2>
+                </div>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
+                    <div style="background: var(--bg-light); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.5rem;">
+                        <div style="color: var(--primary-color); font-size: 1.8rem; margin-bottom: 1rem;"><i class="fas fa-lock"></i></div>
+                        <h4 style="color: var(--text-dark); margin-bottom: 0.5rem;">Autenticação Segura</h4>
+                        <p style="color: var(--text-light); font-size: 0.95rem; line-height: 1.7;">Tokens JWT com expiração, controle de escopo por perfil (município, estado, MS) e rate limiting.</p>
+                    </div>
+                    <div style="background: var(--bg-light); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.5rem;">
+                        <div style="color: var(--primary-color); font-size: 1.8rem; margin-bottom: 1rem;"><i class="fas fa-book"></i></div>
+                        <h4 style="color: var(--text-dark); margin-bottom: 0.5rem;">Documentação Swagger</h4>
+                        <p style="color: var(--text-light); font-size: 0.95rem; line-height: 1.7;">Documentação automática e interativa via OpenAPI 3.0, com exemplos de requisição e resposta.</p>
+                    </div>
+                    <div style="background: var(--bg-light); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.5rem;">
+                        <div style="color: var(--primary-color); font-size: 1.8rem; margin-bottom: 1rem;"><i class="fas fa-exchange-alt"></i></div>
+                        <h4 style="color: var(--text-dark); margin-bottom: 0.5rem;">Interoperabilidade</h4>
+                        <p style="color: var(--text-light); font-size: 0.95rem; line-height: 1.7;">Compatível com padrões RNDS, FHIR e SISREG, facilitando integração com sistemas já existentes.</p>
+                    </div>
+                    <div style="background: var(--bg-light); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.5rem;">
+                        <div style="color: var(--primary-color); font-size: 1.8rem; margin-bottom: 1rem;"><i class="fas fa-tachometer-alt"></i></div>
+                        <h4 style="color: var(--text-dark); margin-bottom: 0.5rem;">Cache &amp; Performance</h4>
+                        <p style="color: var(--text-light); font-size: 0.95rem; line-height: 1.7;">Cache Redis para consultas pesadas, garantindo respostas rápidas mesmo com alto volume de requisições.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stack Técnica -->
+            <div style="margin-bottom: 3rem;">
+                <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1.5rem;">
+                    <div style="width: 4px; height: 2rem; background: var(--primary-color); border-radius: 2px;"></div>
+                    <h2 style="color: var(--text-dark); font-size: 1.6rem;">Stack Técnica</h2>
+                </div>
+                <div style="background: var(--bg-light); border: 1px solid var(--border-color); border-radius: 12px; padding: 2rem;">
+                    <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
+                        <span style="background: rgba(27,185,31,0.15); color: var(--primary-color); padding: 0.5rem 1.2rem; border-radius: 50px; font-weight: 600; border: 1px solid rgba(27,185,31,0.3); font-family: var(--font-mono); font-size: 0.9rem;"><i class="fab fa-python"></i> Python</span>
+                        <span style="background: var(--bg-card); color: var(--text-dark); padding: 0.5rem 1.2rem; border-radius: 50px; border: 1px solid var(--border-color); font-family: var(--font-mono); font-size: 0.9rem;">FastAPI</span>
+                        <span style="background: var(--bg-card); color: var(--text-dark); padding: 0.5rem 1.2rem; border-radius: 50px; border: 1px solid var(--border-color); font-family: var(--font-mono); font-size: 0.9rem;">SQLAlchemy</span>
+                        <span style="background: var(--bg-card); color: var(--text-dark); padding: 0.5rem 1.2rem; border-radius: 50px; border: 1px solid var(--border-color); font-family: var(--font-mono); font-size: 0.9rem;">PostgreSQL</span>
+                        <span style="background: var(--bg-card); color: var(--text-dark); padding: 0.5rem 1.2rem; border-radius: 50px; border: 1px solid var(--border-color); font-family: var(--font-mono); font-size: 0.9rem;">Redis</span>
+                        <span style="background: var(--bg-card); color: var(--text-dark); padding: 0.5rem 1.2rem; border-radius: 50px; border: 1px solid var(--border-color); font-family: var(--font-mono); font-size: 0.9rem;">JWT</span>
+                        <span style="background: var(--bg-card); color: var(--text-dark); padding: 0.5rem 1.2rem; border-radius: 50px; border: 1px solid var(--border-color); font-family: var(--font-mono); font-size: 0.9rem;">OpenAPI 3.0</span>
+                        <span style="background: var(--bg-card); color: var(--text-dark); padding: 0.5rem 1.2rem; border-radius: 50px; border: 1px solid var(--border-color); font-family: var(--font-mono); font-size: 0.9rem;">Docker</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Impacto -->
+            <div style="margin-bottom: 3rem;">
+                <div style="background: var(--bg-light); border: 1px solid var(--border-color); border-left: 4px solid var(--primary-color); border-radius: 12px; padding: 2rem;">
+                    <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1rem;">
+                        <i class="fas fa-quote-left" style="color: var(--primary-color); margin-right: 0.5rem;"></i>
+                        A interoperabilidade é um dos principais gargalos do SUS digital. A <strong style="color: var(--text-dark);">API-SISREG</strong> atua como ponte entre o sistema federal de regulação e os sistemas locais, reduzindo duplicação de dados e acelerando o acesso à informação para tomada de decisão em saúde.
+                    </p>
+                    <div style="display: flex; gap: 2rem; flex-wrap: wrap; margin-top: 1.5rem;">
+                        <div style="text-align: center;">
+                            <div style="font-size: 1.8rem; font-weight: 700; color: var(--primary-color); font-family: var(--font-mono);">REST</div>
+                            <div style="color: var(--text-light); font-size: 0.85rem;">Arquitetura</div>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="font-size: 1.8rem; font-weight: 700; color: var(--primary-color); font-family: var(--font-mono);">RNDS</div>
+                            <div style="color: var(--text-light); font-size: 0.85rem;">Compatível</div>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="font-size: 1.8rem; font-weight: 700; color: var(--primary-color); font-family: var(--font-mono);">e-SUS</div>
+                            <div style="color: var(--text-light); font-size: 0.85rem;">Ecossistema</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <div style="text-align: center; padding: 2rem;">
+                <a href="https://github.com/otavioaugust1" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="margin-right: 1rem;">
+                    <i class="fab fa-github"></i> Ver Código no GitHub
+                </a>
+                <a href="../asset/projetos.html" class="btn btn-secondary">
+                    <i class="fas fa-th-large"></i> Outros Projetos
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>OTAVIO<span style="color: var(--primary-color);">.</span></h4>
+                    <p>Cientista de Dados especializado em saúde pública. Transformando dados em decisões para o SUS.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="../index.html">Início</a></li>
+                        <li><a href="../asset/sobre.html">Sobre Mim</a></li>
+                        <li><a href="../asset/projetos.html">Projetos</a></li>
+                        <li><a href="../index.html#contatos">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <ul>
+                        <li><a href="mailto:otavioaugust@gmail.com"><i class="fas fa-envelope"></i> otavioaugust@gmail.com</a></li>
+                        <li><a href="https://github.com/otavioaugust1" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a></li>
+                        <li><a href="https://www.linkedin.com/in/otavioaugust" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Otavio Augusto. Feito com <i class="fas fa-heart" style="color: var(--primary-color);"></i> e dados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script/script.js"></script>
+</body>
+</html>

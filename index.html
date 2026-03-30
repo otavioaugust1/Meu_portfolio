@@ -191,38 +191,28 @@
         <div class="container">
             <div class="section-header">
                 <h2>Projetos em Destaque</h2>
-                <p class="section-subtitle">Seleção dos principais projetos de Data Science e Automação</p>
+                <p class="section-subtitle">Soluções desenvolvidas para o ecossistema SUS — regulação, automação, APIs e gestão em saúde</p>
+            </div>
+
+            <!-- Badge de foco em saúde -->
+            <div style="text-align: center; margin-bottom: 2rem;">
+                <span style="background: rgba(27,185,31,0.12); color: var(--primary-color); border: 1px solid rgba(27,185,31,0.4); padding: 0.5rem 1.4rem; border-radius: 50px; font-size: 0.9rem; font-weight: 600;">
+                    <i class="fas fa-heartbeat"></i> Especialista em Saúde Pública &amp; SUS
+                </span>
             </div>
 
             <div class="projects-grid">
-                <!-- Card 1 -->
-                <div class="project-card reveal">
-                    <div class="project-image"><i class="fas fa-brain"></i></div>
-                    <div class="project-content">
-                        <h3 class="project-title">Sistemas de Recomendação — SOFTEX</h3>
-                        <p class="project-description">Motor de recomendação com abordagens colaborativa, por conteúdo e híbrida. O projeto mais bem avaliado do portfólio.</p>
-                        <div class="project-tags">
-                            <span class="project-tag">Python</span>
-                            <span class="project-tag">Scikit-learn</span>
-                            <span class="project-tag">ML</span>
-                        </div>
-                        <div class="project-footer">
-                            <div class="project-stats"><span><i class="fas fa-star"></i> 4 · <i class="fas fa-code-branch"></i> 2</span></div>
-                            <a href="projeto/projeto_03.html" class="project-link">Ver mais →</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 2 -->
-                <div class="project-card reveal">
+                <!-- Card 1: Analisador de Filas OCI -->
+                <div class="project-card reveal" style="border: 2px solid var(--primary-color); position: relative;">
+                    <div style="position: absolute; top: 10px; right: 10px; background: var(--primary-color); color: #000; font-size: 0.65rem; font-weight: 700; padding: 2px 8px; border-radius: 20px;">🏥 SAÚDE</div>
                     <div class="project-image"><i class="fas fa-hospital-alt"></i></div>
                     <div class="project-content">
                         <h3 class="project-title">Analisador de Filas — OCI</h3>
-                        <p class="project-description">Aplicação Streamlit para análise geoespacial de filas de espera do SUS por procedimento, município e especialidade.</p>
+                        <p class="project-description">App Streamlit para análise geoespacial de filas do SUS e identificação de pacientes elegíveis para agrupamento em Organizações de Cuidados Integrados (OCI).</p>
                         <div class="project-tags">
                             <span class="project-tag">Python</span>
                             <span class="project-tag">Streamlit</span>
-                            <span class="project-tag">Geopandas</span>
+                            <span class="project-tag">OCI</span>
                         </div>
                         <div class="project-footer">
                             <div class="project-stats"><span><i class="fas fa-star"></i> 2 · <i class="fas fa-code-branch"></i> 1</span></div>
@@ -231,20 +221,40 @@
                     </div>
                 </div>
 
-                <!-- Card 3 -->
-                <div class="project-card reveal">
-                    <div class="project-image"><i class="fas fa-globe-americas"></i></div>
+                <!-- Card 2: API-REST SISREG -->
+                <div class="project-card reveal" style="border: 2px solid var(--primary-color); position: relative;">
+                    <div style="position: absolute; top: 10px; right: 10px; background: var(--primary-color); color: #000; font-size: 0.65rem; font-weight: 700; padding: 2px 8px; border-radius: 20px;">🏥 SAÚDE</div>
+                    <div class="project-image"><i class="fas fa-plug"></i></div>
                     <div class="project-content">
-                        <h3 class="project-title">Copa do Mundo 2026 🔮</h3>
-                        <p class="project-description">Previsão do campeão com Machine Learning — evoluindo o modelo Poisson (Qatar 2022) para XGBoost com 48 seleções e 3 países-sede.</p>
+                        <h3 class="project-title">API-REST — Integração SISREG</h3>
+                        <p class="project-description">API RESTful para interoperabilidade entre sistemas de regulação do SUS — filas, vagas, indicadores e solicitações com autenticação segura e documentação OpenAPI.</p>
                         <div class="project-tags">
                             <span class="project-tag">Python</span>
-                            <span class="project-tag">XGBoost</span>
-                            <span class="project-tag">Em curso</span>
+                            <span class="project-tag">FastAPI</span>
+                            <span class="project-tag">SISREG</span>
                         </div>
                         <div class="project-footer">
-                            <div class="project-stats"><span><i class="fas fa-spinner fa-pulse"></i> Em andamento</span></div>
-                            <a href="projeto/projeto_05.html" class="project-link">Ver mais →</a>
+                            <div class="project-stats"><span><i class="fas fa-exchange-alt"></i> Interoperabilidade</span></div>
+                            <a href="projeto/projeto_12.html" class="project-link">Ver mais →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3: Manual Regulação -->
+                <div class="project-card reveal" style="border: 2px solid var(--primary-color); position: relative;">
+                    <div style="position: absolute; top: 10px; right: 10px; background: var(--primary-color); color: #000; font-size: 0.65rem; font-weight: 700; padding: 2px 8px; border-radius: 20px;">🏥 SAÚDE</div>
+                    <div class="project-image"><i class="fas fa-book-medical"></i></div>
+                    <div class="project-content">
+                        <h3 class="project-title">Manual de Regulação SUS</h3>
+                        <p class="project-description">Guia técnico completo: fluxos de regulação, SISREG, OCI, base legal e e-SUS Regulação — construído com 17 anos de experiência no Ministério da Saúde.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Regulação</span>
+                            <span class="project-tag">SISREG</span>
+                            <span class="project-tag">e-SUS</span>
+                        </div>
+                        <div class="project-footer">
+                            <div class="project-stats"><span><i class="fas fa-book"></i> 6 Módulos</span></div>
+                            <a href="projeto/projeto_13.html" class="project-link">Ver mais →</a>
                         </div>
                     </div>
                 </div>

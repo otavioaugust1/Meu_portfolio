@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BOT Monitoramento Componente Geral - Automação SUS | Otavio Augusto">
+    <meta name="author" content="Otavio Augusto">
+
+    <link rel="icon" type="image/png" href="../img/Icon.png" />
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <title>BOT Monitoramento Componente Geral | Otavio Augusto</title>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="navbar-brand">
+                <a href="../index.html">OTAVIO<span>.</span></a>
+            </div>
+            <button class="nav-toggle" id="navToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="../index.html#home" class="nav-link">Início</a></li>
+                <li><a href="../index.html#sobre" class="nav-link">Sobre</a></li>
+                <li><a href="../index.html#skills" class="nav-link">Skills</a></li>
+                <li><a href="../index.html#projetos" class="nav-link">Projetos</a></li>
+                <li><a href="../index.html#contatos" class="nav-link">Contato</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="dark-toggle" id="darkToggle" title="Alternar modo escuro">
+                    <i class="fas fa-moon" id="darkIcon"></i>
+                </button>
+                <a href="mailto:otavioaugust@gmail.com" class="nav-cta">Enviar E-mail</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Hero -->
+    <section class="hero" style="min-height: 35vh; padding: 120px 20px 60px;">
+        <div class="hero-content" style="grid-template-columns: 1fr; text-align: center;">
+            <div class="hero-text" style="max-width: 700px; margin: 0 auto;">
+                <div class="hero-badge"><i class="fas fa-robot"></i> Automação · SUS · Componente Especial</div>
+                <h1 class="hero-title">BOT <span class="highlight">Monitoramento</span> Componente Geral</h1>
+                <p class="hero-subtitle" style="font-size: 1rem;">$ python bot_monitoramento.py --componente geral --modo automatico</p>
+                <p class="hero-description">Robô de automação para monitorar, coletar e consolidar dados do Componente Especializado da Assistência Farmacêutica (CEAF) no SUS, com alertas e relatórios automáticos.</p>
+                <div class="hero-buttons" style="justify-content: center;">
+                    <a href="https://github.com/otavioaugust1/BOT_MONITORAMENTO_COMPONETE_GERAL" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                        <i class="fab fa-github"></i> Ver no GitHub
+                    </a>
+                    <a href="../asset/projetos.html" class="btn btn-secondary">
+                        <i class="fas fa-arrow-left"></i> Voltar aos Projetos
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content -->
+    <section style="padding: 60px 0; background-color: var(--bg-white);">
+        <div class="container" style="max-width: 900px;">
+
+            <!-- Visão Geral -->
+            <div style="margin-bottom: 3rem;">
+                <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1.5rem;">
+                    <div style="width: 4px; height: 2rem; background: var(--primary-color); border-radius: 2px;"></div>
+                    <h2 style="color: var(--text-dark); font-size: 1.6rem;">Visão Geral do Projeto</h2>
+                </div>
+                <p style="color: var(--text-light); line-height: 1.9; font-size: 1.05rem; margin-bottom: 1rem;">
+                    O <strong>Componente Especializado da Assistência Farmacêutica (CEAF)</strong> é responsável pelo fornecimento de medicamentos de alto custo no SUS. O monitoramento manual desses dados é trabalhoso e sujeito a erros — este BOT resolve esse problema com automação completa.
+                </p>
+                <p style="color: var(--text-light); line-height: 1.9; font-size: 1.05rem;">
+                    O robô acessa portais do DATASUS e sistemas do Ministério da Saúde, coleta dados de dispensação, consolida por competência e gera painéis de monitoramento automáticos com alertas de inconsistências.
+                </p>
+            </div>
+
+            <!-- Funcionalidades -->
+            <div style="margin-bottom: 3rem;">
+                <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1.5rem;">
+                    <div style="width: 4px; height: 2rem; background: var(--primary-color); border-radius: 2px;"></div>
+                    <h2 style="color: var(--text-dark); font-size: 1.6rem;">Funcionalidades</h2>
+                </div>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
+                    <div style="background: var(--bg-light); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.5rem;">
+                        <div style="color: var(--primary-color); font-size: 1.8rem; margin-bottom: 1rem;"><i class="fas fa-robot"></i></div>
+                        <h4 style="color: var(--text-dark); margin-bottom: 0.5rem;">Coleta Automatizada</h4>
+                        <p style="color: var(--text-light); font-size: 0.95rem; line-height: 1.7;">Navegação automática nos portais do DATASUS com Selenium para extração de dados de dispensação por competência.</p>
+                    </div>
+                    <div style="background: var(--bg-light); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.5rem;">
+                        <div style="color: var(--primary-color); font-size: 1.8rem; margin-bottom: 1rem;"><i class="fas fa-bell"></i></div>
+                        <h4 style="color: var(--text-dark); margin-bottom: 0.5rem;">Alertas de Inconsistências</h4>
+                        <p style="color: var(--text-light); font-size: 0.95rem; line-height: 1.7;">Detecção e notificação automática de divergências entre dados esperados e reportados pelos estados.</p>
+                    </div>
+                    <div style="background: var(--bg-light); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.5rem;">
+                        <div style="color: var(--primary-color); font-size: 1.8rem; margin-bottom: 1rem;"><i class="fas fa-pills"></i></div>
+                        <h4 style="color: var(--text-dark); margin-bottom: 0.5rem;">Monitoramento de Medicamentos</h4>
+                        <p style="color: var(--text-light); font-size: 0.95rem; line-height: 1.7;">Acompanhamento por grupo de medicamento, CID, UF e estabelecimento, com histórico temporal.</p>
+                    </div>
+                    <div style="background: var(--bg-light); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.5rem;">
+                        <div style="color: var(--primary-color); font-size: 1.8rem; margin-bottom: 1rem;"><i class="fas fa-file-excel"></i></div>
+                        <h4 style="color: var(--text-dark); margin-bottom: 0.5rem;">Relatórios Consolidados</h4>
+                        <p style="color: var(--text-light); font-size: 0.95rem; line-height: 1.7;">Geração automática de planilhas e dashboards prontos para uso pelos gestores técnicos do MS.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stack Técnica -->
+            <div style="margin-bottom: 3rem;">
+                <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1.5rem;">
+                    <div style="width: 4px; height: 2rem; background: var(--primary-color); border-radius: 2px;"></div>
+                    <h2 style="color: var(--text-dark); font-size: 1.6rem;">Stack Técnica</h2>
+                </div>
+                <div style="background: var(--bg-light); border: 1px solid var(--border-color); border-radius: 12px; padding: 2rem;">
+                    <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
+                        <span style="background: rgba(27,185,31,0.15); color: var(--primary-color); padding: 0.5rem 1.2rem; border-radius: 50px; font-weight: 600; border: 1px solid rgba(27,185,31,0.3); font-family: var(--font-mono); font-size: 0.9rem;"><i class="fab fa-python"></i> Python</span>
+                        <span style="background: var(--bg-card); color: var(--text-dark); padding: 0.5rem 1.2rem; border-radius: 50px; border: 1px solid var(--border-color); font-family: var(--font-mono); font-size: 0.9rem;">Selenium</span>
+                        <span style="background: var(--bg-card); color: var(--text-dark); padding: 0.5rem 1.2rem; border-radius: 50px; border: 1px solid var(--border-color); font-family: var(--font-mono); font-size: 0.9rem;">Pandas</span>
+                        <span style="background: var(--bg-card); color: var(--text-dark); padding: 0.5rem 1.2rem; border-radius: 50px; border: 1px solid var(--border-color); font-family: var(--font-mono); font-size: 0.9rem;">OpenPyXL</span>
+                        <span style="background: var(--bg-card); color: var(--text-dark); padding: 0.5rem 1.2rem; border-radius: 50px; border: 1px solid var(--border-color); font-family: var(--font-mono); font-size: 0.9rem;">Schedule</span>
+                        <span style="background: var(--bg-card); color: var(--text-dark); padding: 0.5rem 1.2rem; border-radius: 50px; border: 1px solid var(--border-color); font-family: var(--font-mono); font-size: 0.9rem;">DATASUS</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Impacto -->
+            <div style="margin-bottom: 3rem;">
+                <div style="background: var(--bg-light); border: 1px solid var(--border-color); border-left: 4px solid var(--primary-color); border-radius: 12px; padding: 2rem;">
+                    <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1rem;">
+                        <i class="fas fa-quote-left" style="color: var(--primary-color); margin-right: 0.5rem;"></i>
+                        O <strong style="color: var(--text-dark);">Componente Especializado</strong> representa bilhões de reais em medicamentos anuais. A automação do monitoramento reduz o tempo de análise de dias para minutos, permitindo respostas mais rápidas a irregularidades e garantindo o acesso contínuo aos medicamentos pelos pacientes do SUS.
+                    </p>
+                    <div style="display: flex; gap: 2rem; flex-wrap: wrap; margin-top: 1.5rem;">
+                        <div style="text-align: center;">
+                            <div style="font-size: 1.8rem; font-weight: 700; color: var(--primary-color); font-family: var(--font-mono);">27 UF</div>
+                            <div style="color: var(--text-light); font-size: 0.85rem;">Estados monitorados</div>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="font-size: 1.8rem; font-weight: 700; color: var(--primary-color); font-family: var(--font-mono);">CEAF</div>
+                            <div style="color: var(--text-light); font-size: 0.85rem;">Componente Especializado</div>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="font-size: 1.8rem; font-weight: 700; color: var(--primary-color); font-family: var(--font-mono);">Auto</div>
+                            <div style="color: var(--text-light); font-size: 0.85rem;">100% Automatizado</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <div style="text-align: center; padding: 2rem;">
+                <a href="https://github.com/otavioaugust1/BOT_MONITORAMENTO_COMPONETE_GERAL" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="margin-right: 1rem;">
+                    <i class="fab fa-github"></i> Ver Código no GitHub
+                </a>
+                <a href="../asset/projetos.html" class="btn btn-secondary">
+                    <i class="fas fa-th-large"></i> Outros Projetos
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>OTAVIO<span style="color: var(--primary-color);">.</span></h4>
+                    <p>Cientista de Dados especializado em saúde pública. Transformando dados em decisões para o SUS.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="../index.html">Início</a></li>
+                        <li><a href="../asset/sobre.html">Sobre Mim</a></li>
+                        <li><a href="../asset/projetos.html">Projetos</a></li>
+                        <li><a href="../index.html#contatos">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <ul>
+                        <li><a href="mailto:otavioaugust@gmail.com"><i class="fas fa-envelope"></i> otavioaugust@gmail.com</a></li>
+                        <li><a href="https://github.com/otavioaugust1" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a></li>
+                        <li><a href="https://www.linkedin.com/in/otavioaugust" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Otavio Augusto. Feito com <i class="fas fa-heart" style="color: var(--primary-color);"></i> e dados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script/script.js"></script>
+</body>
+</html>
